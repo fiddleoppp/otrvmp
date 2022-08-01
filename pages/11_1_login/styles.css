@@ -1,0 +1,64 @@
+.login {}
+
+.login__wrapper {
+  padding: 32px 16px 64px;
+}
+
+.login__title {
+  font-size: var(--font-page-title-size);
+  font-weight: var(--font-page-title-weight);
+  line-height: var(--font-page-title-height);
+  font-family: 'Lora';
+  text-align: center;
+  margin: 0;
+}
+
+.login__form {
+  margin-top: 32px;
+}
+
+.login__form-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.login__form-item + .login__form-item {
+  margin-top: 32px;
+}
+
+.login__form-forget-password {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.login__form-action {
+  margin-top: 40px;
+}
+
+.login__form-footer {
+  margin-top: 24px;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--color-ot-black);
+  text-align: center;
+}
+
+.login__form-footer-link {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 769px) {
+  .login__wrapper {
+    padding: 40px 0 80px;
+    max-width: 440px;
+    margin: 0 auto;
+  }
+
+  .login__form {
+    max-width: 376px;
+    margin: 32px auto 0;
+  }
+}

@@ -1,0 +1,271 @@
+.footer {}
+
+.footer__partner {
+  border-top: 1px solid var(--color-ot-gray-40);
+  padding: 32px 16px;
+  background-color: var(--color-ot-white);
+}
+
+.footer__partner-section {
+
+}
+
+.footer__partner-section + .footer__partner-section {
+  margin-top: 48px;
+}
+
+.footer__partner-label {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--color-ot-black)
+}
+
+.footer__partner-list {
+  margin-top: 16px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.footer__partner-item_visa {
+  height: 20px;
+}
+
+.footer__partner-item_mastercard {
+  height: 30px;
+}
+
+.footer__partner-item_ovo {
+  height: 30px;
+}
+
+.footer__partner-item_gopay {
+  height: 30px;
+}
+
+.footer__partner-item_amex {
+  height: 40px;
+}
+
+.footer__partner-item_paypal {
+  height: 20.5px;
+}
+
+.footer__partner-item_jne {
+  height: 28px;
+}
+
+.footer__partner-item_sicepat {
+  height: 30px;
+}
+
+.footer__partner-item_gosend {
+  height: 40px;
+}
+
+.footer__partner-item_grab {
+  height: 30px;
+}
+
+.footer__partner-img {
+  height: 100%;
+  width: auto;
+}
+
+.footer__sharer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+}
+
+.footer__follow-us {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--color-ot-blue);
+}
+
+.footer__socials {
+  display: flex;
+  justify-content: flex-start;
+  gap: 12px;
+}
+
+.footer__social-item {
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-ot-blue);
+  border-radius: 50%;
+}
+
+.footer__nav {
+  position: relative;
+}
+
+.footer__nav-wrapper {
+  padding: 0 16px;
+}
+
+.footer__nav-item + .footer__nav-item {
+  margin-top: 40px;
+}
+
+.footer__nav-item:nth-child(1),
+.footer__nav-item:nth-child(2) {
+  display: none;
+}
+
+.footer__nav-title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--color-ot-black);
+}
+
+.footer__nav-placholder {
+  height: 18px;
+  width: 1px;
+}
+
+.footer__links {
+  padding: 0;
+  margin: 14px 0 0;
+  list-style-type: none;
+}
+
+.footer__link-item {
+  line-height: 18px;
+}
+
+.footer__link-item + .footer__link-item {
+  margin-top: 12px;
+}
+
+.footer__link-anchor {
+  font-weight: 500;
+  font-size: 13px;
+  color: var(--color-ot-blue);
+  cursor: pointer;
+}
+
+.footer__illustration {
+  width: 100%;
+  margin-top: 24px;
+}
+
+.footer__illustration-wrapper {
+  width: 100%;
+  padding-bottom: 28.57%;
+  background-image: url('../../assets/samples/homepage/footer_books.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.footer__content {
+  background-color: var(--color-ot-gray-20);
+  padding: 38px 0 0;
+}
+
+.footer__sharer-alt {
+  display: none;
+  margin-top: 32px;
+}
+
+.footer__sharer-alt-item {
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-ot-blue);
+  border-radius: 50%;
+}
+
+.footer__copyright {
+  background-color: var(--color-ot-blue);
+  padding: 24px 16px 40px;
+}
+
+.footer__copyright-wrapper {
+  color: var(--color-ot-white);
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+@media screen and (min-width: 1024px) {
+  .footer__partner {
+
+  }
+
+  .footer__partner-wrapper {
+    max-width: 1176px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer__partner-section {
+    width: 50%;
+  }
+
+  .footer__partner-section + .footer__partner-section {
+    margin-top: 0;
+  }
+
+  .footer__sharer {
+    display: none;
+  }
+
+  .footer__nav-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 24px;
+    margin: 0 auto;
+    max-width: 1176px;
+    padding: 0;
+  }
+
+  .footer__nav-item:nth-child(1),
+  .footer__nav-item:nth-child(2) {
+    display: block;
+  }
+
+  .footer__nav-item {
+    width: 25%;
+    padding-bottom: 88px;
+  }
+
+  .footer__nav-item + .footer__nav-item {
+    margin-top: 0;
+  }
+
+  .footer__sharer-alt {
+    display: flex;
+    justify-content: flex-start;
+    gap: 12px;
+  }
+
+  .footer__illustration {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 50%;
+  }
+  
+  .footer__illustration-wrapper {
+    background-position-x: -16px;
+  }
+
+  .footer__copyright {
+    padding: 24px 0 43px;
+  }
+
+  .footer__copyright-wrapper {
+    max-width: 1176px;
+    margin: 0 auto;
+  }
+}

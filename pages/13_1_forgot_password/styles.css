@@ -1,0 +1,80 @@
+.reset {}
+
+.reset__wrapper {
+  padding: 32px 16px 64px;
+  max-width: 440px;
+  margin: 0 auto;
+}
+
+.reset__title {
+  font-size: var(--font-page-title-size);
+  font-weight: var(--font-page-title-weight);
+  line-height: var(--font-page-title-height);
+  font-family: 'Lora';
+  text-align: center;
+  margin: 0;
+}
+
+.reset__description {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+  color: #000000;
+  margin-top: 32px;
+}
+
+.reset__form {
+  margin-top: 32px;
+}
+
+.reset__form-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reset__form-item_password {
+  width: 55%;
+}
+
+.reset__form-item + .reset__form-item {
+  margin-top: 32px;
+}
+
+.reset__form-forget-password {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.reset__form-action {
+  margin-top: 40px;
+}
+
+.reset__form-footer {
+  margin-top: 24px;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--color-ot-black);
+  text-align: center;
+}
+
+.reset__form-footer-link {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 769px) {
+  .reset__wrapper {
+    padding: 40px 0 80px;
+    max-width: 440px;
+    margin: 0 auto;
+  }
+
+  .reset__form,
+  .reset__description {
+    max-width: 376px;
+    margin: 32px auto 0;
+  }
+}
