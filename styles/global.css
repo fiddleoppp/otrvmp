@@ -191,12 +191,19 @@ ul {
   color: var(--color-ot-white);
   height: 40px;
   font-size: 16px;
+  font-weight: 700;
   line-height: 20px;
   border-radius: 8px;
   padding: 0 16px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.button_small {
+  height: 32px;
+  font-size: 13px;
+  line-height: 18px;
 }
 
 .button_ghost {
