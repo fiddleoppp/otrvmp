@@ -5,126 +5,839 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Search Result Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&family=Lora:ital,wght@0,600;0,700;1,600;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../styles/normalize.css">
   <link rel="stylesheet" href="../../styles/global.css">
   <link rel="stylesheet" href="../../components/mobile_nav/index.css">
   <link rel="stylesheet" href="../../components/desktop_nav/index.css">
+  <link rel="stylesheet" href="../../components/footer/index.css">
+  <link rel="stylesheet" href="../../components/filterbox/index.css">
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-  <!-- MOBILE ONLY HEADER -->
-  <header class="mobile-header">
-    <nav class="mobile-header__navbar">
-      <div class="mobile-header__action">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M2.71429 6.46429H21.2857C21.6802 6.46429 22 6.14451 22 5.75V3.96429C22 3.56978 21.6802 3.25 21.2857 3.25H2.71429C2.31978 3.25 2 3.56978 2 3.96429V5.75C2 6.14451 2.31978 6.46429 2.71429 6.46429ZM2.71429 13.6071H21.2857C21.6802 13.6071 22 13.2874 22 12.8929V11.1071C22 10.7126 21.6802 10.3929 21.2857 10.3929H2.71429C2.31978 10.3929 2 10.7126 2 11.1071V12.8929C2 13.2874 2.31978 13.6071 2.71429 13.6071ZM2.71429 20.75H21.2857C21.6802 20.75 22 20.4302 22 20.0357V18.25C22 17.8555 21.6802 17.5357 21.2857 17.5357H2.71429C2.31978 17.5357 2 17.8555 2 18.25V20.0357C2 20.4302 2.31978 20.75 2.71429 20.75Z" fill="#2F4E92"/>
-        </svg>
-        <div class="mobile-header__action-label">
-          MENU
-        </div>
-      </div>
-      <div class="mobile-header__logo">
-        <img class="mobile-header__logo-img" src="../../assets/opentrolley_logo.png" />
-      </div>
-      <div class="mobile-header__action">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M19.5249 14.2222H9.34625L9.57351 15.3333H18.8936C19.4283 15.3333 19.8247 15.8299 19.7062 16.3514L19.5146 17.1943C20.1636 17.5093 20.6111 18.1746 20.6111 18.9444C20.6111 20.0278 19.725 20.9043 18.6381 20.8887C17.6025 20.8738 16.7509 20.0334 16.723 18.9982C16.7077 18.4326 16.9342 17.9201 17.3064 17.5555H10.0269C10.3873 17.9085 10.6111 18.4002 10.6111 18.9444C10.6111 20.0491 9.69 20.9386 8.57396 20.8867C7.58299 20.8407 6.77705 20.04 6.72497 19.0493C6.68476 18.2843 7.08733 17.6099 7.69896 17.2582L5.25983 5.33333H2.83333C2.37309 5.33333 2 4.96024 2 4.5V3.94444C2 3.4842 2.37309 3.11111 2.83333 3.11111H6.39337C6.78924 3.11111 7.13045 3.38961 7.20979 3.77743L7.52806 5.33333H21.1663C21.7011 5.33333 22.0974 5.82989 21.9789 6.35135L20.3375 13.5736C20.2513 13.953 19.914 14.2222 19.5249 14.2222Z" fill="#2F4E92"/>
-        </svg>
-        <div class="mobile-header__action-label">
-          CART
-        </div>
-      </div>
-    </nav>
-    <div class="mobile-header__search">
-      <div class="mobile-header__search-bar">
-        <input class="mobile-header__search-input" placeholder="Search by title, author, keyword, ISBN, EAN" />
-        <button class="mobile-header__search-button">
-          <div class="mobile-header__search-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M21.7263 19.2913L17.8322 15.3971C17.6564 15.2214 17.4182 15.1237 17.1682 15.1237H16.5315C17.6096 13.7449 18.2501 12.0107 18.2501 10.1242C18.2501 5.63636 14.6138 2 10.1259 2C5.63807 2 2.00171 5.63636 2.00171 10.1242C2.00171 14.612 5.63807 18.2484 10.1259 18.2484C12.0125 18.2484 13.7467 17.6079 15.1254 16.5298V17.1665C15.1254 17.4165 15.2231 17.6547 15.3988 17.8305L19.293 21.7246C19.6601 22.0918 20.2538 22.0918 20.6171 21.7246L21.7224 20.6193C22.0896 20.2521 22.0896 19.6584 21.7263 19.2913ZM10.1259 15.1237C7.36447 15.1237 5.1264 12.8896 5.1264 10.1242C5.1264 7.36276 7.36056 5.12469 10.1259 5.12469C12.8874 5.12469 15.1254 7.35885 15.1254 10.1242C15.1254 12.8857 12.8913 15.1237 10.1259 15.1237Z" fill="white"/>
-            </svg>
+  <div class="root">
+    <!-- Desktop only Header -->
+    <header class="header">
+      <div class="header__info-bar">
+        <div class="header__info-bar-wrapper">
+          <div class="header__info-feature">
+            <div class="header__info-country"></div>
+            Singapore-based online bookstore  •  15 million titles  •  7-day local delivery  •  trackable 
           </div>
-        </button>
-      </div>
-    </div>
-    <div class="mobile-header__promo">
-      Feb 2022 promo up to 20% off
-    </div>
-  </header>
-  <div class="srp">
-    <div class="srp__wrapper">
-      <div class="srp__header">
-        <div>SEARCH RESULTS FOR</div>
-        <!-- TODO: Search Keyword here -->
-        <h1 class="srp__keyword">Space</h1>
-        <!-- TODO: Number of displays based on inputs -->
-        <div class="srp__displayer">
-          Displaying 1-20 from 2000 results
+          <div class="header__info-help">
+            <a class="header__info__link">HELP & FAQ</a>
+            <div class="header__info__divider"></div>
+            <a class="header__info__link">CONTACT US</a>
+          </div>
         </div>
-        <div class="srp__filter">
-          <button class="srp__filter-button">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M14.2502 11.3332H5.50016V10.9165C5.50016 10.6873 5.31266 10.4998 5.0835 10.4998H4.25016C4.021 10.4998 3.8335 10.6873 3.8335 10.9165V11.3332H1.75016C1.521 11.3332 1.3335 11.5207 1.3335 11.7498V12.5832C1.3335 12.8123 1.521 12.9998 1.75016 12.9998H3.8335V13.4165C3.8335 13.6457 4.021 13.8332 4.25016 13.8332H5.0835C5.31266 13.8332 5.50016 13.6457 5.50016 13.4165V12.9998H14.2502C14.4793 12.9998 14.6668 12.8123 14.6668 12.5832V11.7498C14.6668 11.5207 14.4793 11.3332 14.2502 11.3332ZM14.2502 7.1665H12.1668V6.74984C12.1668 6.52067 11.9793 6.33317 11.7502 6.33317H10.9168C10.6877 6.33317 10.5002 6.52067 10.5002 6.74984V7.1665H1.75016C1.521 7.1665 1.3335 7.354 1.3335 7.58317V8.4165C1.3335 8.64567 1.521 8.83317 1.75016 8.83317H10.5002V9.24984C10.5002 9.479 10.6877 9.6665 10.9168 9.6665H11.7502C11.9793 9.6665 12.1668 9.479 12.1668 9.24984V8.83317H14.2502C14.4793 8.83317 14.6668 8.64567 14.6668 8.4165V7.58317C14.6668 7.354 14.4793 7.1665 14.2502 7.1665ZM14.2502 2.99984H8.8335V2.58317C8.8335 2.354 8.646 2.1665 8.41683 2.1665H7.5835C7.35433 2.1665 7.16683 2.354 7.16683 2.58317V2.99984H1.75016C1.521 2.99984 1.3335 3.18734 1.3335 3.4165V4.24984C1.3335 4.479 1.521 4.6665 1.75016 4.6665H7.16683V5.08317C7.16683 5.31234 7.35433 5.49984 7.5835 5.49984H8.41683C8.646 5.49984 8.8335 5.31234 8.8335 5.08317V4.6665H14.2502C14.4793 4.6665 14.6668 4.479 14.6668 4.24984V3.4165C14.6668 3.18734 14.4793 2.99984 14.2502 2.99984Z" fill="#2F4E92"/>
-            </svg>                
-            Filter
+      </div>
+      <nav class="header__navbar">
+        <div class="header__navbar-wrapper">
+          <div class="header__logo">
+            <img class="header__logo-img" src="../../assets/opentrolley_logo.png" />
+          </div>
+          <div class="header__search">
+            <div class="header__search-bar">
+              <div class="header__search-dropdown">
+                <div class="header__search-dropdown-label">All</div>
+                <div class="header__search-dropdown-icon">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.48176 11.8312L1.54789 5.89727C1.26171 5.61108 1.26171 5.1471 1.54789 4.86095L2.23998 4.16886C2.52568 3.88316 2.98871 3.88261 3.27508 4.16763L7.99993 8.87035L12.7248 4.16763C13.0111 3.88261 13.4742 3.88316 13.7599 4.16886L14.4519 4.86095C14.7381 5.14713 14.7381 5.61111 14.4519 5.89727L8.51811 11.8312C8.23192 12.1173 7.76794 12.1173 7.48176 11.8312Z" fill="#2F4E92"/>
+                  </svg>
+                </div>
+              </div>
+              <input class="header__search-input" placeholder="Search by title, author, keyword, ISBN, EAN" />
+              <button class="header__search-button">
+                <div class="header__search-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21.7263 19.2913L17.8322 15.3971C17.6564 15.2214 17.4182 15.1237 17.1682 15.1237H16.5315C17.6096 13.7449 18.2501 12.0107 18.2501 10.1242C18.2501 5.63636 14.6138 2 10.1259 2C5.63807 2 2.00171 5.63636 2.00171 10.1242C2.00171 14.612 5.63807 18.2484 10.1259 18.2484C12.0125 18.2484 13.7467 17.6079 15.1254 16.5298V17.1665C15.1254 17.4165 15.2231 17.6547 15.3988 17.8305L19.293 21.7246C19.6601 22.0918 20.2538 22.0918 20.6171 21.7246L21.7224 20.6193C22.0896 20.2521 22.0896 19.6584 21.7263 19.2913ZM10.1259 15.1237C7.36447 15.1237 5.1264 12.8896 5.1264 10.1242C5.1264 7.36276 7.36056 5.12469 10.1259 5.12469C12.8874 5.12469 15.1254 7.35885 15.1254 10.1242C15.1254 12.8857 12.8913 15.1237 10.1259 15.1237Z" fill="white"/>
+                  </svg>
+                </div>
+              </button>
+            </div>
+          </div>
+          <div class="header__action">
+            <div class="header__action-item">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.0001 2.66667C8.63449 2.66667 2.66675 8.63441 2.66675 16C2.66675 23.3656 8.63449 29.3333 16.0001 29.3333C23.3657 29.3333 29.3334 23.3656 29.3334 16C29.3334 8.63441 23.3657 2.66667 16.0001 2.66667ZM16.0001 7.82796C18.613 7.82796 20.7313 9.94624 20.7313 12.5591C20.7313 15.172 18.613 17.2903 16.0001 17.2903C13.3872 17.2903 11.2689 15.172 11.2689 12.5591C11.2689 9.94624 13.3872 7.82796 16.0001 7.82796ZM16.0001 26.3226C12.8442 26.3226 10.0162 24.8925 8.12374 22.6559C9.13449 20.7527 11.113 19.4409 13.4194 19.4409C13.5485 19.4409 13.6775 19.4624 13.8012 19.5C14.5001 19.7258 15.2313 19.871 16.0001 19.871C16.7689 19.871 17.5055 19.7258 18.199 19.5C18.3227 19.4624 18.4517 19.4409 18.5807 19.4409C20.8872 19.4409 22.8657 20.7527 23.8764 22.6559C21.984 24.8925 19.156 26.3226 16.0001 26.3226Z" fill="#333333"/>
+              </svg>
+              <div class="header__action-item-label">
+                Account
+              </div>       
+            </div>
+            <div class="header__action-item">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M26.7451 5.92879C23.8909 3.49655 19.6462 3.93404 17.0265 6.63711L16.0005 7.69438L14.9744 6.63711C12.3599 3.93404 8.10999 3.49655 5.25588 5.92879C1.98511 8.72041 1.81324 13.7307 4.74026 16.7567L14.8182 27.1628C15.4692 27.8346 16.5265 27.8346 17.1775 27.1628L27.2555 16.7567C30.1877 13.7307 30.0158 8.72041 26.7451 5.92879Z" fill="#333333"/>
+              </svg>
+              <div class="header__action-item-label">
+                Wishlist
+              </div>   
+            </div>
+            <div class="header__action-item">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M26.0333 18.963H12.4618L12.7648 20.4444H25.1915C25.9045 20.4444 26.433 21.1065 26.275 21.8018L26.0196 22.9257C26.8849 23.3457 27.4816 24.2328 27.4816 25.2593C27.4816 26.7038 26.3001 27.8724 24.8508 27.8516C23.4701 27.8317 22.3346 26.7113 22.2974 25.3309C22.277 24.5769 22.5791 23.8934 23.0753 23.4074H13.3693C13.8498 23.878 14.1482 24.5336 14.1482 25.2593C14.1482 26.7321 12.9201 27.9181 11.432 27.849C10.1107 27.7876 9.03615 26.72 8.9667 25.3991C8.91309 24.379 9.44985 23.4799 10.2654 23.0109L7.01318 7.11111H3.77786C3.1642 7.11111 2.66675 6.61365 2.66675 6V5.25926C2.66675 4.6456 3.1642 4.14814 3.77786 4.14814H8.52457C9.0524 4.14814 9.50735 4.51949 9.61314 5.03657L10.0375 7.11111H28.2218C28.9349 7.11111 29.4633 7.77319 29.3053 8.46847L27.1168 18.0981C27.0018 18.604 26.5521 18.963 26.0333 18.963Z" fill="black"/>
+              </svg>
+              <div class="header__action-item-label">
+                My Cart
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="header__megamenu">
+        <div class="header__megamenu-wrapper">
+          <div class="header__megamenu-inner-wrapper">
+              <ul class="header__megamenu-nav">
+                <li class="header__megamenu-item">
+                  <div class="header__megamenu-item-wrapper">
+                    <a class="header__megamenu-link">Book Categories</a>
+                  </div>
+                  <div class="navdrop">
+                    <div class="navdrop__section">
+                      <!-- 1st column -->
+                      <div class="navdrop__section-group">
+                        <div class="navdrop__section-groupsub">
+                          <div class="navdrop__section-group-title">Architecture</div>
+                          <div class="navdrop__section-group-item">
+                            <a class="navdrop__section-group-link">Annuals</a>
+                          </div>
+                          <div class="navdrop__section-group-item">
+                            <a class="navdrop__section-group-link">Decoration & Ornaments</a>
+                          </div>
+                          <div class="navdrop__section-group-item">
+                            <a class="navdrop__section-group-link">General</a>
+                          </div>
+                          <div class="navdrop__section-group-item">
+                            <a class="navdrop__section-group-link">Interior Design</a>
+                          </div>
+                          <div class="navdrop__section-group-item">
+                            <a class="navdrop__section-group-link">Landscape</a>
+                          </div>
+                        </div>
+                        <div class="navdrop__section-groupsub">
+                          <div class="navdrop__section-group-title">Business & Economics</div>
+                          <div class="navdrop__section-group-item">
+                            <a class="navdrop__section-group-link">Accounting</a>
+                          </div>
+                          <div class="navdrop__section-group-item">
+                            <a class="navdrop__section-group-link">Business Communication</a>
+                          </div>
+                          <div class="navdrop__section-group-item">
+                            <a class="navdrop__section-group-link">Careers</a>
+                          </div>
+                          <div class="navdrop__section-group-item">
+                            <a class="navdrop__section-group-link">Economics</a>
+                          </div>
+                          <div class="navdrop__section-group-item">
+                            <a class="navdrop__section-group-link">Enterpreneurship</a>
+                          </div>
+                          <div class="navdrop__section-group-item">
+                            <a class="navdrop__section-group-link">Money</a>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- 2nd column -->
+                      <div class="navdrop__section-group">
+                        <div class="navdrop__section-groupsub">
+                          <div class="navdrop__section-group-title">Crafts & Hobbies</div>
+                          <div class="navdrop__section-group-item">
+                            <a class="navdrop__section-group-link">Beadwork</a>
+                          </div>
+                          <div class="navdrop__section-group-item">
+                            <a class="navdrop__section-group-link">Bookprinting & Binding</a>
+                          </div>
+                          <div class="navdrop__section-group-item">
+                            <a class="navdrop__section-group-link">Candle Marking</a>
+                          </div>
+                          <div class="navdrop__section-group-item">
+                            <a class="navdrop__section-group-link">Crafts for Children</a>
+                          </div>
+                          <div class="navdrop__section-group-item">
+                            <a class="navdrop__section-group-link">Dollhouses</a>
+                          </div>
+                          <div class="navdrop__section-group-item">
+                            <a class="navdrop__section-group-link">Dye</a>
+                          </div>
+                          <div class="navdrop__section-group-item">
+                            <a class="navdrop__section-group-link">Fashion</a>
+                          </div>
+                          <div class="navdrop__section-group-item">
+                            <a class="navdrop__section-group-link">Flower Arranging</a>
+                          </div>
+                          <div class="navdrop__section-group-item">
+                            <a class="navdrop__section-group-link">Glass & Glassware</a>
+                          </div>
+                          <div class="navdrop__section-group-item">
+                            <a class="navdrop__section-group-link">Jewelry</a>
+                          </div>
+                          <div class="navdrop__section-group-item">
+                            <a class="navdrop__section-group-link">Needlework</a>
+                          </div>
+                          <div class="navdrop__section-group-item">
+                            <a class="navdrop__section-group-link">Scrapbooking</a>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- 3rd column -->
+                      <div class="navdrop__section-group">
+                        <div class="navdrop__section-groupsub">
+                          <div class="navdrop__section-group-title">Fiction</div>
+                          <div class="navdrop__section-group-item">
+                            <a class="navdrop__section-group-link">Action & Adventure</a>
+                          </div>
+                          <div class="navdrop__section-group-item">
+                            <a class="navdrop__section-group-link">Decoration & Ornaments</a>
+                          </div>
+                          <div class="navdrop__section-group-item">
+                            <a class="navdrop__section-group-link">General</a>
+                          </div>
+                          <div class="navdrop__section-group-item">
+                            <a class="navdrop__section-group-link">Interior Design</a>
+                          </div>
+                          <div class="navdrop__section-group-item">
+                            <a class="navdrop__section-group-link">Landscape</a>
+                          </div>
+                        </div>
+                        <div class="navdrop__section-groupsub">
+                          <div class="navdrop__section-group-title">Foreign Language Study</div>
+                          <div class="navdrop__section-group-item">
+                            <a class="navdrop__section-group-link">Accounting</a>
+                          </div>
+                          <div class="navdrop__section-group-item">
+                            <a class="navdrop__section-group-link">Business Communication</a>
+                          </div>
+                          <div class="navdrop__section-group-item">
+                            <a class="navdrop__section-group-link">Careers</a>
+                          </div>
+                          <div class="navdrop__section-group-item">
+                            <a class="navdrop__section-group-link">Economics</a>
+                          </div>
+                          <div class="navdrop__section-group-item">
+                            <a class="navdrop__section-group-link">Enterpreneurship</a>
+                          </div>
+                          <div class="navdrop__section-group-item">
+                            <a class="navdrop__section-group-link">Money</a>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- 4th column -->
+                      <div class="navdrop__section-group">
+                        <div class="navdrop__section-groupsub">
+                          <div class="navdrop__section-group-title">Health & Fitness</div>
+                          <div class="navdrop__section-group-item">
+                            <a class="navdrop__section-group-link">Annuals</a>
+                          </div>
+                          <div class="navdrop__section-group-item">
+                            <a class="navdrop__section-group-link">Decoration & Ornaments</a>
+                          </div>
+                          <div class="navdrop__section-group-item">
+                            <a class="navdrop__section-group-link">General</a>
+                          </div>
+                          <div class="navdrop__section-group-item">
+                            <a class="navdrop__section-group-link">Interior Design</a>
+                          </div>
+                          <div class="navdrop__section-group-item">
+                            <a class="navdrop__section-group-link">Landscape</a>
+                          </div>
+                        </div>
+                        <div class="navdrop__section-groupsub">
+                          <div class="navdrop__section-group-title">Humor</div>
+                          <div class="navdrop__section-group-item">
+                            <a class="navdrop__section-group-link">Accounting</a>
+                          </div>
+                          <div class="navdrop__section-group-item">
+                            <a class="navdrop__section-group-link">Business Communication</a>
+                          </div>
+                          <div class="navdrop__section-group-item">
+                            <a class="navdrop__section-group-link">Careers</a>
+                          </div>
+                          <div class="navdrop__section-group-item">
+                            <a class="navdrop__section-group-link">Economics</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="navdrop__promo">
+                      <div class="navdrop__promo-img">
+                        <img class="navdrop__promo-img-src" src="../../assets/samples/homepage/nav_promo.png" />
+                      </div>
+                      <div class="navdrop__promo-label">Pre-order Now!</div>
+                      <div class="navdrop__promo-description">The top ten most-anticipated titles are available to order in advance!</div>
+                      <div class="navdrop__promo-cta">
+                        <button class="button button_small">Find out more</button>
+                      </div>
+                    </div>
+                </li>
+                <li class="header__megamenu-item">
+                  <div class="header__megamenu-item-wrapper">
+                    <a class="header__megamenu-link">Bestsellers</a>
+                  </div>
+                  <div class="header__navdrop">
+                    
+                  </div>
+                </li>
+                <li class="header__megamenu-item">
+                  <div class="header__megamenu-item-wrapper">
+                    <a class="header__megamenu-link">New Arrivals</a>
+                  </div>
+                  <div class="header__navdrop">
+                    
+                  </div>
+                </li>
+                <li class="header__megamenu-item">
+                  <div class="header__megamenu-item-wrapper">
+                    <a class="header__megamenu-link">Fiction</a>
+                  </div>
+                  <div class="header__navdrop">
+                    
+                  </div>
+                </li>
+                <li class="header__megamenu-item">
+                  <div class="header__megamenu-item-wrapper">
+                    <a class="header__megamenu-link">Self-help</a>
+                  </div>
+                  <div class="header__navdrop">
+                    
+                  </div>
+                </li>
+                <li class="header__megamenu-item">
+                  <div class="header__megamenu-item-wrapper">
+                    <a class="header__megamenu-link">Information</a>
+                  </div>
+                  <div class="header__navdrop">
+                    
+                  </div>
+                </li>
+              </ul>
+            <div class="header__megamenu-promo">
+              Feb 2022 promo up to 20% off
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- MOBILE ONLY HEADER -->
+    <header class="mobile-header">
+      <nav class="mobile-header__navbar">
+        <div class="mobile-header__action">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.71429 6.46429H21.2857C21.6802 6.46429 22 6.14451 22 5.75V3.96429C22 3.56978 21.6802 3.25 21.2857 3.25H2.71429C2.31978 3.25 2 3.56978 2 3.96429V5.75C2 6.14451 2.31978 6.46429 2.71429 6.46429ZM2.71429 13.6071H21.2857C21.6802 13.6071 22 13.2874 22 12.8929V11.1071C22 10.7126 21.6802 10.3929 21.2857 10.3929H2.71429C2.31978 10.3929 2 10.7126 2 11.1071V12.8929C2 13.2874 2.31978 13.6071 2.71429 13.6071ZM2.71429 20.75H21.2857C21.6802 20.75 22 20.4302 22 20.0357V18.25C22 17.8555 21.6802 17.5357 21.2857 17.5357H2.71429C2.31978 17.5357 2 17.8555 2 18.25V20.0357C2 20.4302 2.31978 20.75 2.71429 20.75Z" fill="#2F4E92"/>
+          </svg>
+          <div class="mobile-header__action-label">
+            MENU
+          </div>
+        </div>
+        <div class="mobile-header__logo">
+          <img class="mobile-header__logo-img" src="../../assets/opentrolley_logo.png" />
+        </div>
+        <div class="mobile-header__action">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19.5249 14.2222H9.34625L9.57351 15.3333H18.8936C19.4283 15.3333 19.8247 15.8299 19.7062 16.3514L19.5146 17.1943C20.1636 17.5093 20.6111 18.1746 20.6111 18.9444C20.6111 20.0278 19.725 20.9043 18.6381 20.8887C17.6025 20.8738 16.7509 20.0334 16.723 18.9982C16.7077 18.4326 16.9342 17.9201 17.3064 17.5555H10.0269C10.3873 17.9085 10.6111 18.4002 10.6111 18.9444C10.6111 20.0491 9.69 20.9386 8.57396 20.8867C7.58299 20.8407 6.77705 20.04 6.72497 19.0493C6.68476 18.2843 7.08733 17.6099 7.69896 17.2582L5.25983 5.33333H2.83333C2.37309 5.33333 2 4.96024 2 4.5V3.94444C2 3.4842 2.37309 3.11111 2.83333 3.11111H6.39337C6.78924 3.11111 7.13045 3.38961 7.20979 3.77743L7.52806 5.33333H21.1663C21.7011 5.33333 22.0974 5.82989 21.9789 6.35135L20.3375 13.5736C20.2513 13.953 19.914 14.2222 19.5249 14.2222Z" fill="#2F4E92"/>
+          </svg>
+          <div class="mobile-header__action-label">
+            CART
+          </div>
+        </div>
+      </nav>
+      <div class="mobile-header__search">
+        <div class="mobile-header__search-bar">
+          <input class="mobile-header__search-input" placeholder="Search by title, author, keyword, ISBN, EAN" />
+          <button class="mobile-header__search-button">
+            <div class="mobile-header__search-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21.7263 19.2913L17.8322 15.3971C17.6564 15.2214 17.4182 15.1237 17.1682 15.1237H16.5315C17.6096 13.7449 18.2501 12.0107 18.2501 10.1242C18.2501 5.63636 14.6138 2 10.1259 2C5.63807 2 2.00171 5.63636 2.00171 10.1242C2.00171 14.612 5.63807 18.2484 10.1259 18.2484C12.0125 18.2484 13.7467 17.6079 15.1254 16.5298V17.1665C15.1254 17.4165 15.2231 17.6547 15.3988 17.8305L19.293 21.7246C19.6601 22.0918 20.2538 22.0918 20.6171 21.7246L21.7224 20.6193C22.0896 20.2521 22.0896 19.6584 21.7263 19.2913ZM10.1259 15.1237C7.36447 15.1237 5.1264 12.8896 5.1264 10.1242C5.1264 7.36276 7.36056 5.12469 10.1259 5.12469C12.8874 5.12469 15.1254 7.35885 15.1254 10.1242C15.1254 12.8857 12.8913 15.1237 10.1259 15.1237Z" fill="white"/>
+              </svg>
+            </div>
           </button>
-          <div class="srp__filter-item">
-            <div class="srp__filter-item-label">Sort by:</div>
-            <div class="srp__filter-item-value">Most Popular</div>
+        </div>
+      </div>
+      <div class="mobile-header__promo">
+        Feb 2022 promo up to 20% off
+      </div>
+    </header>
+    <div class="srp">
+      <div class="srp__desktop-filter">
+        <div class="filterbox">
+          <div class="filterbox__header">
+            <div class="filterbox__header-label">
+              FILTER BY
+            </div>
+            <button class="button button_small">Apply</button>
           </div>
-          <div class="srp__filter-item">
-            <div class="srp__filter-item-label">Not-in-stock items:</div>
-            <div class="srp__filter-item-value">Show</div>
+          <div class="filterbox__body">
+            <!-- Filter Group: Category -->
+            <div class="filterbox__group">
+              <div class="filterbox__group-header">
+                <div class="filterbox__group-header-label">
+                  Category
+                </div>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.51832 4.16871L14.4522 10.1026C14.7384 10.3888 14.7384 10.8527 14.4522 11.1389L13.7601 11.831C13.4744 12.1167 13.0114 12.1172 12.725 11.8322L8.00015 7.12953L3.27532 11.8322C2.98896 12.1173 2.52592 12.1167 2.24023 11.831L1.54814 11.1389C1.26195 10.8527 1.26195 10.3888 1.54814 10.1026L7.482 4.16874C7.76816 3.88256 8.23214 3.88256 8.51832 4.16871Z" fill="#2F4E92"/>
+                </svg>
+              </div>
+              <div class="filterbox__group-body">
+                <div class="filterbox__group-item">
+                  <label class="checkbox checkbox_linkable">
+                    <input class="checkbox__input" type="checkbox" />
+                    <span class="checkbox__checkmark"></span>
+                    <span class="checkbox__label">Children Fiction (321)</span>
+                  </label>
+                </div>
+                <div class="filterbox__group-item">
+                  <label class="checkbox checkbox_linkable">
+                    <input class="checkbox__input" type="checkbox" />
+                    <span class="checkbox__checkmark"></span>
+                    <span class="checkbox__label">House & Home (120)</span>
+                  </label>
+                </div>
+                <div class="filterbox__group-item">
+                  <label class="checkbox checkbox_linkable">
+                    <input class="checkbox__input" type="checkbox" />
+                    <span class="checkbox__checkmark"></span>
+                    <span class="checkbox__label">Technology & Engineering (498)</span>
+                  </label>
+                </div>
+                <div class="filterbox__group-item">
+                  <label class="checkbox checkbox_linkable">
+                    <input class="checkbox__input" type="checkbox" />
+                    <span class="checkbox__checkmark"></span>
+                    <span class="checkbox__label">Fiction (2321)</span>
+                  </label>
+                </div>
+                <div class="filterbox__group-item">
+                  <label class="checkbox checkbox_linkable">
+                    <input class="checkbox__input" type="checkbox" />
+                    <span class="checkbox__checkmark"></span>
+                    <span class="checkbox__label">Art (47)</span>
+                  </label>
+                </div>
+              </div>
+              <div class="filterbox__group-seemore">
+                See more
+              </div>
+            </div>
+            <!-- Filter Group: Price -->
+            <div class="filterbox__group filterbox__group_range">
+              <div class="filterbox__group-header">
+                <div class="filterbox__group-header-label">
+                  Price
+                </div>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.51832 4.16871L14.4522 10.1026C14.7384 10.3888 14.7384 10.8527 14.4522 11.1389L13.7601 11.831C13.4744 12.1167 13.0114 12.1172 12.725 11.8322L8.00015 7.12953L3.27532 11.8322C2.98896 12.1173 2.52592 12.1167 2.24023 11.831L1.54814 11.1389C1.26195 10.8527 1.26195 10.3888 1.54814 10.1026L7.482 4.16874C7.76816 3.88256 8.23214 3.88256 8.51832 4.16871Z" fill="#2F4E92"/>
+                </svg>
+              </div>
+              <div class="filterbox__group-body">
+                <div class="filterbox__group-item">
+                  <div class="textfield textfield_required">
+                    <div class="textfield__input-container">
+                      <input type="text" class="textfield__input" placeholder="Min price">
+                    </div>
+                  </div>
+                </div>
+                <div class="filterbox__group-indicator">to</div>
+                <div class="filterbox__group-item">
+                  <div class="textfield textfield_required">
+                    <div class="textfield__input-container">
+                      <input type="text" class="textfield__input" placeholder="Max price">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Filter Group: Binding -->
+            <div class="filterbox__group">
+              <div class="filterbox__group-header">
+                <div class="filterbox__group-header-label">
+                  Binding
+                </div>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.51832 4.16871L14.4522 10.1026C14.7384 10.3888 14.7384 10.8527 14.4522 11.1389L13.7601 11.831C13.4744 12.1167 13.0114 12.1172 12.725 11.8322L8.00015 7.12953L3.27532 11.8322C2.98896 12.1173 2.52592 12.1167 2.24023 11.831L1.54814 11.1389C1.26195 10.8527 1.26195 10.3888 1.54814 10.1026L7.482 4.16874C7.76816 3.88256 8.23214 3.88256 8.51832 4.16871Z" fill="#2F4E92"/>
+                </svg>
+              </div>
+              <div class="filterbox__group-body">
+                <div class="filterbox__group-item">
+                  <label class="checkbox checkbox_linkable">
+                    <input class="checkbox__input" type="checkbox" />
+                    <span class="checkbox__checkmark"></span>
+                    <span class="checkbox__label">All (2000)</span>
+                  </label>
+                </div>
+                <div class="filterbox__group-item">
+                  <label class="checkbox checkbox_linkable">
+                    <input class="checkbox__input" type="checkbox" />
+                    <span class="checkbox__checkmark"></span>
+                    <span class="checkbox__label">Paperback (1283)</span>
+                  </label>
+                </div>
+                <div class="filterbox__group-item">
+                  <label class="checkbox checkbox_linkable">
+                    <input class="checkbox__input" type="checkbox" />
+                    <span class="checkbox__checkmark"></span>
+                    <span class="checkbox__label">Hardcover (498)</span>
+                  </label>
+                </div>
+                <div class="filterbox__group-item">
+                  <label class="checkbox checkbox_linkable">
+                    <input class="checkbox__input" type="checkbox" />
+                    <span class="checkbox__checkmark"></span>
+                    <span class="checkbox__label">Library Binding (42)</span>
+                  </label>
+                </div>
+                <div class="filterbox__group-item">
+                  <label class="checkbox checkbox_linkable">
+                    <input class="checkbox__input" type="checkbox" />
+                    <span class="checkbox__checkmark"></span>
+                    <span class="checkbox__label">Boxed Set (26)</span>
+                  </label>
+                </div>
+              </div>
+              <div class="filterbox__group-seemore">
+                See more
+              </div>
+            </div>
+            <!-- Filter Group: Language -->
+            <div class="filterbox__group">
+              <div class="filterbox__group-header">
+                <div class="filterbox__group-header-label">
+                  Language
+                </div>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.51832 4.16871L14.4522 10.1026C14.7384 10.3888 14.7384 10.8527 14.4522 11.1389L13.7601 11.831C13.4744 12.1167 13.0114 12.1172 12.725 11.8322L8.00015 7.12953L3.27532 11.8322C2.98896 12.1173 2.52592 12.1167 2.24023 11.831L1.54814 11.1389C1.26195 10.8527 1.26195 10.3888 1.54814 10.1026L7.482 4.16874C7.76816 3.88256 8.23214 3.88256 8.51832 4.16871Z" fill="#2F4E92"/>
+                </svg>
+              </div>
+              <div class="filterbox__group-body">
+                <div class="filterbox__group-item">
+                  <label class="checkbox checkbox_linkable">
+                    <input class="checkbox__input" type="checkbox" />
+                    <span class="checkbox__checkmark"></span>
+                    <span class="checkbox__label">All (2000)</span>
+                  </label>
+                </div>
+                <div class="filterbox__group-item">
+                  <label class="checkbox checkbox_linkable">
+                    <input class="checkbox__input" type="checkbox" />
+                    <span class="checkbox__checkmark"></span>
+                    <span class="checkbox__label">English (1283)</span>
+                  </label>
+                </div>
+                <div class="filterbox__group-item">
+                  <label class="checkbox checkbox_linkable">
+                    <input class="checkbox__input" type="checkbox" />
+                    <span class="checkbox__checkmark"></span>
+                    <span class="checkbox__label">Spanish (498)</span>
+                  </label>
+                </div>
+                <div class="filterbox__group-item">
+                  <label class="checkbox checkbox_linkable">
+                    <input class="checkbox__input" type="checkbox" />
+                    <span class="checkbox__checkmark"></span>
+                    <span class="checkbox__label">French (42)</span>
+                  </label>
+                </div>
+                <div class="filterbox__group-item">
+                  <label class="checkbox checkbox_linkable">
+                    <input class="checkbox__input" type="checkbox" />
+                    <span class="checkbox__checkmark"></span>
+                    <span class="checkbox__label">Korean (6)</span>
+                  </label>
+                </div>
+              </div>
+              <div class="filterbox__group-seemore">
+                See more
+              </div>
+            </div>
+            <!-- Filter Group: Publication Year -->
+            <div class="filterbox__group filterbox__group_range">
+              <div class="filterbox__group-header">
+                <div class="filterbox__group-header-label">
+                  Price
+                </div>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.51832 4.16871L14.4522 10.1026C14.7384 10.3888 14.7384 10.8527 14.4522 11.1389L13.7601 11.831C13.4744 12.1167 13.0114 12.1172 12.725 11.8322L8.00015 7.12953L3.27532 11.8322C2.98896 12.1173 2.52592 12.1167 2.24023 11.831L1.54814 11.1389C1.26195 10.8527 1.26195 10.3888 1.54814 10.1026L7.482 4.16874C7.76816 3.88256 8.23214 3.88256 8.51832 4.16871Z" fill="#2F4E92"/>
+                </svg>
+              </div>
+              <div class="filterbox__group-body">
+                <div class="filterbox__group-item">
+                  <div class="textfield textfield_required">
+                    <div class="textfield__input-container">
+                      <input type="text" class="textfield__input" placeholder="Year">
+                    </div>
+                  </div>
+                </div>
+                <div class="filterbox__group-indicator">to</div>
+                <div class="filterbox__group-item">
+                  <div class="textfield textfield_required">
+                    <div class="textfield__input-container">
+                      <input type="text" class="textfield__input" placeholder="Year">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Filter Group: Age -->
+            <div class="filterbox__group filterbox__group_range">
+              <div class="filterbox__group-header">
+                <div class="filterbox__group-header-label">
+                  Price
+                </div>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.51832 4.16871L14.4522 10.1026C14.7384 10.3888 14.7384 10.8527 14.4522 11.1389L13.7601 11.831C13.4744 12.1167 13.0114 12.1172 12.725 11.8322L8.00015 7.12953L3.27532 11.8322C2.98896 12.1173 2.52592 12.1167 2.24023 11.831L1.54814 11.1389C1.26195 10.8527 1.26195 10.3888 1.54814 10.1026L7.482 4.16874C7.76816 3.88256 8.23214 3.88256 8.51832 4.16871Z" fill="#2F4E92"/>
+                </svg>
+              </div>
+              <div class="filterbox__group-body">
+                <div class="filterbox__group-item">
+                  <div class="textfield textfield_required">
+                    <div class="textfield__input-container">
+                      <input type="text" class="textfield__input" placeholder="Age">
+                    </div>
+                  </div>
+                </div>
+                <div class="filterbox__group-indicator">to</div>
+                <div class="filterbox__group-item">
+                  <div class="textfield textfield_required">
+                    <div class="textfield__input-container">
+                      <input type="text" class="textfield__input" placeholder="Age">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Filter Group: Grade -->
+            <div class="filterbox__group filterbox__group_range">
+              <div class="filterbox__group-header">
+                <div class="filterbox__group-header-label">
+                  Grade
+                </div>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.51832 4.16871L14.4522 10.1026C14.7384 10.3888 14.7384 10.8527 14.4522 11.1389L13.7601 11.831C13.4744 12.1167 13.0114 12.1172 12.725 11.8322L8.00015 7.12953L3.27532 11.8322C2.98896 12.1173 2.52592 12.1167 2.24023 11.831L1.54814 11.1389C1.26195 10.8527 1.26195 10.3888 1.54814 10.1026L7.482 4.16874C7.76816 3.88256 8.23214 3.88256 8.51832 4.16871Z" fill="#2F4E92"/>
+                </svg>
+              </div>
+              <div class="filterbox__group-body">
+                <div class="filterbox__group-item">
+                  <div class="textfield textfield_required">
+                    <div class="textfield__input-container">
+                      <input type="text" class="textfield__input" placeholder="Grade">
+                    </div>
+                  </div>
+                </div>
+                <div class="filterbox__group-indicator">to</div>
+                <div class="filterbox__group-item">
+                  <div class="textfield textfield_required">
+                    <div class="textfield__input-container">
+                      <input type="text" class="textfield__input" placeholder="Grade">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Filter Group: Lexile Level -->
+            <div class="filterbox__group filterbox__group_range">
+              <div class="filterbox__group-header">
+                <div class="filterbox__group-header-label">
+                  Lexile Level
+                </div>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.51832 4.16871L14.4522 10.1026C14.7384 10.3888 14.7384 10.8527 14.4522 11.1389L13.7601 11.831C13.4744 12.1167 13.0114 12.1172 12.725 11.8322L8.00015 7.12953L3.27532 11.8322C2.98896 12.1173 2.52592 12.1167 2.24023 11.831L1.54814 11.1389C1.26195 10.8527 1.26195 10.3888 1.54814 10.1026L7.482 4.16874C7.76816 3.88256 8.23214 3.88256 8.51832 4.16871Z" fill="#2F4E92"/>
+                </svg>
+              </div>
+              <div class="filterbox__group-body">
+                <div class="filterbox__group-item">
+                  <div class="textfield textfield_required">
+                    <div class="textfield__input-container">
+                      <input type="text" class="textfield__input" placeholder="Min level">
+                    </div>
+                  </div>
+                </div>
+                <div class="filterbox__group-indicator">to</div>
+                <div class="filterbox__group-item">
+                  <div class="textfield textfield_required">
+                    <div class="textfield__input-container">
+                      <input type="text" class="textfield__input" placeholder="Max level">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="srp__filter-item">
-            <div class="srp__filter-item-label">View per page:</div>
-            <div class="srp__filter-item-value">20</div>
+          <div class="filterbox__footer">
+            <button class="button button_small">Apply</button>
+          </div>
+        </div>
+      </div>
+      <div class="srp__wrapper">
+        <div class="srp__header">
+          <div class="srp__label">SEARCH RESULTS FOR</div>
+          <!-- TODO: Search Keyword here -->
+          <h1 class="srp__keyword">Space</h1>
+          <!-- TODO: Number of displays based on inputs -->
+          <div class="srp__displayer-container">
+            <div class="srp__displayer">
+                Displaying <strong>1-20</strong> from <strong>2000</strong> results
+              </div>
+              <div class="srp__filter">
+                <button class="srp__filter-button button button_ghost button_small">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.2502 11.3332H5.50016V10.9165C5.50016 10.6873 5.31266 10.4998 5.0835 10.4998H4.25016C4.021 10.4998 3.8335 10.6873 3.8335 10.9165V11.3332H1.75016C1.521 11.3332 1.3335 11.5207 1.3335 11.7498V12.5832C1.3335 12.8123 1.521 12.9998 1.75016 12.9998H3.8335V13.4165C3.8335 13.6457 4.021 13.8332 4.25016 13.8332H5.0835C5.31266 13.8332 5.50016 13.6457 5.50016 13.4165V12.9998H14.2502C14.4793 12.9998 14.6668 12.8123 14.6668 12.5832V11.7498C14.6668 11.5207 14.4793 11.3332 14.2502 11.3332ZM14.2502 7.1665H12.1668V6.74984C12.1668 6.52067 11.9793 6.33317 11.7502 6.33317H10.9168C10.6877 6.33317 10.5002 6.52067 10.5002 6.74984V7.1665H1.75016C1.521 7.1665 1.3335 7.354 1.3335 7.58317V8.4165C1.3335 8.64567 1.521 8.83317 1.75016 8.83317H10.5002V9.24984C10.5002 9.479 10.6877 9.6665 10.9168 9.6665H11.7502C11.9793 9.6665 12.1668 9.479 12.1668 9.24984V8.83317H14.2502C14.4793 8.83317 14.6668 8.64567 14.6668 8.4165V7.58317C14.6668 7.354 14.4793 7.1665 14.2502 7.1665ZM14.2502 2.99984H8.8335V2.58317C8.8335 2.354 8.646 2.1665 8.41683 2.1665H7.5835C7.35433 2.1665 7.16683 2.354 7.16683 2.58317V2.99984H1.75016C1.521 2.99984 1.3335 3.18734 1.3335 3.4165V4.24984C1.3335 4.479 1.521 4.6665 1.75016 4.6665H7.16683V5.08317C7.16683 5.31234 7.35433 5.49984 7.5835 5.49984H8.41683C8.646 5.49984 8.8335 5.31234 8.8335 5.08317V4.6665H14.2502C14.4793 4.6665 14.6668 4.479 14.6668 4.24984V3.4165C14.6668 3.18734 14.4793 2.99984 14.2502 2.99984Z" fill="#2F4E92"/>
+                  </svg>                
+                  Filter
+                </button>
+                <div class="srp__filter-item">
+                  <div class="srp__filter-item-label">Sort by:</div>
+                  <div class="srp__filter-item-value">
+                    Most Popular
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1.84107 3.08105H10.1589C10.9068 3.08105 11.2808 3.98623 10.7531 4.51396L6.59413 8.67289C6.26561 9.00141 5.73439 9.00141 5.40936 8.67289L1.24694 4.51396C0.719209 3.98623 1.09316 3.08105 1.84107 3.08105Z" fill="#2F4E92"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="srp__filter-item">
+                  <div class="srp__filter-item-label">Not-in-stock items:</div>
+                  <div class="srp__filter-item-value">
+                    Show
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1.84107 3.08105H10.1589C10.9068 3.08105 11.2808 3.98623 10.7531 4.51396L6.59413 8.67289C6.26561 9.00141 5.73439 9.00141 5.40936 8.67289L1.24694 4.51396C0.719209 3.98623 1.09316 3.08105 1.84107 3.08105Z" fill="#2F4E92"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="srp__filter-item">
+                  <div class="srp__filter-item-label">View per page:</div>
+                  <div class="srp__filter-item-value">
+                    20
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1.84107 3.08105H10.1589C10.9068 3.08105 11.2808 3.98623 10.7531 4.51396L6.59413 8.67289C6.26561 9.00141 5.73439 9.00141 5.40936 8.67289L1.24694 4.51396C0.719209 3.98623 1.09316 3.08105 1.84107 3.08105Z" fill="#2F4E92"/>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="srp__divider-container">
+            <div class="srp__divider"></div>
           </div>
         </div>
         <div class="srp__body">
           <!-- TODO: Search Result Item based on data-->
           <div class="product">
-            <div class="product__header">
-              <div class="product__cover">
-                <div class="product__cover-fill"></div>
-                <div class="product__ribbon">25% OFF</div>
+            <div class="product__wrapper">
+              <div class="product__header">
+                <div class="product__cover">
+                  <div class="product__cover-fill">
+                    <img class="product__cover-img" src="../../assets/samples/homepage/book_1.png" />
+                  </div>
+                  <div class="product__ribbon">25% OFF</div>
+                </div>
+                <div class="product__meta">
+                  <h3 class="product__title">Through the Glass Ceiling to the Stars: The Story of the First</h3>
+                  <!-- TODO: Make ellipsis here -->
+                  <div class="product__author">by <a>Collins, Eileen M.</a> <a>Ward, Jonathan H.</a></div>
+                  <!-- TODO: Make ellipsis here -->
+                  <div class="product__type">(Hardcover - English - 986412345)</div>
+                </div>
               </div>
-              <div class="product__meta">
-                <h3 class="product__title">Through the Glass Ceiling to the Stars: The Story of the First</h3>
-                <div class="product__author">by <a>Collins, Eileen M.</a> <a>Ward, Jonathan H.</a></div>
-                <div class="product__type">(Hardcover - English - 986412345)</div>
+              <div class="product__info">
+                <p class="product__description">
+                  The long-awaited memoir of a trailblazer and role model who is telling her story for the first time.
+                  <br />
+                  Eileen Collins was an aviation pioneer her entire career, from her crowning achievements as the first woman to command an American space mission as well as her early years as one of the Air Force's first female pilots. She was in the first class of women to earn pilot's wings at Vance Air Force Base and was their first female instructor pilot.
+                </p>
+                <div class="product__cta">
+                  <a class="product__detail-link">MORE DETAILS</a>
+                </div>
+                <div class="product__status">
+                  <div class="product__status-item">
+                    <!-- SVG for warning -->
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M21.7749 18.3896C22.4158 19.5005 21.6113 20.8891 20.3313 20.8891H3.66855C2.38602 20.8891 1.58525 19.4983 2.22491 18.3896L10.5564 3.94414C11.1976 2.83272 12.8036 2.83473 13.4437 3.94414L21.7749 18.3896ZM12 15.403C11.1179 15.403 10.4028 16.1181 10.4028 17.0002C10.4028 17.8823 11.1179 18.5974 12 18.5974C12.8821 18.5974 13.5972 17.8823 13.5972 17.0002C13.5972 16.1181 12.8821 15.403 12 15.403ZM10.4836 9.66181L10.7412 14.384C10.7532 14.605 10.9359 14.778 11.1572 14.778H12.8428C13.0641 14.778 13.2468 14.605 13.2589 14.384L13.5164 9.66181C13.5295 9.42313 13.3394 9.22244 13.1004 9.22244H10.8996C10.6606 9.22244 10.4706 9.42313 10.4836 9.66181Z" fill="#CE0000"/>
+                    </svg>                    
+                    <div class="product__status-item-detail">
+                      Restocking. Usually fulfilled in 2-4 weeks.
+                    </div>
+                  </div>
+                  <div class="product__status-item">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 2C6.47714 2 2 6.47714 2 12C2 17.5229 6.47714 22 12 22C17.5229 22 22 17.5229 22 12C22 6.47714 17.5229 2 12 2ZM12 3.93548C16.4569 3.93548 20.0645 7.54238 20.0645 12C20.0645 16.4569 16.4576 20.0645 12 20.0645C7.54306 20.0645 3.93548 16.4576 3.93548 12C3.93548 7.54306 7.54238 3.93548 12 3.93548ZM17.6534 9.18819L16.7447 8.27214C16.5565 8.08242 16.2501 8.08117 16.0604 8.26939L10.3607 13.9233L7.94976 11.4927C7.76157 11.303 7.4552 11.3018 7.26548 11.49L6.34939 12.3987C6.15968 12.5869 6.15843 12.8932 6.34665 13.083L10.0072 16.7731C10.1954 16.9629 10.5017 16.9641 10.6915 16.7759L17.6507 9.8725C17.8404 9.68427 17.8416 9.3779 17.6534 9.18819Z" fill="#74A4BF"/>
+                    </svg>
+                    <div class="product__status-item-detail">
+                      Sent via local courier with tracking numbers.
+                    </div>
+                  </div>
+                  <div class="product__status-item">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 2C6.47714 2 2 6.47714 2 12C2 17.5229 6.47714 22 12 22C17.5229 22 22 17.5229 22 12C22 6.47714 17.5229 2 12 2ZM12 3.93548C16.4569 3.93548 20.0645 7.54238 20.0645 12C20.0645 16.4569 16.4576 20.0645 12 20.0645C7.54306 20.0645 3.93548 16.4576 3.93548 12C3.93548 7.54306 7.54238 3.93548 12 3.93548ZM17.6534 9.18819L16.7447 8.27214C16.5565 8.08242 16.2501 8.08117 16.0604 8.26939L10.3607 13.9233L7.94976 11.4927C7.76157 11.303 7.4552 11.3018 7.26548 11.49L6.34939 12.3987C6.15968 12.5869 6.15843 12.8932 6.34665 13.083L10.0072 16.7731C10.1954 16.9629 10.5017 16.9641 10.6915 16.7759L17.6507 9.8725C17.8404 9.68427 17.8416 9.3779 17.6534 9.18819Z" fill="#74A4BF"/>
+                    </svg>
+                    <div class="product__status-item-detail">
+                      Price includes 7% GST
+                    </div>
+                  </div>
+                </div>
+                <div class="product__pricing">
+                  <div class="product__pricing-discounted">S$ 33.14</div>
+                  <div class="product__pricing-original">S$ 33.14</div>
+                </div>
+                <div class="product__promo">
+                  3-DAY BOOK SALE (29-31 MARCH 2022)
+                </div>
               </div>
             </div>
-            <div class="product__info">
-              <p class="product__description">
-                The long-awaited memoir of a trailblazer and role model who is telling her story for the first time.
-                <br />
-                Eileen Collins was an aviation pioneer her entire career, from her crowning achievements as the first woman to command an American space mission as well as her early years as one of the Air Force's first female pilots. She was in the first class of women to earn pilot's wings at Vance Air Force Base and was their first female instructor pilot.
-              </p>
-              <!-- items could be `available` or `restocking` -->
-              <div class="product__cta product__cta_available">
-                <div class="product__cta-header">
-                  <div class="product__cta-availability">Available</div>
-                  <div class="product__cta-info">Usually delivered in 4-7 working days.</div>
+          </div>
+          <div class="product">
+            <div class="product__wrapper">
+
+              <div class="product__header">
+                <div class="product__cover">
+                  <div class="product__cover-fill">
+                    <img class="product__cover-img" src="../../assets/samples/homepage/book_3.png" />
+                  </div>
+                  <div class="product__ribbon">25% OFF</div>
                 </div>
-                <div class="product__cta-body">
-                  <div class="product__cta-pricing product__cta-pricing_original">
-                    <div class="product__cta-price">S$ 33.14</div>
-                    <div class="product__cta-price-desc">
-                      3-DAY BOOK SALE (29-31 MARCH 2022)
+                <div class="product__meta">
+                  <h3 class="product__title">How Space Works: The Facts Visually Explained</h3>
+                  <!-- TODO: Make ellipsis here -->
+                  <div class="product__author">by <a>Collins, Eileen M.</a> <a>Ward, Jonathan H.</a></div>
+                  <!-- TODO: Make ellipsis here -->
+                  <div class="product__type">(Hardcover - English - 986412345)</div>
+                </div>
+              </div>
+              <div class="product__info">
+                <p class="product__description">
+                  The long-awaited memoir of a trailblazer and role model who is telling her story for the first time.
+                  <br />
+                  Eileen Collins was an aviation pioneer her entire career, from her crowning achievements as the first woman to command an American space mission as well as her early years as one of the Air Force's first female pilots. She was in the first class of women to earn pilot's wings at Vance Air Force Base and was their first female instructor pilot.
+                </p>
+                <div class="product__cta">
+                  <a class="product__detail-link">MORE DETAILS</a>
+                </div>
+                <div class="product__status">
+                  <div class="product__status-item">
+                    <!-- SVG for warning -->
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M21.7749 18.3896C22.4158 19.5005 21.6113 20.8891 20.3313 20.8891H3.66855C2.38602 20.8891 1.58525 19.4983 2.22491 18.3896L10.5564 3.94414C11.1976 2.83272 12.8036 2.83473 13.4437 3.94414L21.7749 18.3896ZM12 15.403C11.1179 15.403 10.4028 16.1181 10.4028 17.0002C10.4028 17.8823 11.1179 18.5974 12 18.5974C12.8821 18.5974 13.5972 17.8823 13.5972 17.0002C13.5972 16.1181 12.8821 15.403 12 15.403ZM10.4836 9.66181L10.7412 14.384C10.7532 14.605 10.9359 14.778 11.1572 14.778H12.8428C13.0641 14.778 13.2468 14.605 13.2589 14.384L13.5164 9.66181C13.5295 9.42313 13.3394 9.22244 13.1004 9.22244H10.8996C10.6606 9.22244 10.4706 9.42313 10.4836 9.66181Z" fill="#CE0000"/>
+                    </svg>                    
+                    <div class="product__status-item-detail">
+                      Restocking. Usually fulfilled in 2-4 weeks.
                     </div>
                   </div>
-                  <div class="product__cta-pricing product__cta-pricing_discounted">
-                    <div class="product__cta-price">S$ 44.19</div>
-                    <div class="product__cta-price-desc">
-                      TODAY’S PRICE
+                  <div class="product__status-item">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 2C6.47714 2 2 6.47714 2 12C2 17.5229 6.47714 22 12 22C17.5229 22 22 17.5229 22 12C22 6.47714 17.5229 2 12 2ZM12 3.93548C16.4569 3.93548 20.0645 7.54238 20.0645 12C20.0645 16.4569 16.4576 20.0645 12 20.0645C7.54306 20.0645 3.93548 16.4576 3.93548 12C3.93548 7.54306 7.54238 3.93548 12 3.93548ZM17.6534 9.18819L16.7447 8.27214C16.5565 8.08242 16.2501 8.08117 16.0604 8.26939L10.3607 13.9233L7.94976 11.4927C7.76157 11.303 7.4552 11.3018 7.26548 11.49L6.34939 12.3987C6.15968 12.5869 6.15843 12.8932 6.34665 13.083L10.0072 16.7731C10.1954 16.9629 10.5017 16.9641 10.6915 16.7759L17.6507 9.8725C17.8404 9.68427 17.8416 9.3779 17.6534 9.18819Z" fill="#74A4BF"/>
+                    </svg>
+                    <div class="product__status-item-detail">
+                      Sent via local courier with tracking numbers.
                     </div>
                   </div>
-                  <div class="product__cta-cart">
-                    <input type="number" class="product__cta-cart-input" min="0">
-                    <button class="product__cta-cart-button">Add to Cart</button>
+                  <div class="product__status-item">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 2C6.47714 2 2 6.47714 2 12C2 17.5229 6.47714 22 12 22C17.5229 22 22 17.5229 22 12C22 6.47714 17.5229 2 12 2ZM12 3.93548C16.4569 3.93548 20.0645 7.54238 20.0645 12C20.0645 16.4569 16.4576 20.0645 12 20.0645C7.54306 20.0645 3.93548 16.4576 3.93548 12C3.93548 7.54306 7.54238 3.93548 12 3.93548ZM17.6534 9.18819L16.7447 8.27214C16.5565 8.08242 16.2501 8.08117 16.0604 8.26939L10.3607 13.9233L7.94976 11.4927C7.76157 11.303 7.4552 11.3018 7.26548 11.49L6.34939 12.3987C6.15968 12.5869 6.15843 12.8932 6.34665 13.083L10.0072 16.7731C10.1954 16.9629 10.5017 16.9641 10.6915 16.7759L17.6507 9.8725C17.8404 9.68427 17.8416 9.3779 17.6534 9.18819Z" fill="#74A4BF"/>
+                    </svg>
+                    <div class="product__status-item-detail">
+                      Price includes 7% GST
+                    </div>
                   </div>
-                  <button class="product__cta-wishlist">ADD TO MY LIST</button>
+                </div>
+                <div class="product__pricing">
+                  <div class="product__pricing-normal">S$ 33.14</div>
+                </div>
+                <div class="product__promo">
+                  3-DAY BOOK SALE (29-31 MARCH 2022)
                 </div>
               </div>
             </div>
@@ -137,7 +850,7 @@
             <a class="srp__pagination-item">3</a>
             <a class="srp__pagination-item">4</a>
             <a class="srp__pagination-item">5</a>
-            <div class="srp__pagination-item srp__pagination-item_separator">..</div>
+            <div class="srp__pagination-item srp__pagination-item_separator">...</div>
             <a class="srp__pagination-item">12</a>
             <a class="srp__pagination-item srp__pagination-item-next">
               <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -146,13 +859,237 @@
             </a>
             <a class="srp__pagination-item srp__pagination-item-last">
               <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M8.50627 6.42617L5.09433 9.83811C4.8585 10.0739 4.47717 10.0739 4.24385 9.83811L3.67687 9.27113C3.44104 9.0353 3.44104 8.65397 3.67687 8.42065L6.09533 6.00219L3.67687 3.58372C3.44104 3.3479 3.44104 2.96656 3.67687 2.73325L4.24134 2.16124C4.47717 1.92542 4.8585 1.92542 5.09182 2.16124L8.50376 5.57319C8.7421 5.80901 8.7421 6.19035 8.50627 6.42617Z" fill="#2F4E92"/>
+                <path d="M6.00627 6.42617L2.59433 9.83811C2.35851 10.0739 1.97717 10.0739 1.74385 9.83811L1.17687 9.27113C0.941044 9.0353 0.941044 8.65397 1.17687 8.42065L3.59533 6.00219L1.17687 3.58372C0.941044 3.3479 0.941044 2.96656 1.17687 2.73325L1.74134 2.16124C1.97717 1.92542 2.3585 1.92542 2.59182 2.16124L6.00376 5.57319C6.2421 5.80901 6.2421 6.19035 6.00627 6.42617ZM10.8231 5.57319L7.41119 2.16124C7.17536 1.92542 6.79403 1.92542 6.56071 2.16124L5.99373 2.72823C5.7579 2.96405 5.7579 3.34539 5.99373 3.57871L8.41219 5.99717L5.99373 8.41563C5.7579 8.65146 5.7579 9.03279 5.99373 9.26611L6.56071 9.8331C6.79654 10.0689 7.17787 10.0689 7.41119 9.8331L10.8231 6.42115C11.059 6.19035 11.059 5.80901 10.8231 5.57319Z" fill="#2F4E92"/>
               </svg>
             </a>
           </div>
         </div>
       </div>
     </div>
+    <footer class="footer">
+      <div class="footer__partner">
+        <div class="footer__partner-wrapper">
+          <div class="footer__partner-section">
+            <div class="footer__partner-label">
+              Accepted Payments
+            </div>
+            <div class="footer__partner-list">
+              <div class="footer__partner-item footer__partner-item_visa">
+                <img class="footer__partner-img" src="../../assets/partners/visa.png" />
+              </div>
+              <div class="footer__partner-item footer__partner-item_mastercard">
+                <img class="footer__partner-img" src="../../assets/partners/mastercard.png" />
+              </div>
+              <div class="footer__partner-item footer__partner-item_ovo">
+                <img class="footer__partner-img" src="../../assets/partners/ovo.png" />
+              </div>
+              <div class="footer__partner-item footer__partner-item_gopay">
+                <img class="footer__partner-img" src="../../assets/partners/gopay.png" />
+              </div>
+              <div class="footer__partner-item footer__partner-item_amex">
+                <img class="footer__partner-img" src="../../assets/partners/amex.png" />
+              </div>
+              <div class="footer__partner-item footer__partner-item_paypal">
+                <img class="footer__partner-img" src="../../assets/partners/paypal.png" />
+              </div>
+            </div>
+          </div>
+          <div class="footer__partner-section">
+            <div class="footer__partner-label">
+              Shipping Partners
+            </div>
+            <div class="footer__partner-list">
+              <div class="footer__partner-item footer__partner-item_jne">
+                <img class="footer__partner-img" src="../../assets/partners/jne.png" />
+              </div>
+              <div class="footer__partner-item footer__partner-item_sicepat">
+                <img class="footer__partner-img" src="../../assets/partners/sicepat.png" />
+              </div>
+              <div class="footer__partner-item footer__partner-item_gosend">
+                <img class="footer__partner-img" src="../../assets/partners/gosend.png" />
+              </div>
+              <div class="footer__partner-item footer__partner-item_grab">
+                <img class="footer__partner-img" src="../../assets/partners/grab_express.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__content">
+        <div class="footer__sharer">
+          <h5 class="footer__follow-us">FOLLOW US</h5>
+          <div class="footer__socials">
+            <div class="footer__social-item">
+              <!-- <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M44 24.1208C44 13.0725 35.0484 4.12085 24 4.12085C12.9516 4.12085 4 13.0725 4 24.1208C4 34.1031 11.3137 42.3773 20.875 43.8789V29.9023H15.7944V24.1208H20.875V19.7144C20.875 14.7023 23.8589 11.9338 28.429 11.9338C30.6177 11.9338 32.9065 12.3241 32.9065 12.3241V17.2434H30.3839C27.9 17.2434 27.125 18.7854 27.125 20.3668V24.1208H32.6718L31.7847 29.9023H27.125V43.8789C36.6863 42.3773 44 34.1031 44 24.1208Z" fill="#2F4E92"/>
+              </svg> -->
+            </div>
+            <div class="footer__social-item"></div>
+            <div class="footer__social-item"></div>
+          </div>
+        </div>
+        <nav class="footer__nav">
+          <div class="footer__nav-wrapper">
+            <div class="footer__nav-item">
+              <h6 class="footer__nav-title">BOOK CATEGORIES</h6>
+              <ul class="footer__links">
+                <li class="footer__link-item">
+                  <a class="footer__link-anchor">Architecture</a>
+                </li>
+                <li class="footer__link-item">
+                  <a class="footer__link-anchor">Art</a>
+                </li>
+                <li class="footer__link-item">
+                  <a class="footer__link-anchor">Biography & Autobiography</a>
+                </li>
+                <li class="footer__link-item">
+                  <a class="footer__link-anchor">Body, Mind & Spirit</a>
+                </li>
+                <li class="footer__link-item">
+                  <a class="footer__link-anchor">Business & Economics</a>
+                </li>
+                <li class="footer__link-item">
+                  <a class="footer__link-anchor">Children Fiction</a>
+                </li>
+                <li class="footer__link-item">
+                  <a class="footer__link-anchor">Children Non-fiction</a>
+                </li>
+                <li class="footer__link-item">
+                  <a class="footer__link-anchor">Comics & Graphic Novels</a>
+                </li>
+                <li class="footer__link-item">
+                  <a class="footer__link-anchor">Computers</a>
+                </li>
+                <li class="footer__link-item">
+                  <a class="footer__link-anchor">Cooking</a>
+                </li>
+                <li class="footer__link-item">
+                  <a class="footer__link-anchor">Crafts & Hobbies</a>
+                </li>
+                <li class="footer__link-item">
+                  <a class="footer__link-anchor">Design</a>
+                </li>
+                <li class="footer__link-item">
+                  <a class="footer__link-anchor">Drama</a>
+                </li>
+                <li class="footer__link-item">
+                  <a class="footer__link-anchor">Education</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__nav-item">
+              <div class="footer__nav-placholder"></div>
+              <ul class="footer__links">
+                <li class="footer__link-item">
+                  <a class="footer__link-anchor">Drama</a>
+                </li>
+                <li class="footer__link-item">
+                  <a class="footer__link-anchor">Education</a>
+                </li>
+                <li class="footer__link-item">
+                  <a class="footer__link-anchor">Family & Relationships</a>
+                </li>
+                <li class="footer__link-item">
+                  <a class="footer__link-anchor">Fiction</a>
+                </li>
+                <li class="footer__link-item">
+                  <a class="footer__link-anchor">Foreign Language Study</a>
+                </li>
+                <li class="footer__link-item">
+                  <a class="footer__link-anchor">Games</a>
+                </li>
+                <li class="footer__link-item">
+                  <a class="footer__link-anchor">Gardening</a>
+                </li>
+                <li class="footer__link-item">
+                  <a class="footer__link-anchor">Health & Fitness</a>
+                </li>
+                <li class="footer__link-item">
+                  <a class="footer__link-anchor">Literary Collections</a>
+                </li>
+                <li class="footer__link-item">
+                  <a class="footer__link-anchor">Mathematics</a>
+                </li>
+                <li class="footer__link-item">
+                  <a class="footer__link-anchor">Medical</a>
+                </li>
+                <li class="footer__link-item">
+                  <a class="footer__link-anchor">Nature</a>
+                </li>
+                <li class="footer__link-item">
+                  <a class="footer__link-anchor">Performing Arts</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__nav-item">
+              <h6 class="footer__nav-title">ABOUT OPENTROLLEY</h6>
+              <ul class="footer__links">
+                <li class="footer__link-item">
+                  <a class="footer__link-anchor">About Us</a>
+                </li>
+                <li class="footer__link-item">
+                  <a class="footer__link-anchor">Browse 4000+ Book Categories</a>
+                </li>
+                <li class="footer__link-item">
+                  <a class="footer__link-anchor">Terms of Sale</a>
+                </li>
+                <li class="footer__link-item">
+                  <a class="footer__link-anchor">Corporate Accounts</a>
+                </li>
+                <li class="footer__link-item">
+                  <a class="footer__link-anchor">OpenTrolley Bookstore Indonesia</a>
+                </li>
+                <li class="footer__link-item">
+                  <a class="footer__link-anchor">OpenTrolley Bookstore Malaysia</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__nav-item">
+              <h6 class="footer__nav-title">INFORMATION</h6>
+              <ul class="footer__links">
+                <li class="footer__link-item">
+                  <a class="footer__link-anchor">How to Shop</a>
+                </li>
+                <li class="footer__link-item">
+                  <a class="footer__link-anchor">Delivery Info and Charges</a>
+                </li>
+                <li class="footer__link-item">
+                  <a class="footer__link-anchor">Self-collection</a>
+                </li>
+                <li class="footer__link-item">
+                  <a class="footer__link-anchor">Track My Orders</a>
+                </li>
+                <li class="footer__link-item">
+                  <a class="footer__link-anchor">Payment Modes Accepted</a>
+                </li>
+                <li class="footer__link-item">
+                  <a class="footer__link-anchor">Promotions</a>
+                </li>
+                <li class="footer__link-item">
+                  <a class="footer__link-anchor">Frequently Asked Questions</a>
+                </li>
+                <li class="footer__link-item">
+                  <a class="footer__link-anchor">Contact Us</a>
+                </li>
+              </ul>
+              <div class="footer__sharer-alt">
+                <div class="footer__sharer-alt-item"></div>
+                <div class="footer__sharer-alt-item"></div>
+                <div class="footer__sharer-alt-item"></div>
+              </div>
+            </div>
+          </div>
+          <div class="footer__illustration">
+            <div class="footer__illustration-wrapper"></div>
+          </div>
+        </nav>
+      </div>
+      <div class="footer__copyright">
+        <div class="footer__copyright-wrapper">
+          2008-2022 © OpenTrolley Bookstore Pte. Ltd. (incorporated in Singapore). Thank you for supporting local businesses. #SGUnited
+        </div>
+      </div>
+    </footer>
   </div>
 </body>
 </html>
