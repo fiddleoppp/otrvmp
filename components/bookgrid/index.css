@@ -1,0 +1,136 @@
+
+.bookgrid {
+  background-color: transparent;
+}
+
+.bookgrid_personalized {
+  background-color: var(--color-ot-cream-20);
+}
+
+.bookgrid__wrapper {
+  padding: 54px 16px;
+}
+
+.bookgrid__label {
+  font-family: 'Lora';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  margin: 0;
+  color: var(--color-ot-black);
+}
+
+.bookgrid__list {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+
+.bookgrid__item {
+  width: 50%;
+  margin-top: 32px;
+}
+
+.bookgrid__item:nth-child(1),
+.bookgrid__item:nth-child(2) {
+  margin-top: 0;
+}
+
+.bookgrid__item:nth-child(odd) {
+  padding-right: 8px;
+}
+
+.bookgrid__item:nth-child(even) {
+  padding-left: 8px;
+}
+
+.bookgrid__item-cover {
+  padding-bottom: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.bookgrid__item-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 100%;
+  width: auto;
+}
+
+.bookgrid_personalized .bookgrid__item-cover {
+  padding-bottom: 66.66666%;
+}
+
+.bookgrid_personalized .bookgrid__item-cover::before {
+  display: none;
+}
+
+.bookgrid__item-cover::before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: '';
+  border-radius: 50%;
+  background-color: var(--color-ot-gray-40);
+}
+
+.bookgrid__item-category {
+  margin-top: 12px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  color: var(--color-ot-blue);
+}
+
+.bookgrid__item-title {
+  margin-top: 4px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--color-ot-black);
+  text-align: center;
+}
+
+@media screen and (min-width: 769px) {
+  .bookgrid__wrapper {
+    max-width: 774px;
+    margin: 0 auto;
+  }
+
+  .bookgrid_personalized .bookgrid__item {
+    width: calc(25% - 18px);
+  }
+
+  .bookgrid__item {
+    margin-right: 24px;
+    margin-top: 0;
+    width: calc(20% - 24px);
+  }
+
+  .bookgrid__item:last-child {
+    margin-right: 0;
+  }
+  
+  .bookgrid__item:nth-child(odd),
+  .bookgrid__item:nth-child(even) {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .bookgrid__wrapper {
+    max-width: 916px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .bookgrid__wrapper {
+    max-width: 1176px;
+  }
+}

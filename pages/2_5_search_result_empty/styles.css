@@ -1,0 +1,259 @@
+.emptysearch {}
+
+.emptysearch__info {
+  padding-bottom: 60px;
+}
+
+.emptysearch__heading {
+  padding: 0 16px;
+  font-family: 'Lora';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  margin: 32px 0 0;
+}
+
+.emptysearch__description {
+  margin: 32px 0 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  padding: 0 16px;
+}
+
+.emptysearch__suggestion {
+  margin-top: 24px;
+  padding: 0 16px;
+}
+
+.emptysearch__suggestion + .emptysearch__suggestion {
+  margin-top: 32px;
+}
+
+.emptysearch__suggestion-title {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.emptysearch__suggestion-list {
+  margin-top: 4px;
+}
+
+.emptysearch__suggestion-item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+
+.emptysearch__recommendation {
+  padding: 40px 0;
+  background-color: var(--color-ot-cream-20);
+}
+
+.emptysearch__recommendation-wrapper {
+
+}
+
+.emptysearch__recommendation-header {
+  padding: 0 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.emptysearch__recommendation-label {
+  font-family: 'Lora';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: var(--color-ot-black);
+}
+
+.emptysearch__recommendation-viewmore {
+
+}
+
+.emptysearch__recommendation-viewmore-link {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  width: 140px;
+  color: var(--color-ot-blue);
+  margin-bottom: 5px;
+}
+
+.emptysearch__recommendation-arrow {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 46px;
+  height: 46px;
+  top: 35%;
+  transform: translateY(-50%);
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  background-color: var(--color-ot-blue);
+  cursor: pointer;
+}
+
+.emptysearch__recommendation-arrow_prev {
+  left: -46px;
+}
+
+.emptysearch__recommendation-arrow_next {
+  right: -46px;
+}
+
+.emptysearch__recommendation-arrow_prev::after,
+.emptysearch__recommendation-arrow_next::after {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 24px;
+}
+
+.emptysearch__recommendation-arrow_prev::after {
+  margin-right: 3px;
+  background-image: url('../../assets/icons/chevron-left.png');
+}
+
+.emptysearch__recommendation-arrow_next::after {
+  margin-left: 3px;
+  background-image: url('../../assets/icons/chevron-right.png');
+}
+
+.emptysearch__recommendation-list {
+  margin: 20px 0 0;
+  white-space: nowrap;
+  display: flex;
+  padding: 0 10px;
+}
+
+.emptysearch__recommendation-item {
+  width: calc(50% - 30px);
+  margin: 0 10px;
+}
+
+.emptysearch__recommendation-item-cover {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+}
+
+.emptysearch__recommendation-item-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 100%;
+  width: auto;
+}
+
+.emptysearch__recommendation-item-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+  margin: 12px 0 0;
+  white-space: initial;
+  text-align: center;
+  color: var(--color-ot-black);
+}
+
+.emptysearch__recommendation-item-author {
+  margin-top: 4px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  color: var(--color-ot-black);
+}
+
+.emptysearch__recommendation-item-price,
+.emptysearch__recommendation-item-price_discounted,
+.emptysearch__recommendation-item-price_original {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+}
+
+.emptysearch__recommendation-item-price {
+  color: var(--color-ot-blue);
+}
+
+.emptysearch__recommendation-item-price_discounted {
+  color: var(--color-ot-red);
+}
+
+.emptysearch__recommendation-item-price_original {
+  color: var(--color-ot-gray);
+  text-decoration: line-through;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  margin-top: 0px;
+}
+
+@media screen and (min-width: 769px) {
+  .emptysearch__recommendation-wrapper {
+    max-width: 774px;
+    margin: 0 auto;
+  }
+
+}
+
+@media screen and (min-width: 1025px) {
+  .emptysearch__recommendation-wrapper {
+    max-width: 916px;
+  }
+
+  .emptysearch__info {
+    padding: 0 20px 80px;
+    margin: 0 auto;
+  }
+
+  
+  .emptysearch__heading {
+    font-size: 32px;
+    line-height: 38px;
+    margin-top: 40px;
+  }
+
+  .emptysearch__description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .emptysearch__suggestion {
+    margin-top: 32px;
+  }
+
+  .emptysearch__suggestion-title {
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .emptysearch__suggestion-list {
+    margin-top: 8px;
+  }
+
+  .emptysearch__suggestion-item {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .emptysearch__info {
+    max-width: 1176px;
+  }
+
+  .emptysearch__recommendation-wrapper {
+    max-width: 1176px;
+  }
+}

@@ -20,7 +20,6 @@ $(document).ready(function() {
 
   $('.bestseller__list').slick({
     dots: false,
-    // dotsClass: 'bestseller__dots',
     arrows: true,
     prevArrow: '<button class="bestseller__arrow bestseller__arrow_prev"></button>',
     nextArrow: '<button class="bestseller__arrow bestseller__arrow_next"></button>',

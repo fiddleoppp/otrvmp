@@ -1,0 +1,115 @@
+.ctabox {
+  width: 100%;
+}
+
+.ctabox__header {
+  background-color: var(--color-ot-blue);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  padding: 12px 16px;
+  color: var(--color-ot-white);
+}
+
+.ctabox__header-title {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.ctabox__header-hint {
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 13px;
+  margin-top: 2px;
+}
+
+.ctabox__body {
+  padding: 20px 16px;
+  background-color: var(--color-ot-cream-20);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.ctabox__pricing {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+}
+
+.ctabox__pricing-discounted {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--color-ot-red);
+}
+
+.ctabox__pricing-ribbon {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18px;
+  background-color: var(--color-ot-red);
+  color: var(--color-ot-white);
+  padding: 5px 8px;
+  border-radius: 4px;
+}
+
+.ctabox__original-price {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  text-decoration: line-through;
+  color: var(--color-ot-black);
+}
+
+.ctabox__description {
+  margin-top: 4px;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.ctabox__input {
+  margin-top: 24px;
+  height: 32px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+.ctabox__input-field {
+  border: 1px solid var(--color-ot-gray-60);
+  border-radius: 6px;
+  width: 60px;
+  background-color: var(--color-ot-white);
+  padding: 7px 12px;
+  outline: none;
+}
+
+.ctabox__input-field::placeholder {
+  color: var(--color-ot-gray-60);
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.ctabox__input-button {
+  width: 132px;
+  height: 32px;
+}
+
+.ctabox__add-to-list {
+  margin-top: 16px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--color-ot-blue);
+  text-decoration: underline;
+  padding: 0;
+  height: 18px;
+}
+
+@media screen and (min-width: 769px) {
+  .ctabox {
+    max-width: 276px;
+  }
+}

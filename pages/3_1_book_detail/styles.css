@@ -1,0 +1,295 @@
+.detail {}
+.detail__wrapper {}
+.detail__info {
+  padding: 32px 16px 0;
+}
+
+.detail__cover {
+  width: 220px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.detail__cover-img {
+  width: 100%;
+  height: auto;
+}
+
+.detail__side {
+  margin-top: 24px;
+}
+
+.detail__title {
+  margin: 0;
+  font-family: 'Lora';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.detail__meta {
+  margin-top: 16px;
+}
+
+.detail__meta-additionals {}
+
+.detail__author {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.detail__format {
+  margin-top: 25px;
+}
+
+.detail__format-current {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.detail__format-toggle {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18px;
+  cursor: pointer;
+  color: var(--color-ot-blue);
+  margin-top: 4px;
+}
+
+.detail__status {
+  margin-top: 34px;
+}
+
+.detail__status-item {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.detail__status-item + .detail__status-item {
+  margin-top: 12px
+}
+
+.detail__status-item > svg {
+  width: 24px;
+  height: 24px;
+  flex: 0 1 auto;
+  margin-top: -2px;
+}
+
+.detail__meta-cta {
+  margin-top: 34px;
+}
+
+.detail__description {
+  padding: 0 16px;
+  margin-top: 32px;
+}
+
+.detail__description-divider {
+  width: 100%;
+  height: 1px;
+  background-color: var(--color-ot-gray-40);
+}
+
+.detail__description-title {
+  margin: 24px 0 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.detail__description-text {
+  margin: 8px 0 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.detail__specs {
+  margin-top: 40px;
+  padding: 0 16px;
+}
+
+.detail__specs-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  margin: 0;
+}
+
+.detail__specs-list {
+  margin-top: 8px;
+  padding: 0;
+}
+
+.detail__specs-item {
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+
+.detail__specs-item + .detail__specs-item {
+  margin-top: 12px;
+}
+
+.detail__specs-label {
+  width: 144px;
+  flex: 1 0 auto;
+  position: relative;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.detail__specs-label::after {
+  content: ':';
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.detail__specs-value {
+  width: 100%;
+  padding-left: 12px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.detail__specs-value-item + .detail__specs-value-item {
+  margin-top: 12px;
+}
+
+.detail__specs-value-link {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 1025px) {
+  .detail__info {
+    padding: 40px 20px 40px;
+    margin: 0 auto;
+    display: flex;
+    gap: 60px;
+  }
+
+  .detail__description,
+  .detail__specs {
+    padding: 40px 20px 0;
+    margin: 24px auto 0;
+  }
+
+  .detail__description-title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .detail__description-text {
+    margin-top: 16px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .detail__cover {
+    width: 280px;
+    flex: 1 0 auto;
+  }
+
+  .detail__cover-img {
+    max-width: 220px;
+    margin: 0 auto;
+  }
+
+  .detail__side {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .detail__title {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .detail__meta-additionals {
+    width: 100%;
+  }
+
+  .detail__meta {
+    display: flex;
+    gap: 40px;
+    flex: 1 0 auto;
+    margin-top: 12px;
+  }
+
+  .detail__meta-cta {
+    margin-top: 0;
+  }
+
+  .detail__author {
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .detail__format {
+    margin-top: 32px;
+  }
+
+  .detail__format-current {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .detail__format-toggle {
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  .detail__status {
+    margin-top: 34px;
+  }
+
+  .detail__status-item {
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  .detail__specs-list {
+    margin-top: 16px;
+  }
+
+  .detail__specs-title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .detail__specs-label {
+    width: 220px;
+  }
+
+  .detail__specs-label,
+  .detail__specs-value {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .detail__personalization {
+    margin-top: 60px;
+  }
+
+  .detail__recommendation {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .detail__info,
+  .detail__description,
+  .detail__specs {
+    max-width: 1176px;
+  }
+}
