@@ -195,7 +195,7 @@ ul {
   color: var(--color-ot-white);
   height: 40px;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 20px;
   border-radius: 8px;
   padding: 0 16px;
@@ -264,6 +264,13 @@ ul {
   border: 1px solid var(--color-ot-gray-60);
   padding: 10px 12px;
   outline: none;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.textfield_small .textfield__input {
+  height: 32px;
 }
 
 .textfield__input::placeholder {
@@ -312,6 +319,8 @@ ul {
 .checkbox {
   position: relative;
   padding-left: 28px;
+  min-height: 20px;
+  min-width: 28px;
   display: flex;
   align-items: center;
 }
@@ -372,7 +381,16 @@ ul {
   color: var(--color-ot-blue);
 }
 
+.page {}
+
+.page__wrapper {}
+
 @media screen and (min-width: 769px) {
+  .page__wrapper {
+    max-width: 774px;
+    margin: 0 auto;
+  }
+
   .desktop-only {
     display: block;
   }
@@ -413,5 +431,17 @@ ul {
     --font-h6-subheading-size: var(--font-desktop-h6-subheading-size);
     --font-h6-subheading-height: var(--font-desktop-h6-subheading-height);
     --font-h6-subheading-weight: var(--font-desktop-h6-subheading-weight);
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .page__wrapper {
+    max-width: initial;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .page__wrapper {
+    max-width: 1176px;
   }
 }
