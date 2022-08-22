@@ -212,6 +212,10 @@
   border-right: 1px solid var(--color-ot-gray-60);
 }
 
+.header__megamenu-item:last-child .header__megamenu-item-wrapper {
+  border-right-color: transparent;
+}
+
 .header__megamenu-item:hover .header__megamenu-item-wrapper {
   border-right: 1px solid var(--color-ot-blue);
 }
