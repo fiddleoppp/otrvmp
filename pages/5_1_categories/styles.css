@@ -1,0 +1,232 @@
+.categories {}
+
+.categories__wrapper {
+  padding: 32px 16px 80px;
+}
+
+.categories__menu {
+  display: none;
+}
+
+.categories__info {
+
+}
+
+.categories__title {
+  font-family: 'Lora';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  margin: 0;
+}
+
+.categories__recommendation {
+  margin-top: 32px;
+}
+
+.categories__recommendation-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  margin: 0;
+}
+
+.categories__recommendation-set {
+  margin-top: 12px;
+}
+
+.categories__recommendation-item {
+  cursor: pointer;
+  padding: 0 20px;
+  border-radius: 8px;
+  border-left: 12px solid var(--color-ot-gray-80);
+  background-color: var(--color-ot-gray-40);
+  color: var(--color-ot-black);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 60px;
+  line-height: 60px;
+  font-family: 'Lora';
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.categories__recommendation-item + .categories__recommendation-item {
+  margin-top: 12px;
+}
+
+.categories__subcategories {
+  margin-top: 60px;
+}
+
+.categories__subcategories-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  margin: 0;
+}
+
+.categories__subcategories-set {
+  margin-top: 12px;
+}
+
+.categories__subcategories-item {
+  cursor: pointer;
+  padding: 0 20px;
+  border-radius: 8px;
+  border-left: 12px solid var(--color-ot-gray-40);
+  background-color: var(--color-ot-cream-20);
+  color: var(--color-ot-black);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 60px;
+  font-family: 'Lora';
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.categories__subcategories-item + .categories__subcategories-item {
+  margin-top: 12px;
+}
+
+.categories__list {
+  margin-top: 60px;
+}
+
+.categories__item + .categories__item {
+  margin-top: 20px;
+}
+
+.categories__list-grouping + .categories__list-grouping {
+  margin-top: 20px;
+}
+
+.categories__item-link {
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+@media screen and (min-width: 1025px) {
+  .categories__wrapper {
+    display: flex;
+    gap: 40px;
+  }
+
+  .categories__menu {
+    flex: 1 0 auto;
+    display: block;
+    border: 1px solid var(--color-ot-gray-40);
+    border-radius: 8px;
+    width: 276px;
+  }
+
+  .categories__menu-title {
+    padding: 20px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .categories__menu-body {
+    border-top: 1px solid var(--color-ot-gray-40);
+    padding: 20px 24px 40px;
+  }
+
+  .categories__menu-item + .categories__menu-item {
+    margin-top: 20px;
+  }
+
+  .categories__menu-item-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    cursor: pointer;
+  }
+
+  .categories__info {
+    width: 100%;
+  }
+
+  .categories__title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .categories__recommendation,
+  .categories__subcategories {
+    margin-top: 40px;
+  }
+
+  .categories__recommendation-title,
+  .categories__subcategories-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .categories__recommendation-set,
+  .categories__subcategories-set {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .categories__recommendation-set {
+    gap: 22px;
+  }
+
+  .categories__subcategories-set {
+    gap: 21px;
+  }
+
+  .categories__recommendation-item,
+  .categories__subcategories-item {
+    height: 100px;
+  }
+  
+  .categories__recommendation-item {
+    width: calc(50% - 11px);
+  }
+
+  .categories__subcategories-item {
+    width: calc(33.33333% - 14px);
+  }
+
+  .categories__recommendation-item + .categories__recommendation-item,
+  .categories__subcategories-item + .categories__subcategories-item {
+    margin-top: 0;
+  }
+
+  .categories__list {
+    display: flex;
+    gap: 47px;
+  }
+
+  .categories__list-grouping {
+    width: calc(25% - 35.25px);
+  }
+
+  .categories__list-grouping + .categories__list-grouping {
+    margin-top: 0;
+  }
+
+  .categories__item + .categories__item {
+    margin-top: 12px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .categories__recommendation-item,
+  .categories__subcategories-item {
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 32px;
+  }
+}
