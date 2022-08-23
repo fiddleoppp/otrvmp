@@ -1,0 +1,46 @@
+
+.profilemenu {
+  display: none;
+  width: 276px;
+  border-radius: 8px;
+  border: 1px solid var(--color-ot-gray-40);
+}
+
+.profilemenu-label {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  padding: 20px;
+  border-bottom: 1px solid var(--color-ot-gray-40);
+}
+
+.profilemenu-set {
+  padding: 10px 0;
+}
+
+.profilemenu-item {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 10px 24px;
+  cursor: pointer;
+}
+
+.profilemenu-item_active,
+.profilemenu-item:hover {
+  background-color: var(--color-ot-gray-40);
+}
+
+.profilemenu-link {
+  text-decoration: none;
+}
+
+.profilemenu-link:hover {
+  color: var(--color-ot-blue);
+}
+
+@media screen and (min-width: 1025px) {
+  .profilemenu {
+    display: block;
+  }
+}
