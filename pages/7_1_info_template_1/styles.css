@@ -1,0 +1,97 @@
+.template {}
+
+.template__wrapper {
+  padding: 32px 16px 80px;
+}
+
+.template__title {
+  font-family: 'Lora';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  margin: 0;
+}
+
+.template__body {
+  margin-top: 32px;
+}
+
+.template__body a {
+  text-decoration: underline;
+}
+
+.template__body p {
+  margin: 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.template__body h4 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  margin-top: 32px;
+  margin-bottom: 8px;
+}
+
+.template__body ul {
+  margin-bottom: 0;
+}
+
+.template__body p + ul {
+  margin-top: 6px;
+}
+
+.template__body h4 + ul,
+.template__body ul ul,
+.template__body p ul {
+  list-style-type: disc;
+  margin-top: 0;
+}
+
+.template__body ul p {
+  margin: 0;
+}
+
+.template__body ul li + li {
+  margin-top: 4px;
+}
+
+.template__body ul li {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.template__body hr {
+  display: block;
+  height: 1px;
+  width: 100%;
+  margin: 40px 0;
+  background-color: var(--color-ot-gray-40);
+  border: none;
+}
+
+.template__body br {
+  height: 32px;
+}
+
+@media screen and (min-width: 1025px) {
+  .template__wrapper {
+    padding: 40px 20px 80px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
+  }
+
+  .template__menu {
+    width: 276px;
+  }
+
+  .template__title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+  }
+}
