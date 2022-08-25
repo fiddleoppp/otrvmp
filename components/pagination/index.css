@@ -1,0 +1,25 @@
+
+.pagination {}
+
+.pagination-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  gap: 12px;
+}
+
+.pagination-item {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--color-ot-blue);
+  text-decoration: underline;
+}
+
+.pagination-item_active {
+  color: var(--color-ot-black);
+  text-decoration: none;
+}
+
+.pagination-item_separator {
+  text-decoration: none;
+}

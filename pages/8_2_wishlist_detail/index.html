@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>7_2_info_template_2</title>
+  <title>8_2_wishlist_detail</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&family=Lora:ital,wght@0,600;0,700;1,600;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../styles/normalize.css">
   <link rel="stylesheet" href="../../styles/global.css">
@@ -12,6 +12,8 @@
   <link rel="stylesheet" href="../../components/desktop_nav/index.css">
   <link rel="stylesheet" href="../../components/footer/index.css">
   <link rel="stylesheet" href="../../components/profile_menu/index.css">
+  <link rel="stylesheet" href="../../components/ctabox/index.css">
+  <link rel="stylesheet" href="../../components/pagination/index.css">
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
@@ -183,79 +185,216 @@
         Feb 2022 promo up to 20% off
       </div>
     </header>
-    
     <div class="page">
       <div class="page__wrapper">
-        <div class="template">
-          <!-- TODO: Dropdown -->
-          <div class="template__wrapper">
-            <div class="template__menu">
-              <div class="profilemenu">
-                <div class="profilemenu-label">Information</div>
-                <div class="profilemenu-set">
-                  <div class="profilemenu-item">
-                    <a href="" class="profilemenu-link">How to Shop</a>
+        <div class="wishdetail">
+          <div class="wishdetail__wrapper">
+            <div class="wishdetail__heading">
+              <div class="wishdetail__meta">
+                <h1 class="wishdetail__title">Business & Economics</h1>
+                <div class="wishdetail__date">Created on Apr 9, 2022</div>
+              </div>
+              <div class="wishdetail__cta">
+                <div class="wishdetail__cta-item">
+                  <button class="button button_ghost button_full-width">Edit List</button>
+                </div>
+                <div class="wishdetail__cta-item">
+                  <button class="button button_full-width">Create New List</button>
+                </div>
+              </div>
+            </div>
+            <div class="wishdetail__filter">
+              <div class="wishdetail__total">Displaying <strong>1-4</strong> from <strong>4 results</strong></div>
+              <div class="wishdetail__config">
+                <div class="wishdetail__config-item">
+                  <div class="wishdetail__config-label">Sort by:</div>
+                  <div class="wishdetail__config-current">
+                    Most Popular
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1.84107 3.08008H10.1589C10.9068 3.08008 11.2808 3.98526 10.7531 4.51299L6.59413 8.67191C6.26561 9.00043 5.73439 9.00043 5.40936 8.67191L1.24694 4.51299C0.719209 3.98526 1.09316 3.08008 1.84107 3.08008Z" fill="#2F4E92"/>
+                    </svg>                      
                   </div>
-                  <div class="profilemenu-item">
-                    <a href="" class="profilemenu-link">Delivery Info and Charges</a>
+                </div>
+                <div class="wishdetail__config-item">
+                  <div class="wishdetail__config-label">Not-in-stock items:</div>
+                  <div class="wishdetail__config-current">
+                    Show
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1.84107 3.08008H10.1589C10.9068 3.08008 11.2808 3.98526 10.7531 4.51299L6.59413 8.67191C6.26561 9.00043 5.73439 9.00043 5.40936 8.67191L1.24694 4.51299C0.719209 3.98526 1.09316 3.08008 1.84107 3.08008Z" fill="#2F4E92"/>
+                    </svg>                      
                   </div>
-                  <div class="profilemenu-item">
-                    <a href="" class="profilemenu-link">Self-Collection at Ninja Points</a>
-                  </div>
-                  <div class="profilemenu-item">
-                    <a href="" class="profilemenu-link">Payment Modes Accepted</a>
-                  </div>
-                  <div class="profilemenu-item">
-                    <a href="" class="profilemenu-link">How We Pack Your Books</a>
-                  </div>
-                  <div class="profilemenu-item profilemenu-item_active">
-                    <a href="" class="profilemenu-link">Corporate Account</a>
-                  </div>
-                  <div class="profilemenu-item">
-                    <a href="" class="profilemenu-link">Contact Sales Team</a>
-                  </div>
-                  <div class="profilemenu-item">
-                    <a href="" class="profilemenu-link">Contact Us</a>
+                </div>
+                <div class="wishdetail__config-item">
+                  <div class="wishdetail__config-label">View per page:</div>
+                  <div class="wishdetail__config-current">
+                    20
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1.84107 3.08008H10.1589C10.9068 3.08008 11.2808 3.98526 10.7531 4.51299L6.59413 8.67191C6.26561 9.00043 5.73439 9.00043 5.40936 8.67191L1.24694 4.51299C0.719209 3.98526 1.09316 3.08008 1.84107 3.08008Z" fill="#2F4E92"/>
+                    </svg>                      
                   </div>
                 </div>
               </div>
             </div>
-            <div class="template__detail">
-              <div class="template__title">Corporate Account</div>
-              <div class="template__banner">
-                <img class="template__banner-src" src="../../assets/corporate_banner.png" />
+            <div class="wishdetail__divider"></div>
+            <div class="wishdetail__listing">
+              <div class="wishdetail__item">
+                <div class="wishdetail__item-cover">
+                  <img src="../../assets/samples/homepage/book_1.png" alt="" class="wishdetail__item-cover-img">
+                  <div class="wishdetail__item-cover-ribbon">
+                    25% OFF
+                  </div>
+                </div>
+                <div class="wishdetail__item-meta">
+                  <h3 class="wishdetail__item-title">This Is Marketing: You Can’t Be Seen Until You Learn How to See</h3>
+                  <div class="wishdetail__item-author">by <a>Godin, Seth</a></div>
+                  <div class="wishdetail__item-format">(Hardcover - English - 9781950...)</div>
+                </div>
+                <div class="wishdetail__item-action">
+                  <div class="ctabox">
+                    <div class="ctabox__header">
+                      <div class="ctabox__header-title">
+                        Available
+                      </div>
+                      <div class="ctabox__header-hint">
+                        345 copies available.<br />
+                        Usually delivered in 4-7 working days.
+                      </div>
+                    </div>
+                    <div class="ctabox__body">
+                      <div class="ctabox__pricing">
+                        <div class="ctabox__pricing-discounted">S$ 33.14</div>
+                        <div class="ctabox__pricing-ribbon">25% OFF</div>
+                      </div>
+                      <div class="ctabox__original-price">S$ 44.19</div>
+                      <div class="ctabox__description">3-DAY BOOK SALE (29-31 MARCH 2022)</div>
+                      <div class="ctabox__input">
+                        <input type="number" class="ctabox__input-field">
+                        <button class="ctabox__input-button button button_small">Add to Cart</button>
+                      </div>
+                      <button class="ctabox__add-to-list button button_text">ADD TO MY LIST</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="wishdetail__item-description">
+                  The long-awaited memoir of a trailblazer and role model who is telling her story for the first time.
+                  <br />
+                  <br />
+                  Eileen Collins was an aviation pioneer her entire career, from her crowning achievements as the first woman to command an American space mission as well as her early years as one of the Air Force's first female pilots. She was in the first class of women to earn pilot's wings at Vance Air Force Base and was their first female instructor pilot.
+                </div>
               </div>
-              <div class="template__body">
-                <h4>Local Singapore Book Distributor</h4>
-                <p>OpenTrolley Bookstore Pte. Ltd. is a leading book distribution company in Singapore with more than 15 million international titles sourced from more than 25,000 publishers worldwide. Fullfilment for most items is usually within a week.</p>
-                <br />
-                <p>Our company serves various schools, government bodies and private companies in Singapore.</p>
-                <br />
-                <p>If you intend to buy books in large quantity regularly or just for one-time purchase, contact our sales team to find out how we can help your organization with your book requirements.</p>
-                <br />
-                <p><strong>Over 15 million quality titles</strong></p>
-                <p>Widest book selection in Singapore. Save time and effort in contacting multiple suppliers and get all your books from one source</p>
-                <br />
-                <p><strong>Online catalog and ordering</strong></p>
-                <p>Browse through our vast inventory via our online catalog. If you order books regularly, you will appreciate how easy it is to place orders online via our website</p>
-                <br />
-                <p><strong>Quick and reliable delivery</strong></p>
-                <p>Majority of our titles can be fulfilled within 1 week. Local delivery is free of charge for bulk orders</p>
-                <br />
-                <p><strong>Trusted by local companies</strong></p>
-                <p>Hundreds of clients (SME to large organizations) rely on us to provide reliable book supply all year long</p>
-                <br />
-                <p><strong>Local assurance</strong></p>
-                <p>Contact our sales representative anytime during working hours Mon-Fri</p>
-                <br />
-                <p><strong>Local E-invoice via Vendors@Gov or Gebiz</strong></p>
-                <p>We can bill your school or organization via government's Vendors@Gov or Gebiz - only for government entities</p>
-                <br />
-                <p><strong>Corporate discount</strong></p>
-                <p>Enquire with us on special discount and credit term we offer our corporate clients</p>
-                <br />
-                <p><strong>Contact Us</strong></p>
-                <p>Contact our sales team by sending us an email to corporate@opentrolley.com.sg. Feel free to browse through our website in the mean time. Alternatively, you may call us at 6908-0471.</p>
+              <hr class="wishdetail__item-divider">
+              <div class="wishdetail__item">
+                <div class="wishdetail__item-cover">
+                  <img src="../../assets/samples/homepage/book_2.png" alt="" class="wishdetail__item-cover-img">
+                  <div class="wishdetail__item-cover-ribbon">
+                    25% OFF
+                  </div>
+                </div>
+                <div class="wishdetail__item-meta">
+                  <h3 class="wishdetail__item-title">What to Do When It’s Your Turn</h3>
+                  <div class="wishdetail__item-author">by <a>Godin, Seth</a></div>
+                  <div class="wishdetail__item-format">(Hardcover - English - 9781950...)</div>
+                </div>
+                <div class="wishdetail__item-action">
+                  <div class="ctabox ctabox_restocking">
+                    <div class="ctabox__header">
+                      <div class="ctabox__header-title">
+                        Restocking
+                      </div>
+                      <div class="ctabox__header-hint">
+                        Restocking items are usually fulfilled in 2-4 weeks. Cannot combine other item(s) in one order.
+                      </div>
+                    </div>
+                    <div class="ctabox__body">
+                      <div class="ctabox__pricing">
+                        <div class="ctabox__pricing-discounted">S$ 33.14</div>
+                        <div class="ctabox__pricing-ribbon">25% OFF</div>
+                      </div>
+                      <div class="ctabox__original-price">S$ 44.19</div>
+                      <div class="ctabox__description">3-DAY BOOK SALE (29-31 MARCH 2022)</div>
+                      <div class="ctabox__input">
+                        <input type="number" class="ctabox__input-field">
+                        <button class="ctabox__input-button button button_small" disabled>Buy Now</button>
+                      </div>
+                      <button class="ctabox__add-to-list button button_text">REMOVE FROM LIST</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="wishdetail__item-description">
+                  Embark on an awe-inspiring and informative journey through our Solar System and beyond in this illuminating astronomy book br br Discover how big the Universe is, why our view of the sky is constantly changing, what came before the Big Bang, and so much more.
+                  <br />
+                  <br />
+                  Inside the pages of this comprehensive guide to astronomy for beginners.
+                </div>
+              </div>
+              <hr class="wishdetail__item-divider">
+              <div class="wishdetail__item">
+                <div class="wishdetail__item-cover">
+                  <img src="../../assets/samples/homepage/book_3.png" alt="" class="wishdetail__item-cover-img">
+                  <div class="wishdetail__item-cover-ribbon">
+                    25% OFF
+                  </div>
+                </div>
+                <div class="wishdetail__item-meta">
+                  <h3 class="wishdetail__item-title">All Marketers Are Liars: The Underground Classic That Explains How Marketing Really Works</h3>
+                  <div class="wishdetail__item-author">by <a>Godin, Seth</a></div>
+                  <div class="wishdetail__item-format">(Hardcover - English - 9781950...)</div>
+                </div>
+                <div class="wishdetail__item-action">
+                  <div class="ctabox ctabox_restocking">
+                    <div class="ctabox__header">
+                      <div class="ctabox__header-title">
+                        Restocking
+                      </div>
+                      <div class="ctabox__header-hint">
+                        Restocking items are usually fulfilled in 2-4 weeks. Cannot combine other item(s) in one order.
+                      </div>
+                    </div>
+                    <div class="ctabox__body">
+                      <div class="ctabox__pricing">
+                        <div class="ctabox__pricing-discounted">S$ 33.14</div>
+                        <div class="ctabox__pricing-ribbon">25% OFF</div>
+                      </div>
+                      <div class="ctabox__original-price">S$ 44.19</div>
+                      <div class="ctabox__description">3-DAY BOOK SALE (29-31 MARCH 2022)</div>
+                      <div class="ctabox__input">
+                        <input type="number" class="ctabox__input-field">
+                        <button class="ctabox__input-button button button_small" disabled>Buy Now</button>
+                      </div>
+                      <button class="ctabox__add-to-list button button_text">REMOVE FROM LIST</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="wishdetail__item-description">
+                  Embark on an awe-inspiring and informative journey through our Solar System and beyond in this illuminating astronomy book br br Discover how big the Universe is, why our view of the sky is constantly changing, what came before the Big Bang, and so much more.
+                  <br />
+                  <br />
+                  Inside the pages of this comprehensive guide to astronomy for beginners.
+                </div>
+              </div>
+            </div>
+            <div class="wishdetail__divider"></div>
+            <div class="wishdetail__pagination">
+              <div class="pagination">
+                <div class="pagination-wrapper">
+                  <a class="pagination-item pagination-item_active">1</a>
+                  <a class="pagination-item">2</a>
+                  <a class="pagination-item">3</a>
+                  <a class="pagination-item">4</a>
+                  <a class="pagination-item">5</a>
+                  <div class="pagination-item pagination-item_separator">...</div>
+                  <a class="pagination-item">12</a>
+                  <a class="pagination-item pagination-item-next">
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8.50627 6.42617L5.09433 9.83811C4.8585 10.0739 4.47717 10.0739 4.24385 9.83811L3.67687 9.27113C3.44104 9.0353 3.44104 8.65397 3.67687 8.42065L6.09533 6.00219L3.67687 3.58372C3.44104 3.3479 3.44104 2.96656 3.67687 2.73325L4.24134 2.16124C4.47717 1.92542 4.8585 1.92542 5.09182 2.16124L8.50376 5.57319C8.7421 5.80901 8.7421 6.19035 8.50627 6.42617Z" fill="#2F4E92"/>
+                    </svg>
+                  </a>
+                  <a class="pagination-item pagination-item-last">
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6.00627 6.42617L2.59433 9.83811C2.35851 10.0739 1.97717 10.0739 1.74385 9.83811L1.17687 9.27113C0.941044 9.0353 0.941044 8.65397 1.17687 8.42065L3.59533 6.00219L1.17687 3.58372C0.941044 3.3479 0.941044 2.96656 1.17687 2.73325L1.74134 2.16124C1.97717 1.92542 2.3585 1.92542 2.59182 2.16124L6.00376 5.57319C6.2421 5.80901 6.2421 6.19035 6.00627 6.42617ZM10.8231 5.57319L7.41119 2.16124C7.17536 1.92542 6.79403 1.92542 6.56071 2.16124L5.99373 2.72823C5.7579 2.96405 5.7579 3.34539 5.99373 3.57871L8.41219 5.99717L5.99373 8.41563C5.7579 8.65146 5.7579 9.03279 5.99373 9.26611L6.56071 9.8331C6.79654 10.0689 7.17787 10.0689 7.41119 9.8331L10.8231 6.42115C11.059 6.19035 11.059 5.80901 10.8231 5.57319Z" fill="#2F4E92"/>
+                    </svg>
+                  </a>
+                </div>
               </div>
             </div>
           </div>

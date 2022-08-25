@@ -1,0 +1,133 @@
+.nowishlist {}
+
+.nowishlist__wrapper {
+  padding: 32px 16px 80px;
+}
+
+.nowishlist__menu {
+  display: none;
+}
+
+.nowishlist__detail {}
+
+.nowishlist__heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nowishlist__title {
+  font-family: 'Lora';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  margin: 0;
+}
+
+.nowishlist__body {
+  margin-top: 26px;
+}
+
+.nowishlist__description {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.nowishlist__guide {
+  margin-top: 32px;
+}
+
+.nowishlist__guide-description {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.nowishlist__guide-subtitle {
+  margin-top: 8px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.nowishlist__guide-list {
+  margin-top: 4px;
+}
+.nowishlist__guide-item {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.nowishlist__guide-item + .nowishlist__guide-item {
+  margin-top: 4px;
+}
+
+.nowishlist__guide-item a {
+  text-decoration: underline;
+}
+
+.nowishlist__cta {
+  margin-top: 40px;
+}
+
+@media screen and (min-width: 1025px) {
+  .nowishlist__wrapper {
+    display: flex;
+    gap: 40px;
+    padding: 40px 20px 80px;
+  }
+
+  .nowishlist__menu {
+    display: block;
+    width: 276px;
+    flex: 1 0 auto;
+  }
+
+  .nowishlist__detail {
+    width: 100%;
+  }
+
+  .nowishlist__title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .nowishlist__main-button {
+    display: none;
+  }
+
+  .nowishlist__body {
+    margin-top: 32px;
+  }
+
+  .nowishlist__description {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .nowishlist__guide {
+    margin-top: 32px;
+  }
+
+  .nowishlist__guide-description {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .nowishlist__guide-subtitle {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .nowishlist__guide-item {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

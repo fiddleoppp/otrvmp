@@ -1,0 +1,140 @@
+.wishgrid {}
+
+.wishgrid__wrapper {}
+
+.wishgrid__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wishgrid__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  margin: 0;
+}
+
+.wishgrid__see-all {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--color-ot-blue);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.wishgrid__see-all > svg {
+  fill: currentColor;
+}
+
+.wishgrid__date {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  margin-top: 4px;
+}
+
+.wishgrid__body {
+  margin-top: 16px;
+  gap: 16px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.wishgrid__item {
+  width: calc(50% - 8px);
+}
+
+.wishgrid__item:nth-child(-n+2) {
+  display: none;
+}
+
+.wishgrid__item-cover {
+  width: 100%;
+  padding-bottom: 100%;
+  position: relative;
+}
+
+.wishgrid__item-cover-img {
+  position: absolute;
+  height: 100%;
+  width: auto;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+
+.wishgrid__item-title {
+  margin: 12px 0 0;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+}
+
+.wishgrid__item-author {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  margin-top: 4px;
+  text-align: center;
+}
+
+.wishgrid__item-pricing {
+  text-align: center;
+}
+
+.wishgrid__item-special-price,
+.wishgrid__item-original-price:only-child {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  margin-top: 4px;
+}
+
+.wishgrid__item-special-price {
+  color: var(--color-ot-red);
+}
+
+.wishgrid__item-original-price:only-child {
+  color: var(--color-ot-blue);
+  text-decoration: none;
+}
+
+.wishgrid__item-original-price {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  margin-top: 2px;
+  text-decoration: line-through;
+}
+
+@media screen and (min-width: 1025px) {
+  .wishgrid__item:nth-child(-n+2) {
+    display: block;
+  }
+
+  .wishgrid__item {
+    width: calc(25% - 12px);
+  }
+
+  .wishgrid__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .wishgrid__item-title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .wishgrid__item-special-price,
+  .wishgrid__item-original-price:only-child {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}

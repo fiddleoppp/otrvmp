@@ -205,6 +205,11 @@ ul {
   align-items: center;
 }
 
+.button:disabled {
+  background-color: var(--color-ot-gray-80);
+  cursor: not-allowed;
+}
+
 .button_small {
   height: 32px;
   font-size: 13px;
