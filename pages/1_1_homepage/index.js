@@ -38,4 +38,11 @@ $(document).ready(function() {
       }
     ]
   });
+
+  $('.header__search-dropdown-select').select2({
+    width: 100,
+    dropdownCssClass: 'dropdown__container header__search-dropdown-container',
+    selectionCssClass: 'dropdown__selection',
+    minimumResultsForSearch: -1
+  });
 });

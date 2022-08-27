@@ -44,6 +44,10 @@
   color: var(--color-ot-blue);
 }
 
+.profile__dropdown {
+  margin-bottom: 46px;
+}
+
 .profile__title {
   font-size: var(--font-page-title-size);
   font-weight: var(--font-page-title-weight);
@@ -57,6 +61,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
 .profile__form-item + .profile__form-item {
@@ -149,6 +154,10 @@
     width: 100%;
   }
 
+  .profile__dropdown {
+    display: none;
+  }
+
   .profile__form {
     margin: 0;
     width: 100%;
@@ -161,6 +170,13 @@
 
   .profile__form-action > button {
     width: 240px;
+  }
+
+  .profile__title {
+    margin-top: 0;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
   }
 
   .profile__nav {

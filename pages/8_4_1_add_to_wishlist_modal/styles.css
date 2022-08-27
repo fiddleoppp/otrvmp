@@ -1,0 +1,70 @@
+/* CSS For wishlist modal only */
+.wishmodal__details {
+  display: flex;
+  gap: 16px;
+}
+
+.wishmodal__cover {
+  width: 84px;
+  flex: 1 0 auto;
+}
+
+.wishmodal__cover-img {
+  max-width: 100%;
+}
+
+.wishmodal__title {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 0;
+}
+
+.wishmodal__author {
+  margin-top: 4px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.wishmodal__author a {
+  text-decoration: underline;
+}
+
+.wishmodal__format {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  margin-top: 8px;
+}
+
+.wishmodal__price {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18px;
+  margin-top: 8px;
+}
+
+.wishmodal__divider {
+  width: 100%;
+  height: 1px;
+  display: block;
+  border: none;
+  background-color: var(--color-ot-gray-40);
+  margin: 24px 0;
+}
+
+@media screen and (min-width: 1025px) {
+  .wishmodal__author,
+  .wishmodal__format,
+  .wishmodal__price {
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  .wishmodal__title {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 18px;
+  }
+}

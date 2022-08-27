@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="../../components/desktop_nav/index.css">
   <link rel="stylesheet" href="../../components/footer/index.css">
   <link rel="stylesheet" href="../../components/bookslider/index.css">
+  <link rel="stylesheet" href="../../components/dropdown/index.css">
   <link rel="stylesheet" href="./styles.css">
   <script src="./index.js"></script>
 </head>
@@ -46,11 +47,15 @@
           <div class="header__search">
             <div class="header__search-bar">
               <div class="header__search-dropdown">
-                <div class="header__search-dropdown-label">All</div>
-                <div class="header__search-dropdown-icon">
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M7.48176 11.8312L1.54789 5.89727C1.26171 5.61108 1.26171 5.1471 1.54789 4.86095L2.23998 4.16886C2.52568 3.88316 2.98871 3.88261 3.27508 4.16763L7.99993 8.87035L12.7248 4.16763C13.0111 3.88261 13.4742 3.88316 13.7599 4.16886L14.4519 4.86095C14.7381 5.14713 14.7381 5.61111 14.4519 5.89727L8.51811 11.8312C8.23192 12.1173 7.76794 12.1173 7.48176 11.8312Z" fill="#2F4E92"/>
-                  </svg>
+                <div class="dropdown">
+                  <select class="header__search-dropdown-select dropdown__select">
+                    <option>All</option>
+                    <option>Title</option>
+                    <option>Author</option>
+                    <option>Keyword</option>
+                    <option>ISBN</option>
+                    <option>EAN</option>
+                  </select>
                 </div>
               </div>
               <input class="header__search-input" placeholder="Search by title, author, keyword, ISBN, EAN" />

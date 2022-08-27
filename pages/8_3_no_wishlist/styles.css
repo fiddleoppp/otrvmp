@@ -8,7 +8,9 @@
   display: none;
 }
 
-.nowishlist__detail {}
+.nowishlist__detail {
+  margin-top: 40px;
+}
 
 .nowishlist__heading {
   display: flex;
@@ -85,8 +87,13 @@
     flex: 1 0 auto;
   }
 
+  .nowishlist__profile-dropdown {
+    display: none;
+  }
+
   .nowishlist__detail {
     width: 100%;
+    margin-top: 0;
   }
 
   .nowishlist__title {

@@ -5,14 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>6_1_order_history</title>
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&family=Lora:ital,wght@0,600;0,700;1,600;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../styles/normalize.css">
   <link rel="stylesheet" href="../../styles/global.css">
   <link rel="stylesheet" href="../../components/mobile_nav/index.css">
   <link rel="stylesheet" href="../../components/desktop_nav/index.css">
   <link rel="stylesheet" href="../../components/footer/index.css">
+  <link rel="stylesheet" href="../../components/dropdown/index.css">
   <link rel="stylesheet" href="../../components/profile_menu/index.css">
   <link rel="stylesheet" href="./styles.css">
+  <script src="./index.js"></script>
 </head>
 <body>
   <div class="root">
@@ -39,11 +47,15 @@
           <div class="header__search">
             <div class="header__search-bar">
               <div class="header__search-dropdown">
-                <div class="header__search-dropdown-label">All</div>
-                <div class="header__search-dropdown-icon">
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M7.48176 11.8312L1.54789 5.89727C1.26171 5.61108 1.26171 5.1471 1.54789 4.86095L2.23998 4.16886C2.52568 3.88316 2.98871 3.88261 3.27508 4.16763L7.99993 8.87035L12.7248 4.16763C13.0111 3.88261 13.4742 3.88316 13.7599 4.16886L14.4519 4.86095C14.7381 5.14713 14.7381 5.61111 14.4519 5.89727L8.51811 11.8312C8.23192 12.1173 7.76794 12.1173 7.48176 11.8312Z" fill="#2F4E92"/>
-                  </svg>
+                <div class="dropdown">
+                  <select class="header__search-dropdown-select dropdown__select">
+                    <option>All</option>
+                    <option>Title</option>
+                    <option>Author</option>
+                    <option>Keyword</option>
+                    <option>ISBN</option>
+                    <option>EAN</option>
+                  </select>
                 </div>
               </div>
               <input class="header__search-input" placeholder="Search by title, author, keyword, ISBN, EAN" />
@@ -189,7 +201,6 @@
         <div class="orderhistory">
           <div class="orderhistory__wrapper">
             <div class="orderhistory__menu">
-              <!-- TODO: Mobile profile menu -->
               <div class="profilemenu">
                 <div class="profilemenu-label">My Account</div>
                 <div class="profilemenu-set">
@@ -209,6 +220,18 @@
                     <a href="" class="profilemenu-link">Order History</a>
                   </div>
                 </div>
+              </div>
+            </div>
+            <div class="orderhistory__dropdown">
+              <div class="dropdown dropdown_large">
+                <div class="dropdown__label">MY ACCOUNT MENU</div>
+                <select class="orderhistory__dropdown-select dropdown__select">
+                  <option>Edit Profile</option>
+                  <option>Change Password</option>
+                  <option>My Wishlist</option>
+                  <option>My Address Book</option>
+                  <option selected>Order History</option>
+                </select>
               </div>
             </div>
             <div class="orderhistory__detail">

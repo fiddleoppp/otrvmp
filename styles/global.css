@@ -386,9 +386,19 @@ ul {
   color: var(--color-ot-blue);
 }
 
-.page {}
+.jq-toast-wrap {
+  width: 100%;
+  padding: 0 16px;
+}
 
-.page__wrapper {}
+.jq-toast-single {
+  padding: 12px 32px 12px 16px;
+}
+
+.close-jq-toast-single {
+  top: 12px;
+  right: 16px;
+}
 
 @media screen and (min-width: 769px) {
   .page__wrapper {
@@ -436,6 +446,11 @@ ul {
     --font-h6-subheading-size: var(--font-desktop-h6-subheading-size);
     --font-h6-subheading-height: var(--font-desktop-h6-subheading-height);
     --font-h6-subheading-weight: var(--font-desktop-h6-subheading-weight);
+  }
+ 
+  .jq-toast-wrap {
+    width: 500px;
+    padding: 0;
   }
 }
 

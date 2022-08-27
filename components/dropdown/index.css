@@ -1,0 +1,138 @@
+.dropdown_full-width {
+  width: 100%;
+}
+
+.dropdown__label {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  margin-bottom: 8px;
+}
+
+.dropdown__select,
+.dropdown__selection {
+  position: relative;
+  width: 100%;
+  border: 1px solid var(--color-ot-gray-60) !important;
+  border-radius: 8px !important;
+  padding: 8px 28px 8px 11px;
+  height: 40px !important ;
+  background-color: var(--color-ot-white) !important;
+  -moz-appearance: none; /* Firefox */
+  -webkit-appearance: none; /* Safari and Chrome */
+  appearance: none;
+  display: flex !important;
+  align-items: center;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  outline: none;
+}
+
+.dropdown_large .dropdown__select {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px !important;
+}
+
+.dropdown__select + .dropdown__select,
+.dropdown__select + .select2-container + .dropdown__select,
+.dropdown__select + .select2-container + .dropdown__select + .select2-container {
+  margin-top: 8px;
+}
+
+.dropdown_large .dropdown__selection,
+.dropdown_large .dropdown__select {
+  padding: 16px 44px 16px 20px;
+  height: 58px !important;
+}
+
+.dropdown_large .dropdown__selection .select2-selection__rendered {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px !important;
+}
+
+.dropdown__selection .select2-selection__rendered {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px !important;
+  padding: 0 !important;
+}
+
+.dropdown__select {
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTcuNDgyIDExLjgzMkwxLjU0ODE0IDUuODk4MTJDMS4yNjE5NSA1LjYxMTkzIDEuMjYxOTUgNS4xNDc5NiAxLjU0ODE0IDQuODYxOEwyLjI0MDIzIDQuMTY5NzFDMi41MjU5MiAzLjg4NDAxIDIuOTg4OTYgMy44ODM0NiAzLjI3NTMyIDQuMTY4NDlMOC4wMDAxOCA4Ljg3MTIxTDEyLjcyNSA0LjE2ODQ5QzEzLjAxMTQgMy44ODM0NiAxMy40NzQ0IDMuODg0MDEgMTMuNzYwMSA0LjE2OTcxTDE0LjQ1MjIgNC44NjE4QzE0LjczODQgNS4xNDc5OSAxNC43Mzg0IDUuNjExOTcgMTQuNDUyMiA1Ljg5ODEyTDguNTE4MzUgMTEuODMyQzguMjMyMTcgMTIuMTE4MiA3Ljc2ODE5IDEyLjExODIgNy40ODIgMTEuODMyWiIgZmlsbD0iIzJGNEU5MiIvPgo8L3N2Zz4K');
+  background-size: 16px;
+  background-position: calc(100% - 12px) center;
+  background-repeat: no-repeat;
+}
+
+.dropdown_large .dropdown__select {
+  background-position: calc(100% - 20px) center;
+}
+
+.dropdown__selection .select2-selection__arrow {
+  content: '';
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTcuNDgyIDExLjgzMkwxLjU0ODE0IDUuODk4MTJDMS4yNjE5NSA1LjYxMTkzIDEuMjYxOTUgNS4xNDc5NiAxLjU0ODE0IDQuODYxOEwyLjI0MDIzIDQuMTY5NzFDMi41MjU5MiAzLjg4NDAxIDIuOTg4OTYgMy44ODM0NiAzLjI3NTMyIDQuMTY4NDlMOC4wMDAxOCA4Ljg3MTIxTDEyLjcyNSA0LjE2ODQ5QzEzLjAxMTQgMy44ODM0NiAxMy40NzQ0IDMuODg0MDEgMTMuNzYwMSA0LjE2OTcxTDE0LjQ1MjIgNC44NjE4QzE0LjczODQgNS4xNDc5OSAxNC43Mzg0IDUuNjExOTcgMTQuNDUyMiA1Ljg5ODEyTDguNTE4MzUgMTEuODMyQzguMjMyMTcgMTIuMTE4MiA3Ljc2ODE5IDEyLjExODIgNy40ODIgMTEuODMyWiIgZmlsbD0iIzJGNEU5MiIvPgo8L3N2Zz4K');
+  background-size: 16px;
+  top: 0;
+  bottom: 0;
+  margin: auto 12px auto 0;
+  width: 16px !important;
+  height: 16px !important;
+  background-repeat: no-repeat;
+  display: block;
+}
+
+.dropdown_large .dropdown__selection .select2-selection__arrow {
+  margin-right: 20px;
+}
+
+.dropdown__selection .select2-selection__arrow b {
+  display: none;
+}
+
+.dropdown__container {
+  border: 1px solid var(--color-ot-gray-60) !important;
+  border-radius: 6px !important;
+  margin-top: 8px;
+}
+
+.dropdown__container .select2-results__options {
+  padding: 10px 0;
+  max-height: 220px !important;
+}
+
+.dropdown__container .select2-results__option {
+  height: 30px;
+  color: var(--color-ot-blue) !important;
+  padding: 6px 11px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.dropdown__container_large .select2-results__option {
+  height: 40px;
+  padding: 10px 24px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.dropdown__container .select2-results__option.select2-results__option--selected,
+.dropdown__container .select2-results__option.select2-results__option--highlighted {
+  background-color: var(--color-ot-gray-40);
+}
+
+.dropdown__selection .select2-selection__placeholder {
+  color: var(--color-ot-gray-60) !important;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  font-family: 'Inter', sans-serif;
+}

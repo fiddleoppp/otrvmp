@@ -34,6 +34,7 @@
   width: 140px;
   color: var(--color-ot-blue);
   margin-bottom: 5px;
+  text-align: right;
 }
 
 .bookslider__arrow {
@@ -83,10 +84,20 @@
   white-space: nowrap;
   display: flex;
   padding: 0 10px;
+  overflow-x: hidden;
+}
+
+.bookslider__list.slick-initialized {
+  overflow-x: initial;
+}
+
+.bookslider__list::-webkit-scrollbar {
+  display: none;
 }
 
 .bookslider__item {
-  width: calc(50% - 30px);
+  width: calc(50% - 20px);
+  flex: 1 0 auto;
   margin: 0 10px;
 }
 
@@ -155,6 +166,11 @@
   .bookslider__wrapper {
     max-width: 774px;
     margin: 0 auto;
+  }
+
+  
+  .bookslider__item {
+    width: calc(20% - 20px);
   }
 }
 

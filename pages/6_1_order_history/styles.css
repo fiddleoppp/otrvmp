@@ -10,6 +10,7 @@
 
 .orderhistory__detail {
   width: 100%;
+  margin-top: 40px;
 }
 
 .orderhistory__title {
@@ -95,6 +96,14 @@
   
   .orderhistory__menu {
     display: block;
+  }
+
+  .orderhistory__dropdown {
+    display: none;
+  }
+
+  .orderhistory__detail {
+    margin-top: 0;
   }
 
   .orderhistory__title {
