@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="../../components/desktop_nav/index.css">
   <link rel="stylesheet" href="../../components/footer/index.css">
   <link rel="stylesheet" href="../../components/dropdown/index.css">
+  <link rel="stylesheet" href="../../components//navdrawer/index.css">
   <link rel="stylesheet" href="./styles.css">
   <script src="./index.js"></script>
 <title>Homepage</title>
@@ -332,7 +333,7 @@
     <!-- MOBILE ONLY HEADER -->
     <header class="mobile-header">
       <nav class="mobile-header__navbar">
-        <div class="mobile-header__action">
+        <div class="mobile-header__action" id="menu-drawer">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M2.71429 6.46429H21.2857C21.6802 6.46429 22 6.14451 22 5.75V3.96429C22 3.56978 21.6802 3.25 21.2857 3.25H2.71429C2.31978 3.25 2 3.56978 2 3.96429V5.75C2 6.14451 2.31978 6.46429 2.71429 6.46429ZM2.71429 13.6071H21.2857C21.6802 13.6071 22 13.2874 22 12.8929V11.1071C22 10.7126 21.6802 10.3929 21.2857 10.3929H2.71429C2.31978 10.3929 2 10.7126 2 11.1071V12.8929C2 13.2874 2.31978 13.6071 2.71429 13.6071ZM2.71429 20.75H21.2857C21.6802 20.75 22 20.4302 22 20.0357V18.25C22 17.8555 21.6802 17.5357 21.2857 17.5357H2.71429C2.31978 17.5357 2 17.8555 2 18.25V20.0357C2 20.4302 2.31978 20.75 2.71429 20.75Z" fill="#2F4E92"/>
           </svg>
@@ -366,6 +367,102 @@
       </div>
       <div class="mobile-header__promo">
         Feb 2022 promo up to 20% off
+      </div>
+
+      <div class="navdrawer">
+        <header class="navdrawer__header">
+          <div class="navdrawer__header-action" id="drawer-close">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9117 9.63879L5.77503 3.50212C5.49607 3.22316 5.04384 3.22316 4.76488 3.50212L3.50219 4.76481C3.22323 5.04377 3.22323 5.496 3.50219 5.77496L9.63887 11.9116L3.50219 18.0483C3.22323 18.3273 3.22323 18.7795 3.50219 19.0585L4.76488 20.3212C5.04384 20.6001 5.49607 20.6001 5.77503 20.3212L11.9117 14.1845L18.0484 20.3212C18.3273 20.6001 18.7796 20.6001 19.0585 20.3212L20.3212 19.0585C20.6002 18.7795 20.6002 18.3273 20.3212 18.0483L14.1846 11.9116L20.3212 5.77496C20.6002 5.496 20.6002 5.04377 20.3212 4.76481L19.0585 3.50211C18.7796 3.22316 18.3273 3.22316 18.0484 3.50211L11.9117 9.63879Z" fill="#2F4E92"/>
+            </svg>
+            <div class="navdrawer__header-action-label">
+              EXIT
+            </div>
+          </div>
+          <div class="navdrawer__header-logo">
+            <img class="navdrawer__header-logo-img" src="../../assets/opentrolley_logo.png" />
+          </div>
+          <div class="navdrawer__header-action" id="drawer-search">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M21.7266 19.2913L17.8324 15.3971C17.6567 15.2214 17.4184 15.1237 17.1684 15.1237H16.5318C17.6098 13.7449 18.2504 12.0107 18.2504 10.1242C18.2504 5.63636 14.614 2 10.1262 2C5.63832 2 2.00195 5.63636 2.00195 10.1242C2.00195 14.612 5.63832 18.2484 10.1262 18.2484C12.0127 18.2484 13.7469 17.6079 15.1257 16.5298V17.1665C15.1257 17.4165 15.2233 17.6547 15.3991 17.8305L19.2932 21.7246C19.6604 22.0918 20.2541 22.0918 20.6173 21.7246L21.7227 20.6193C22.0898 20.2521 22.0898 19.6584 21.7266 19.2913ZM10.1262 15.1237C7.36471 15.1237 5.12665 12.8896 5.12665 10.1242C5.12665 7.36276 7.36081 5.12469 10.1262 5.12469C12.8876 5.12469 15.1257 7.35885 15.1257 10.1242C15.1257 12.8857 12.8915 15.1237 10.1262 15.1237Z" fill="#2F4E92"/>
+            </svg>
+            <div class="navdrawer__header-action-label">
+              SEARCH
+            </div>
+          </div>
+        </header>
+        <div class="navdrawer__body">
+          <div class="navdrawer__item" data-id="book-categories">
+            <div class="navdrawer__item-button">
+              <div class="navdrawer__item-label">Book Categories</div>
+              <div class="navdrawer__item-icon">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11.831 8.51816L5.89714 14.452C5.61096 14.7382 5.14698 14.7382 4.86082 14.452L4.16873 13.7599C3.88304 13.4742 3.88249 13.0112 4.16751 12.7248L8.87023 7.99999L4.16751 3.27516C3.88249 2.9888 3.88304 2.52576 4.16873 2.24007L4.86082 1.54797C5.14701 1.26179 5.61099 1.26179 5.89714 1.54797L11.831 7.48184C12.1172 7.768 12.1172 8.23198 11.831 8.51816Z" fill="#74A4BF"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="navdrawer__item" data-id="bestsellers">
+            <div class="navdrawer__item-button">
+              <div class="navdrawer__item-label">Bestsellers</div>
+              <div class="navdrawer__item-icon">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11.831 8.51816L5.89714 14.452C5.61096 14.7382 5.14698 14.7382 4.86082 14.452L4.16873 13.7599C3.88304 13.4742 3.88249 13.0112 4.16751 12.7248L8.87023 7.99999L4.16751 3.27516C3.88249 2.9888 3.88304 2.52576 4.16873 2.24007L4.86082 1.54797C5.14701 1.26179 5.61099 1.26179 5.89714 1.54797L11.831 7.48184C12.1172 7.768 12.1172 8.23198 11.831 8.51816Z" fill="#74A4BF"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="navdrawer__item" data-id="new-arrivals">
+            <div class="navdrawer__item-button">
+              <div class="navdrawer__item-label">New Arrivals</div>
+              <div class="navdrawer__item-icon">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11.831 8.51816L5.89714 14.452C5.61096 14.7382 5.14698 14.7382 4.86082 14.452L4.16873 13.7599C3.88304 13.4742 3.88249 13.0112 4.16751 12.7248L8.87023 7.99999L4.16751 3.27516C3.88249 2.9888 3.88304 2.52576 4.16873 2.24007L4.86082 1.54797C5.14701 1.26179 5.61099 1.26179 5.89714 1.54797L11.831 7.48184C12.1172 7.768 12.1172 8.23198 11.831 8.51816Z" fill="#74A4BF"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="navdrawer__item" data-id="fiction">
+            <div class="navdrawer__item-button">
+              <div class="navdrawer__item-label">Fiction</div>
+              <div class="navdrawer__item-icon">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11.831 8.51816L5.89714 14.452C5.61096 14.7382 5.14698 14.7382 4.86082 14.452L4.16873 13.7599C3.88304 13.4742 3.88249 13.0112 4.16751 12.7248L8.87023 7.99999L4.16751 3.27516C3.88249 2.9888 3.88304 2.52576 4.16873 2.24007L4.86082 1.54797C5.14701 1.26179 5.61099 1.26179 5.89714 1.54797L11.831 7.48184C12.1172 7.768 12.1172 8.23198 11.831 8.51816Z" fill="#74A4BF"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="navdrawer__item" data-id="self-help">
+            <div class="navdrawer__item-button">
+              <div class="navdrawer__item-label">Self-help</div>
+              <div class="navdrawer__item-icon">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11.831 8.51816L5.89714 14.452C5.61096 14.7382 5.14698 14.7382 4.86082 14.452L4.16873 13.7599C3.88304 13.4742 3.88249 13.0112 4.16751 12.7248L8.87023 7.99999L4.16751 3.27516C3.88249 2.9888 3.88304 2.52576 4.16873 2.24007L4.86082 1.54797C5.14701 1.26179 5.61099 1.26179 5.89714 1.54797L11.831 7.48184C12.1172 7.768 12.1172 8.23198 11.831 8.51816Z" fill="#74A4BF"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="navdrawer__item" data-id="information">
+            <div class="navdrawer__item-button">
+              <div class="navdrawer__item-label">Information</div>
+              <div class="navdrawer__item-icon">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11.831 8.51816L5.89714 14.452C5.61096 14.7382 5.14698 14.7382 4.86082 14.452L4.16873 13.7599C3.88304 13.4742 3.88249 13.0112 4.16751 12.7248L8.87023 7.99999L4.16751 3.27516C3.88249 2.9888 3.88304 2.52576 4.16873 2.24007L4.86082 1.54797C5.14701 1.26179 5.61099 1.26179 5.89714 1.54797L11.831 7.48184C12.1172 7.768 12.1172 8.23198 11.831 8.51816Z" fill="#74A4BF"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="navdrawer__searchbar">
+          <input class="navdrawer__searchbar-input" placeholder="Search by title, author, keyword, ISBN, EAN" />
+          <button class="navdrawer__searchbar-button">
+            <div class="navdrawer__searchbar-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21.7263 19.2913L17.8322 15.3971C17.6564 15.2214 17.4182 15.1237 17.1682 15.1237H16.5315C17.6096 13.7449 18.2501 12.0107 18.2501 10.1242C18.2501 5.63636 14.6138 2 10.1259 2C5.63807 2 2.00171 5.63636 2.00171 10.1242C2.00171 14.612 5.63807 18.2484 10.1259 18.2484C12.0125 18.2484 13.7467 17.6079 15.1254 16.5298V17.1665C15.1254 17.4165 15.2231 17.6547 15.3988 17.8305L19.293 21.7246C19.6601 22.0918 20.2538 22.0918 20.6171 21.7246L21.7224 20.6193C22.0896 20.2521 22.0896 19.6584 21.7263 19.2913ZM10.1259 15.1237C7.36447 15.1237 5.1264 12.8896 5.1264 10.1242C5.1264 7.36276 7.36056 5.12469 10.1259 5.12469C12.8874 5.12469 15.1254 7.35885 15.1254 10.1242C15.1254 12.8857 12.8913 15.1237 10.1259 15.1237Z" fill="white"/>
+              </svg>
+            </div>
+          </button>
+        </div>
       </div>
     </header>
     <!-- Top featured section -->

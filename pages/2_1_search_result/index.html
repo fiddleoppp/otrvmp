@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Search Result Page</title>
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&family=Lora:ital,wght@0,600;0,700;1,600;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../styles/normalize.css">
   <link rel="stylesheet" href="../../styles/global.css">
@@ -13,7 +19,9 @@
   <link rel="stylesheet" href="../../components/footer/index.css">
   <link rel="stylesheet" href="../../components/filterbox/index.css">
   <link rel="stylesheet" href="../../components/dropdown/index.css">
+  <link rel="stylesheet" href="../../components/menu/index.css">
   <link rel="stylesheet" href="./styles.css">
+  <script src="./index.js"></script>
 </head>
 <body>
   <div class="root">
@@ -680,6 +688,7 @@
                 Displaying <strong>1-20</strong> from <strong>2000</strong> results
               </div>
               <div class="srp__filter">
+                
                 <button class="srp__filter-button button button_ghost button_small">
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M14.2502 11.3332H5.50016V10.9165C5.50016 10.6873 5.31266 10.4998 5.0835 10.4998H4.25016C4.021 10.4998 3.8335 10.6873 3.8335 10.9165V11.3332H1.75016C1.521 11.3332 1.3335 11.5207 1.3335 11.7498V12.5832C1.3335 12.8123 1.521 12.9998 1.75016 12.9998H3.8335V13.4165C3.8335 13.6457 4.021 13.8332 4.25016 13.8332H5.0835C5.31266 13.8332 5.50016 13.6457 5.50016 13.4165V12.9998H14.2502C14.4793 12.9998 14.6668 12.8123 14.6668 12.5832V11.7498C14.6668 11.5207 14.4793 11.3332 14.2502 11.3332ZM14.2502 7.1665H12.1668V6.74984C12.1668 6.52067 11.9793 6.33317 11.7502 6.33317H10.9168C10.6877 6.33317 10.5002 6.52067 10.5002 6.74984V7.1665H1.75016C1.521 7.1665 1.3335 7.354 1.3335 7.58317V8.4165C1.3335 8.64567 1.521 8.83317 1.75016 8.83317H10.5002V9.24984C10.5002 9.479 10.6877 9.6665 10.9168 9.6665H11.7502C11.9793 9.6665 12.1668 9.479 12.1668 9.24984V8.83317H14.2502C14.4793 8.83317 14.6668 8.64567 14.6668 8.4165V7.58317C14.6668 7.354 14.4793 7.1665 14.2502 7.1665ZM14.2502 2.99984H8.8335V2.58317C8.8335 2.354 8.646 2.1665 8.41683 2.1665H7.5835C7.35433 2.1665 7.16683 2.354 7.16683 2.58317V2.99984H1.75016C1.521 2.99984 1.3335 3.18734 1.3335 3.4165V4.24984C1.3335 4.479 1.521 4.6665 1.75016 4.6665H7.16683V5.08317C7.16683 5.31234 7.35433 5.49984 7.5835 5.49984H8.41683C8.646 5.49984 8.8335 5.31234 8.8335 5.08317V4.6665H14.2502C14.4793 4.6665 14.6668 4.479 14.6668 4.24984V3.4165C14.6668 3.18734 14.4793 2.99984 14.2502 2.99984Z" fill="#2F4E92"/>
@@ -694,6 +703,14 @@
                       <path d="M1.84107 3.08105H10.1589C10.9068 3.08105 11.2808 3.98623 10.7531 4.51396L6.59413 8.67289C6.26561 9.00141 5.73439 9.00141 5.40936 8.67289L1.24694 4.51396C0.719209 3.98623 1.09316 3.08105 1.84107 3.08105Z" fill="#2F4E92"/>
                     </svg>
                   </div>
+                  <div class="srp__filter-item-dropdown">
+                    <div class="menu">
+                      <div class="menu__wrapper">
+                        <div class="menu__item" data-value="newest" data-label="Newest">Newest</div>
+                        <div class="menu__item" data-value="oldest" data-label="Oldest">Oldest</div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div class="srp__filter-item">
                   <div class="srp__filter-item-label">Not-in-stock items:</div>
@@ -703,6 +720,14 @@
                       <path d="M1.84107 3.08105H10.1589C10.9068 3.08105 11.2808 3.98623 10.7531 4.51396L6.59413 8.67289C6.26561 9.00141 5.73439 9.00141 5.40936 8.67289L1.24694 4.51396C0.719209 3.98623 1.09316 3.08105 1.84107 3.08105Z" fill="#2F4E92"/>
                     </svg>
                   </div>
+                  <div class="srp__filter-item-dropdown">
+                    <div class="menu">
+                      <div class="menu__wrapper">
+                        <div class="menu__item" data-value="newest" data-label="Newest">Newest</div>
+                        <div class="menu__item" data-value="oldest" data-label="Oldest">Oldest</div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div class="srp__filter-item">
                   <div class="srp__filter-item-label">View per page:</div>
@@ -711,6 +736,14 @@
                     <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M1.84107 3.08105H10.1589C10.9068 3.08105 11.2808 3.98623 10.7531 4.51396L6.59413 8.67289C6.26561 9.00141 5.73439 9.00141 5.40936 8.67289L1.24694 4.51396C0.719209 3.98623 1.09316 3.08105 1.84107 3.08105Z" fill="#2F4E92"/>
                     </svg>
+                  </div>
+                  <div class="srp__filter-item-dropdown">
+                    <div class="menu">
+                      <div class="menu__wrapper">
+                        <div class="menu__item" data-value="newest" data-label="Newest">Newest</div>
+                        <div class="menu__item" data-value="oldest" data-label="Oldest">Oldest</div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>

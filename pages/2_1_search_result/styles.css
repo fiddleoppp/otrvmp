@@ -36,9 +36,11 @@
 
 .srp__filter {
   margin-top: 16px;
-  padding: 0 16px;
   overflow-x: scroll;
   white-space: nowrap;
+  padding: 0 16px;
+  padding-bottom: 150px;
+  margin-bottom: -150px;
 }
 
 .srp__filter::-webkit-scrollbar {
@@ -48,7 +50,8 @@
 .srp__filter-button,
 .srp__filter-item {
   vertical-align: middle;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
 }
 
 .srp__filter-button {
@@ -61,6 +64,7 @@
   display: inline-flex;
   justify-content: flex-start;
   gap: 8px;
+  position: relative;
 }
 
 .srp__filter-item-label {
@@ -79,6 +83,19 @@
   justify-content: flex-start;
   align-items: center;
   gap: 5px;
+  position: relative;
+}
+
+.srp__filter-item-dropdown {
+  display: none;
+  position: absolute;
+  right: -12px;
+  top: 24px;
+  z-index: 1000;
+}
+
+.srp__filter-item_open .srp__filter-item-dropdown {
+  display: block;
 }
 
 .srp__divider-container {
@@ -385,6 +402,10 @@
     margin: 0 auto;
     padding: 40px 20px;
     gap: 40px;
+  }
+
+  .srp__filter {
+    overflow-x: initial;
   }
 
   .srp__filter-item {

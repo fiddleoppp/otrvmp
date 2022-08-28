@@ -54,6 +54,8 @@
   gap: 40px;
   overflow-x: scroll;
   white-space: nowrap;
+  padding-bottom: 150px;
+  margin-bottom: -150px;
 }
 
 .wishdetail__config::-webkit-scrollbar {
@@ -63,6 +65,7 @@
 .wishdetail__config-item {
   display: flex;
   gap: 8px;
+  position: relative;
 }
 
 .wishdetail__config-item:first-child {
@@ -88,6 +91,18 @@
   font-size: 13px;
   line-height: 18px;
   color: var(--color-ot-blue);
+}
+
+.wishdetail__config-dropdown {
+  display: none;
+  position: absolute;
+  right: -12px;
+  top: 24px;
+  z-index: 1000;
+}
+
+.wishdetail__config-item_open .wishdetail__config-dropdown {
+  display: block;
 }
 
 .wishdetail__divider {
@@ -227,6 +242,7 @@
 
   .wishdetail__config {
     margin-top: 0;
+    overflow-x: initial;
   }
 
   .wishdetail__config-item:first-child {

@@ -1,0 +1,220 @@
+.navdrawer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-ot-white);
+  z-index: 10000;
+  transition: .2s ease-in-out;
+  transform: translateX(-100%);
+}
+
+.navdrawer_active {
+  transform: translateX(0);
+}
+
+.navdrawer__header {
+  height: 60px;
+  background-color: var(--color-ot-white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #EAEAEA;
+}
+
+.navdrawer__header-logo {
+  height: 30px;
+}
+
+.navdrawer__header-logo-img {
+  height: 100%;
+  width: auto;
+}
+
+.navdrawer__header-action {
+  cursor: pointer;
+  flex: 0 1 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 72px;
+  height: 100%;
+}
+
+.navdrawer__header-action_active {
+  background-color: var(--color-ot-blue);
+}
+
+.navdrawer__header-action-label {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  color: var(--color-ot-blue);
+}
+
+.navdrawer__header-action_active .navdrawer__header-action-label {
+  color: var(--color-ot-white);
+}
+
+.navdrawer__header-action_active > svg > path {
+  fill: var(--color-ot-white);
+}
+
+.navdrawer__body {
+  position: relative;
+  height: calc(100vh - 60px);
+  background-color: var(--color-ot-gray-20);
+}
+
+.navdrawer_search .navdrawer__body {
+  display: none;
+}
+
+.navdrawer__item {
+  padding: 0 16px;
+  cursor: pointer;
+}
+
+.navdrawer__item_active {
+  cursor: initial;
+}
+
+.navdrawer__item-button {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--color-ot-gray-40);
+}
+
+.navdrawer__item-label {
+  width: 100%;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.navdrawer__item-icon {
+  flex: 1 0 auto;
+  width: 16px;
+}
+
+.navdrawer__subnav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 60px);
+  transform: translateX(100%);
+  background-color: var(--color-ot-gray-20);
+  z-index: 10000;
+  transition: all .2s ease-in-out;
+}
+
+.navdrawer__subnav_active {
+  transform: translateX(0);
+}
+
+.navdrawer__subnav-wrapper {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.navdrawer__subnav-head {
+  padding: 0 16px;
+  cursor: pointer;
+}
+
+.navdrawer__subnav-head-wrapper{
+  padding: 20px 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 6px;
+  border-bottom: 1px solid var(--color-ot-gray-40);
+}
+
+.navdrawer__subnav-head-label {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--color-ot-blue);
+}
+
+.navdrawer__subnav-item {
+  display: block;
+  padding: 0 16px;
+  cursor: pointer;
+}
+
+.navdrawer__subnav-item-wrapper {
+  padding: 20px 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 6px;
+  border-bottom: 1px solid var(--color-ot-gray-40);
+}
+
+.navdrawer__subnav-item-label {
+  width: 100%;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--color-ot-black);
+}
+
+.navdrawer__subnav-item-wrapper > svg {
+  flex: 1 0 auto;
+}
+
+.navdrawer__searchbar {
+  display: none;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 16px;
+}
+
+.navdrawer_search .navdrawer__searchbar {
+  display: flex;
+}
+
+.navdrawer__searchbar-input {
+  width: 100%;
+  height: 40px;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border: 1px solid var(--color-ot-gray-60);
+  border-right: none;
+  outline: none;
+  padding: 11px 16px;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+.navdrawer__searchbar-input::placeholder {
+  color: var(--color-ot-gray-80);
+}
+
+.navdrawer__searchbar-button {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 0 auto;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border: none;
+  background-color: var(--color-ot-blue);
+  outline: none;
+  cursor: pointer;
+}
+
+.navdrawer__searchbar-icon {
+  width: 24px;
+  height: 24px;
+}

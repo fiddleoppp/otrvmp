@@ -23,7 +23,7 @@ $(document).ready(function() {
   $('.wishmodal__dropdown-select').select2({
     width: '100%',
     placeholder: 'Select wishlist',
-    dropdownCssClass: 'dropdown__container dropdown__container_large',
+    dropdownCssClass: 'dropdown__container',
     selectionCssClass: 'dropdown__selection',
     minimumResultsForSearch: -1
   });
