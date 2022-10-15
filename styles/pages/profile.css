@@ -189,6 +189,11 @@
     gap: 16px;
   }
 
+  .profile__address-recipient {
+    font-size: 18px;
+    line-height: 27px;
+  }  
+
   .profile__address-info {
     width: 100%;
   }

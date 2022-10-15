@@ -197,12 +197,16 @@ ul {
   font-size: 16px;
   font-weight: 600;
   line-height: 20px;
-  border-radius: 8px;
+  border-radius: 6px;
   padding: 0 16px;
   display: flex;
   gap: 5px;
   justify-content: center;
   align-items: center;
+}
+
+.button:hover {
+  background-color: var(--color-ot-gray-80);
 }
 
 .button:disabled {
@@ -422,6 +426,10 @@ ul {
     display: block;
   }
 
+  .root {
+    padding-top: 180px;
+  }
+
   :root {
     --font-page-title-size: var(--font-desktop-page-title-size);
     --font-page-title-height: var(--font-desktop-page-title-height);
@@ -457,6 +465,16 @@ ul {
 @media screen and (min-width: 1025px) {
   .page__wrapper {
     max-width: initial;
+  }
+
+  .jq-toast-single {
+    font-size: 16px;
+    line-height: 20px;
+    border-radius: 8px;
+  }
+
+  .close-jq-toast-single {
+    font-size: 18px;
   }
 }
 

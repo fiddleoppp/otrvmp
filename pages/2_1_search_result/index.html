@@ -18,7 +18,9 @@
   <link rel="stylesheet" href="../../components/desktop_nav/index.css">
   <link rel="stylesheet" href="../../components/footer/index.css">
   <link rel="stylesheet" href="../../components/filterbox/index.css">
+  <link rel="stylesheet" href="../../components/filtermodal/index.css">
   <link rel="stylesheet" href="../../components/dropdown/index.css">
+  <link rel="stylesheet" href="../../components/pagination/index.css">
   <link rel="stylesheet" href="../../components/menu/index.css">
   <link rel="stylesheet" href="./styles.css">
   <script src="./index.js"></script>
@@ -379,15 +381,15 @@
           </div>
           <div class="filterbox__body">
             <!-- Filter Group: Category -->
-            <div class="filterbox__group">
-              <div class="filterbox__group-header">
+            <details class="filterbox__group" open="true">
+              <summary class="filterbox__group-header">
                 <div class="filterbox__group-header-label">
                   Category
                 </div>
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M8.51832 4.16871L14.4522 10.1026C14.7384 10.3888 14.7384 10.8527 14.4522 11.1389L13.7601 11.831C13.4744 12.1167 13.0114 12.1172 12.725 11.8322L8.00015 7.12953L3.27532 11.8322C2.98896 12.1173 2.52592 12.1167 2.24023 11.831L1.54814 11.1389C1.26195 10.8527 1.26195 10.3888 1.54814 10.1026L7.482 4.16874C7.76816 3.88256 8.23214 3.88256 8.51832 4.16871Z" fill="#2F4E92"/>
                 </svg>
-              </div>
+              </summary>
               <div class="filterbox__group-body">
                 <div class="filterbox__group-item">
                   <label class="checkbox checkbox_linkable">
@@ -424,21 +426,21 @@
                     <span class="checkbox__label">Art (47)</span>
                   </label>
                 </div>
+                <div class="filterbox__group-seemore">
+                  See more
+                </div>
               </div>
-              <div class="filterbox__group-seemore">
-                See more
-              </div>
-            </div>
+            </details>
             <!-- Filter Group: Price -->
-            <div class="filterbox__group filterbox__group_range">
-              <div class="filterbox__group-header">
+            <details class="filterbox__group filterbox__group_range" open>
+              <summary class="filterbox__group-header">
                 <div class="filterbox__group-header-label">
                   Price
                 </div>
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M8.51832 4.16871L14.4522 10.1026C14.7384 10.3888 14.7384 10.8527 14.4522 11.1389L13.7601 11.831C13.4744 12.1167 13.0114 12.1172 12.725 11.8322L8.00015 7.12953L3.27532 11.8322C2.98896 12.1173 2.52592 12.1167 2.24023 11.831L1.54814 11.1389C1.26195 10.8527 1.26195 10.3888 1.54814 10.1026L7.482 4.16874C7.76816 3.88256 8.23214 3.88256 8.51832 4.16871Z" fill="#2F4E92"/>
                 </svg>
-              </div>
+              </summary>
               <div class="filterbox__group-body">
                 <div class="filterbox__group-item">
                   <div class="textfield textfield_required">
@@ -456,17 +458,17 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </details>
             <!-- Filter Group: Binding -->
-            <div class="filterbox__group">
-              <div class="filterbox__group-header">
+            <details class="filterbox__group" open>
+              <summary class="filterbox__group-header">
                 <div class="filterbox__group-header-label">
                   Binding
                 </div>
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M8.51832 4.16871L14.4522 10.1026C14.7384 10.3888 14.7384 10.8527 14.4522 11.1389L13.7601 11.831C13.4744 12.1167 13.0114 12.1172 12.725 11.8322L8.00015 7.12953L3.27532 11.8322C2.98896 12.1173 2.52592 12.1167 2.24023 11.831L1.54814 11.1389C1.26195 10.8527 1.26195 10.3888 1.54814 10.1026L7.482 4.16874C7.76816 3.88256 8.23214 3.88256 8.51832 4.16871Z" fill="#2F4E92"/>
                 </svg>
-              </div>
+              </summary>
               <div class="filterbox__group-body">
                 <div class="filterbox__group-item">
                   <label class="checkbox checkbox_linkable">
@@ -503,21 +505,21 @@
                     <span class="checkbox__label">Boxed Set (26)</span>
                   </label>
                 </div>
+                <div class="filterbox__group-seemore">
+                  See more
+                </div>
               </div>
-              <div class="filterbox__group-seemore">
-                See more
-              </div>
-            </div>
+            </details>
             <!-- Filter Group: Language -->
-            <div class="filterbox__group">
-              <div class="filterbox__group-header">
+            <details class="filterbox__group" open>
+              <summary class="filterbox__group-header">
                 <div class="filterbox__group-header-label">
                   Language
                 </div>
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M8.51832 4.16871L14.4522 10.1026C14.7384 10.3888 14.7384 10.8527 14.4522 11.1389L13.7601 11.831C13.4744 12.1167 13.0114 12.1172 12.725 11.8322L8.00015 7.12953L3.27532 11.8322C2.98896 12.1173 2.52592 12.1167 2.24023 11.831L1.54814 11.1389C1.26195 10.8527 1.26195 10.3888 1.54814 10.1026L7.482 4.16874C7.76816 3.88256 8.23214 3.88256 8.51832 4.16871Z" fill="#2F4E92"/>
                 </svg>
-              </div>
+              </summary>
               <div class="filterbox__group-body">
                 <div class="filterbox__group-item">
                   <label class="checkbox checkbox_linkable">
@@ -554,21 +556,21 @@
                     <span class="checkbox__label">Korean (6)</span>
                   </label>
                 </div>
+                <div class="filterbox__group-seemore">
+                  See more
+                </div>
               </div>
-              <div class="filterbox__group-seemore">
-                See more
-              </div>
-            </div>
+            </details>
             <!-- Filter Group: Publication Year -->
-            <div class="filterbox__group filterbox__group_range">
-              <div class="filterbox__group-header">
+            <details class="filterbox__group filterbox__group_range" open>
+              <summary class="filterbox__group-header">
                 <div class="filterbox__group-header-label">
                   Price
                 </div>
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M8.51832 4.16871L14.4522 10.1026C14.7384 10.3888 14.7384 10.8527 14.4522 11.1389L13.7601 11.831C13.4744 12.1167 13.0114 12.1172 12.725 11.8322L8.00015 7.12953L3.27532 11.8322C2.98896 12.1173 2.52592 12.1167 2.24023 11.831L1.54814 11.1389C1.26195 10.8527 1.26195 10.3888 1.54814 10.1026L7.482 4.16874C7.76816 3.88256 8.23214 3.88256 8.51832 4.16871Z" fill="#2F4E92"/>
                 </svg>
-              </div>
+              </summary>
               <div class="filterbox__group-body">
                 <div class="filterbox__group-item">
                   <div class="textfield textfield_required">
@@ -586,17 +588,17 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </details>
             <!-- Filter Group: Age -->
-            <div class="filterbox__group filterbox__group_range">
-              <div class="filterbox__group-header">
+            <details class="filterbox__group filterbox__group_range" open>
+              <summary class="filterbox__group-header">
                 <div class="filterbox__group-header-label">
-                  Price
+                  Age
                 </div>
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M8.51832 4.16871L14.4522 10.1026C14.7384 10.3888 14.7384 10.8527 14.4522 11.1389L13.7601 11.831C13.4744 12.1167 13.0114 12.1172 12.725 11.8322L8.00015 7.12953L3.27532 11.8322C2.98896 12.1173 2.52592 12.1167 2.24023 11.831L1.54814 11.1389C1.26195 10.8527 1.26195 10.3888 1.54814 10.1026L7.482 4.16874C7.76816 3.88256 8.23214 3.88256 8.51832 4.16871Z" fill="#2F4E92"/>
                 </svg>
-              </div>
+              </summary>
               <div class="filterbox__group-body">
                 <div class="filterbox__group-item">
                   <div class="textfield textfield_required">
@@ -614,17 +616,17 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </details>
             <!-- Filter Group: Grade -->
-            <div class="filterbox__group filterbox__group_range">
-              <div class="filterbox__group-header">
+            <details class="filterbox__group filterbox__group_range" open>
+              <summary class="filterbox__group-header">
                 <div class="filterbox__group-header-label">
                   Grade
                 </div>
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M8.51832 4.16871L14.4522 10.1026C14.7384 10.3888 14.7384 10.8527 14.4522 11.1389L13.7601 11.831C13.4744 12.1167 13.0114 12.1172 12.725 11.8322L8.00015 7.12953L3.27532 11.8322C2.98896 12.1173 2.52592 12.1167 2.24023 11.831L1.54814 11.1389C1.26195 10.8527 1.26195 10.3888 1.54814 10.1026L7.482 4.16874C7.76816 3.88256 8.23214 3.88256 8.51832 4.16871Z" fill="#2F4E92"/>
                 </svg>
-              </div>
+              </summary>
               <div class="filterbox__group-body">
                 <div class="filterbox__group-item">
                   <div class="textfield textfield_required">
@@ -642,17 +644,17 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </details>
             <!-- Filter Group: Lexile Level -->
-            <div class="filterbox__group filterbox__group_range">
-              <div class="filterbox__group-header">
+            <details class="filterbox__group filterbox__group_range" open>
+              <summary class="filterbox__group-header">
                 <div class="filterbox__group-header-label">
                   Lexile Level
                 </div>
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M8.51832 4.16871L14.4522 10.1026C14.7384 10.3888 14.7384 10.8527 14.4522 11.1389L13.7601 11.831C13.4744 12.1167 13.0114 12.1172 12.725 11.8322L8.00015 7.12953L3.27532 11.8322C2.98896 12.1173 2.52592 12.1167 2.24023 11.831L1.54814 11.1389C1.26195 10.8527 1.26195 10.3888 1.54814 10.1026L7.482 4.16874C7.76816 3.88256 8.23214 3.88256 8.51832 4.16871Z" fill="#2F4E92"/>
                 </svg>
-              </div>
+              </summary>
               <div class="filterbox__group-body">
                 <div class="filterbox__group-item">
                   <div class="textfield textfield_required">
@@ -670,7 +672,7 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </details>
           </div>
           <div class="filterbox__footer">
             <button class="button button_small">Apply</button>
@@ -685,71 +687,67 @@
           <!-- Number of displays based on inputs -->
           <div class="srp__displayer-container">
             <div class="srp__displayer">
-                Displaying <strong>1-20</strong> from <strong>2000</strong> results
-              </div>
-              <div class="srp__filter">
-                
-                <button class="srp__filter-button button button_ghost button_small">
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M14.2502 11.3332H5.50016V10.9165C5.50016 10.6873 5.31266 10.4998 5.0835 10.4998H4.25016C4.021 10.4998 3.8335 10.6873 3.8335 10.9165V11.3332H1.75016C1.521 11.3332 1.3335 11.5207 1.3335 11.7498V12.5832C1.3335 12.8123 1.521 12.9998 1.75016 12.9998H3.8335V13.4165C3.8335 13.6457 4.021 13.8332 4.25016 13.8332H5.0835C5.31266 13.8332 5.50016 13.6457 5.50016 13.4165V12.9998H14.2502C14.4793 12.9998 14.6668 12.8123 14.6668 12.5832V11.7498C14.6668 11.5207 14.4793 11.3332 14.2502 11.3332ZM14.2502 7.1665H12.1668V6.74984C12.1668 6.52067 11.9793 6.33317 11.7502 6.33317H10.9168C10.6877 6.33317 10.5002 6.52067 10.5002 6.74984V7.1665H1.75016C1.521 7.1665 1.3335 7.354 1.3335 7.58317V8.4165C1.3335 8.64567 1.521 8.83317 1.75016 8.83317H10.5002V9.24984C10.5002 9.479 10.6877 9.6665 10.9168 9.6665H11.7502C11.9793 9.6665 12.1668 9.479 12.1668 9.24984V8.83317H14.2502C14.4793 8.83317 14.6668 8.64567 14.6668 8.4165V7.58317C14.6668 7.354 14.4793 7.1665 14.2502 7.1665ZM14.2502 2.99984H8.8335V2.58317C8.8335 2.354 8.646 2.1665 8.41683 2.1665H7.5835C7.35433 2.1665 7.16683 2.354 7.16683 2.58317V2.99984H1.75016C1.521 2.99984 1.3335 3.18734 1.3335 3.4165V4.24984C1.3335 4.479 1.521 4.6665 1.75016 4.6665H7.16683V5.08317C7.16683 5.31234 7.35433 5.49984 7.5835 5.49984H8.41683C8.646 5.49984 8.8335 5.31234 8.8335 5.08317V4.6665H14.2502C14.4793 4.6665 14.6668 4.479 14.6668 4.24984V3.4165C14.6668 3.18734 14.4793 2.99984 14.2502 2.99984Z" fill="#2F4E92"/>
-                  </svg>                
-                  Filter
-                </button>
-                <div class="srp__filter-item">
-                  <div class="srp__filter-item-label">Sort by:</div>
-                  <div class="srp__filter-item-value">
-                    Most Popular
-                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1.84107 3.08105H10.1589C10.9068 3.08105 11.2808 3.98623 10.7531 4.51396L6.59413 8.67289C6.26561 9.00141 5.73439 9.00141 5.40936 8.67289L1.24694 4.51396C0.719209 3.98623 1.09316 3.08105 1.84107 3.08105Z" fill="#2F4E92"/>
-                    </svg>
-                  </div>
-                  <div class="srp__filter-item-dropdown">
-                    <div class="menu">
-                      <div class="menu__wrapper">
-                        <div class="menu__item" data-value="newest" data-label="Newest">Newest</div>
-                        <div class="menu__item" data-value="oldest" data-label="Oldest">Oldest</div>
-                      </div>
-                    </div>
-                  </div>
+              Displaying <strong>1-20</strong> from <strong>2000</strong> results
+            </div>
+            <div class="srp__filter">
+              <button class="srp__filter-button button button_ghost button_small">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14.2502 11.3332H5.50016V10.9165C5.50016 10.6873 5.31266 10.4998 5.0835 10.4998H4.25016C4.021 10.4998 3.8335 10.6873 3.8335 10.9165V11.3332H1.75016C1.521 11.3332 1.3335 11.5207 1.3335 11.7498V12.5832C1.3335 12.8123 1.521 12.9998 1.75016 12.9998H3.8335V13.4165C3.8335 13.6457 4.021 13.8332 4.25016 13.8332H5.0835C5.31266 13.8332 5.50016 13.6457 5.50016 13.4165V12.9998H14.2502C14.4793 12.9998 14.6668 12.8123 14.6668 12.5832V11.7498C14.6668 11.5207 14.4793 11.3332 14.2502 11.3332ZM14.2502 7.1665H12.1668V6.74984C12.1668 6.52067 11.9793 6.33317 11.7502 6.33317H10.9168C10.6877 6.33317 10.5002 6.52067 10.5002 6.74984V7.1665H1.75016C1.521 7.1665 1.3335 7.354 1.3335 7.58317V8.4165C1.3335 8.64567 1.521 8.83317 1.75016 8.83317H10.5002V9.24984C10.5002 9.479 10.6877 9.6665 10.9168 9.6665H11.7502C11.9793 9.6665 12.1668 9.479 12.1668 9.24984V8.83317H14.2502C14.4793 8.83317 14.6668 8.64567 14.6668 8.4165V7.58317C14.6668 7.354 14.4793 7.1665 14.2502 7.1665ZM14.2502 2.99984H8.8335V2.58317C8.8335 2.354 8.646 2.1665 8.41683 2.1665H7.5835C7.35433 2.1665 7.16683 2.354 7.16683 2.58317V2.99984H1.75016C1.521 2.99984 1.3335 3.18734 1.3335 3.4165V4.24984C1.3335 4.479 1.521 4.6665 1.75016 4.6665H7.16683V5.08317C7.16683 5.31234 7.35433 5.49984 7.5835 5.49984H8.41683C8.646 5.49984 8.8335 5.31234 8.8335 5.08317V4.6665H14.2502C14.4793 4.6665 14.6668 4.479 14.6668 4.24984V3.4165C14.6668 3.18734 14.4793 2.99984 14.2502 2.99984Z" fill="#2F4E92"/>
+                </svg>                
+                Filter
+              </button>
+              <div class="srp__filter-item">
+                <div class="srp__filter-item-label">Sort by:</div>
+                <div class="srp__filter-item-value">
+                  Most Popular
+                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.84107 3.08105H10.1589C10.9068 3.08105 11.2808 3.98623 10.7531 4.51396L6.59413 8.67289C6.26561 9.00141 5.73439 9.00141 5.40936 8.67289L1.24694 4.51396C0.719209 3.98623 1.09316 3.08105 1.84107 3.08105Z" fill="#2F4E92"/>
+                  </svg>
                 </div>
-                <div class="srp__filter-item">
-                  <div class="srp__filter-item-label">Not-in-stock items:</div>
-                  <div class="srp__filter-item-value">
-                    Show
-                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1.84107 3.08105H10.1589C10.9068 3.08105 11.2808 3.98623 10.7531 4.51396L6.59413 8.67289C6.26561 9.00141 5.73439 9.00141 5.40936 8.67289L1.24694 4.51396C0.719209 3.98623 1.09316 3.08105 1.84107 3.08105Z" fill="#2F4E92"/>
-                    </svg>
-                  </div>
-                  <div class="srp__filter-item-dropdown">
-                    <div class="menu">
-                      <div class="menu__wrapper">
-                        <div class="menu__item" data-value="newest" data-label="Newest">Newest</div>
-                        <div class="menu__item" data-value="oldest" data-label="Oldest">Oldest</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="srp__filter-item">
-                  <div class="srp__filter-item-label">View per page:</div>
-                  <div class="srp__filter-item-value">
-                    20
-                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1.84107 3.08105H10.1589C10.9068 3.08105 11.2808 3.98623 10.7531 4.51396L6.59413 8.67289C6.26561 9.00141 5.73439 9.00141 5.40936 8.67289L1.24694 4.51396C0.719209 3.98623 1.09316 3.08105 1.84107 3.08105Z" fill="#2F4E92"/>
-                    </svg>
-                  </div>
-                  <div class="srp__filter-item-dropdown">
-                    <div class="menu">
-                      <div class="menu__wrapper">
-                        <div class="menu__item" data-value="newest" data-label="Newest">Newest</div>
-                        <div class="menu__item" data-value="oldest" data-label="Oldest">Oldest</div>
-                      </div>
+                <div class="srp__filter-item-dropdown">
+                  <div class="menu">
+                    <div class="menu__wrapper">
+                      <div class="menu__item" data-value="newest" data-label="Newest">Newest</div>
+                      <div class="menu__item" data-value="oldest" data-label="Oldest">Oldest</div>
                     </div>
                   </div>
                 </div>
               </div>
-          </div>
-          <div class="srp__divider-container">
-            <div class="srp__divider"></div>
+              <div class="srp__filter-item">
+                <div class="srp__filter-item-label">Not-in-stock items:</div>
+                <div class="srp__filter-item-value">
+                  Show
+                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.84107 3.08105H10.1589C10.9068 3.08105 11.2808 3.98623 10.7531 4.51396L6.59413 8.67289C6.26561 9.00141 5.73439 9.00141 5.40936 8.67289L1.24694 4.51396C0.719209 3.98623 1.09316 3.08105 1.84107 3.08105Z" fill="#2F4E92"/>
+                  </svg>
+                </div>
+                <div class="srp__filter-item-dropdown">
+                  <div class="menu">
+                    <div class="menu__wrapper">
+                      <div class="menu__item" data-value="newest" data-label="Newest">Newest</div>
+                      <div class="menu__item" data-value="oldest" data-label="Oldest">Oldest</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="srp__filter-item">
+                <div class="srp__filter-item-label">View per page:</div>
+                <div class="srp__filter-item-value">
+                  20
+                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.84107 3.08105H10.1589C10.9068 3.08105 11.2808 3.98623 10.7531 4.51396L6.59413 8.67289C6.26561 9.00141 5.73439 9.00141 5.40936 8.67289L1.24694 4.51396C0.719209 3.98623 1.09316 3.08105 1.84107 3.08105Z" fill="#2F4E92"/>
+                  </svg>
+                </div>
+                <div class="srp__filter-item-dropdown">
+                  <div class="menu">
+                    <div class="menu__wrapper">
+                      <div class="menu__item" data-value="newest" data-label="Newest">Newest</div>
+                      <div class="menu__item" data-value="oldest" data-label="Oldest">Oldest</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="srp__body">
@@ -811,13 +809,15 @@
                 </div>
                 <div class="product__promo">
                   3-DAY BOOK SALE (29-31 MARCH 2022)
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.00016 1.3125C4.31852 1.3125 1.3335 4.2523 1.3335 7.8758C1.3335 11.5014 4.31852 14.4391 8.00016 14.4391C11.6818 14.4391 14.6668 11.5014 14.6668 7.8758C14.6668 4.2523 11.6818 1.3125 8.00016 1.3125ZM8.00016 4.22364C8.62371 4.22364 9.1292 4.72129 9.1292 5.33517C9.1292 5.94905 8.62371 6.4467 8.00016 6.4467C7.37661 6.4467 6.87113 5.94905 6.87113 5.33517C6.87113 4.72129 7.37661 4.22364 8.00016 4.22364ZM9.50554 10.9457C9.50554 11.1211 9.3611 11.2633 9.18296 11.2633H6.81737C6.63922 11.2633 6.49479 11.1211 6.49479 10.9457V10.3106C6.49479 10.1352 6.63922 9.993 6.81737 9.993H7.13995V8.29924H6.81737C6.63922 8.29924 6.49479 8.15705 6.49479 7.98166V7.34651C6.49479 7.17112 6.63922 7.02893 6.81737 7.02893H8.5378C8.71594 7.02893 8.86038 7.17112 8.86038 7.34651V9.993H9.18296C9.3611 9.993 9.50554 10.1352 9.50554 10.3106V10.9457Z" fill="#2F4E92"/>
+                  </svg>
                 </div>
               </div>
             </div>
           </div>
           <div class="product">
             <div class="product__wrapper">
-
               <div class="product__header">
                 <div class="product__cover">
                   <div class="product__cover-fill">
@@ -872,30 +872,90 @@
                 </div>
                 <div class="product__promo">
                   3-DAY BOOK SALE (29-31 MARCH 2022)
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.00016 1.3125C4.31852 1.3125 1.3335 4.2523 1.3335 7.8758C1.3335 11.5014 4.31852 14.4391 8.00016 14.4391C11.6818 14.4391 14.6668 11.5014 14.6668 7.8758C14.6668 4.2523 11.6818 1.3125 8.00016 1.3125ZM8.00016 4.22364C8.62371 4.22364 9.1292 4.72129 9.1292 5.33517C9.1292 5.94905 8.62371 6.4467 8.00016 6.4467C7.37661 6.4467 6.87113 5.94905 6.87113 5.33517C6.87113 4.72129 7.37661 4.22364 8.00016 4.22364ZM9.50554 10.9457C9.50554 11.1211 9.3611 11.2633 9.18296 11.2633H6.81737C6.63922 11.2633 6.49479 11.1211 6.49479 10.9457V10.3106C6.49479 10.1352 6.63922 9.993 6.81737 9.993H7.13995V8.29924H6.81737C6.63922 8.29924 6.49479 8.15705 6.49479 7.98166V7.34651C6.49479 7.17112 6.63922 7.02893 6.81737 7.02893H8.5378C8.71594 7.02893 8.86038 7.17112 8.86038 7.34651V9.993H9.18296C9.3611 9.993 9.50554 10.1352 9.50554 10.3106V10.9457Z" fill="#2F4E92"/>
+                  </svg>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="srp__pagination">
-          <div class="srp__pagination-wrapper">
-            <a class="srp__pagination-item srp__pagination-item_active">1</a>
-            <a class="srp__pagination-item">2</a>
-            <a class="srp__pagination-item">3</a>
-            <a class="srp__pagination-item">4</a>
-            <a class="srp__pagination-item">5</a>
-            <div class="srp__pagination-item srp__pagination-item_separator">...</div>
-            <a class="srp__pagination-item">12</a>
-            <a class="srp__pagination-item srp__pagination-item-next">
-              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M8.50627 6.42617L5.09433 9.83811C4.8585 10.0739 4.47717 10.0739 4.24385 9.83811L3.67687 9.27113C3.44104 9.0353 3.44104 8.65397 3.67687 8.42065L6.09533 6.00219L3.67687 3.58372C3.44104 3.3479 3.44104 2.96656 3.67687 2.73325L4.24134 2.16124C4.47717 1.92542 4.8585 1.92542 5.09182 2.16124L8.50376 5.57319C8.7421 5.80901 8.7421 6.19035 8.50627 6.42617Z" fill="#2F4E92"/>
-              </svg>
-            </a>
-            <a class="srp__pagination-item srp__pagination-item-last">
-              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M6.00627 6.42617L2.59433 9.83811C2.35851 10.0739 1.97717 10.0739 1.74385 9.83811L1.17687 9.27113C0.941044 9.0353 0.941044 8.65397 1.17687 8.42065L3.59533 6.00219L1.17687 3.58372C0.941044 3.3479 0.941044 2.96656 1.17687 2.73325L1.74134 2.16124C1.97717 1.92542 2.3585 1.92542 2.59182 2.16124L6.00376 5.57319C6.2421 5.80901 6.2421 6.19035 6.00627 6.42617ZM10.8231 5.57319L7.41119 2.16124C7.17536 1.92542 6.79403 1.92542 6.56071 2.16124L5.99373 2.72823C5.7579 2.96405 5.7579 3.34539 5.99373 3.57871L8.41219 5.99717L5.99373 8.41563C5.7579 8.65146 5.7579 9.03279 5.99373 9.26611L6.56071 9.8331C6.79654 10.0689 7.17787 10.0689 7.41119 9.8331L10.8231 6.42115C11.059 6.19035 11.059 5.80901 10.8231 5.57319Z" fill="#2F4E92"/>
-              </svg>
-            </a>
+        <div class="srp__footer">
+          <div class="srp__footer-wrapper">
+            <div class="pagination">
+              <div class="pagination-wrapper">
+                <a class="pagination-item pagination-item_active">1</a>
+                <a class="pagination-item">2</a>
+                <a class="pagination-item">3</a>
+                <a class="pagination-item">4</a>
+                <a class="pagination-item">5</a>
+                <div class="pagination-item pagination-item_separator">...</div>
+                <a class="pagination-item">12</a>
+                <a class="pagination-item pagination-item-next">
+                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.50627 6.42617L5.09433 9.83811C4.8585 10.0739 4.47717 10.0739 4.24385 9.83811L3.67687 9.27113C3.44104 9.0353 3.44104 8.65397 3.67687 8.42065L6.09533 6.00219L3.67687 3.58372C3.44104 3.3479 3.44104 2.96656 3.67687 2.73325L4.24134 2.16124C4.47717 1.92542 4.8585 1.92542 5.09182 2.16124L8.50376 5.57319C8.7421 5.80901 8.7421 6.19035 8.50627 6.42617Z" fill="#2F4E92"/>
+                  </svg>
+                </a>
+                <a class="pagination-item pagination-item-last">
+                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.00627 6.42617L2.59433 9.83811C2.35851 10.0739 1.97717 10.0739 1.74385 9.83811L1.17687 9.27113C0.941044 9.0353 0.941044 8.65397 1.17687 8.42065L3.59533 6.00219L1.17687 3.58372C0.941044 3.3479 0.941044 2.96656 1.17687 2.73325L1.74134 2.16124C1.97717 1.92542 2.3585 1.92542 2.59182 2.16124L6.00376 5.57319C6.2421 5.80901 6.2421 6.19035 6.00627 6.42617ZM10.8231 5.57319L7.41119 2.16124C7.17536 1.92542 6.79403 1.92542 6.56071 2.16124L5.99373 2.72823C5.7579 2.96405 5.7579 3.34539 5.99373 3.57871L8.41219 5.99717L5.99373 8.41563C5.7579 8.65146 5.7579 9.03279 5.99373 9.26611L6.56071 9.8331C6.79654 10.0689 7.17787 10.0689 7.41119 9.8331L10.8231 6.42115C11.059 6.19035 11.059 5.80901 10.8231 5.57319Z" fill="#2F4E92"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="srp__filter">
+              <div class="srp__filter-item">
+                <div class="srp__filter-item-label">Sort by:</div>
+                <div class="srp__filter-item-value">
+                  Most Popular
+                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.84107 3.08105H10.1589C10.9068 3.08105 11.2808 3.98623 10.7531 4.51396L6.59413 8.67289C6.26561 9.00141 5.73439 9.00141 5.40936 8.67289L1.24694 4.51396C0.719209 3.98623 1.09316 3.08105 1.84107 3.08105Z" fill="#2F4E92"/>
+                  </svg>
+                </div>
+                <div class="srp__filter-item-dropdown">
+                  <div class="menu">
+                    <div class="menu__wrapper">
+                      <div class="menu__item" data-value="newest" data-label="Newest">Newest</div>
+                      <div class="menu__item" data-value="oldest" data-label="Oldest">Oldest</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="srp__filter-item">
+                <div class="srp__filter-item-label">Not-in-stock items:</div>
+                <div class="srp__filter-item-value">
+                  Show
+                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.84107 3.08105H10.1589C10.9068 3.08105 11.2808 3.98623 10.7531 4.51396L6.59413 8.67289C6.26561 9.00141 5.73439 9.00141 5.40936 8.67289L1.24694 4.51396C0.719209 3.98623 1.09316 3.08105 1.84107 3.08105Z" fill="#2F4E92"/>
+                  </svg>
+                </div>
+                <div class="srp__filter-item-dropdown">
+                  <div class="menu">
+                    <div class="menu__wrapper">
+                      <div class="menu__item" data-value="newest" data-label="Newest">Newest</div>
+                      <div class="menu__item" data-value="oldest" data-label="Oldest">Oldest</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="srp__filter-item">
+                <div class="srp__filter-item-label">View per page:</div>
+                <div class="srp__filter-item-value">
+                  20
+                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.84107 3.08105H10.1589C10.9068 3.08105 11.2808 3.98623 10.7531 4.51396L6.59413 8.67289C6.26561 9.00141 5.73439 9.00141 5.40936 8.67289L1.24694 4.51396C0.719209 3.98623 1.09316 3.08105 1.84107 3.08105Z" fill="#2F4E92"/>
+                  </svg>
+                </div>
+                <div class="srp__filter-item-dropdown">
+                  <div class="menu">
+                    <div class="menu__wrapper">
+                      <div class="menu__item" data-value="newest" data-label="Newest">Newest</div>
+                      <div class="menu__item" data-value="oldest" data-label="Oldest">Oldest</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -1150,6 +1210,315 @@
         </div>
       </div>
     </footer>
+
+    <!-- Filter Box Modal for Mobile -->
+    <div class="filtermodal" id="filterModal">
+      <header class="filtermodal__header">
+        <div class="filtermodal__header-label">Filters</div>
+        <svg id="filterModalCloseButton" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9117 9.63869L5.77503 3.50201C5.49607 3.22305 5.04384 3.22305 4.76488 3.50201L3.50219 4.7647C3.22323 5.04366 3.22323 5.4959 3.50219 5.77486L9.63887 11.9115L3.50219 18.0482C3.22323 18.3272 3.22323 18.7794 3.50219 19.0584L4.76488 20.3211C5.04384 20.6 5.49607 20.6 5.77503 20.3211L11.9117 14.1844L18.0484 20.3211C18.3273 20.6 18.7796 20.6 19.0585 20.3211L20.3212 19.0584C20.6002 18.7794 20.6002 18.3272 20.3212 18.0482L14.1846 11.9115L20.3212 5.77485C20.6002 5.49589 20.6002 5.04366 20.3212 4.7647L19.0585 3.50201C18.7796 3.22305 18.3273 3.22305 18.0484 3.50201L11.9117 9.63869Z" fill="#2F4E92"/>
+        </svg>
+      </header>
+      <div class="filtermodal__body">
+        <!-- Filter Group: Category -->
+        <details class="filterbox__group" open="true">
+          <summary class="filterbox__group-header">
+            <div class="filterbox__group-header-label">
+              Category
+            </div>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8.51832 4.16871L14.4522 10.1026C14.7384 10.3888 14.7384 10.8527 14.4522 11.1389L13.7601 11.831C13.4744 12.1167 13.0114 12.1172 12.725 11.8322L8.00015 7.12953L3.27532 11.8322C2.98896 12.1173 2.52592 12.1167 2.24023 11.831L1.54814 11.1389C1.26195 10.8527 1.26195 10.3888 1.54814 10.1026L7.482 4.16874C7.76816 3.88256 8.23214 3.88256 8.51832 4.16871Z" fill="#2F4E92"/>
+            </svg>
+          </summary>
+          <div class="filterbox__group-body">
+            <div class="filterbox__group-item">
+              <label class="checkbox checkbox_linkable">
+                <input class="checkbox__input" type="checkbox" />
+                <span class="checkbox__checkmark"></span>
+                <span class="checkbox__label">Children Fiction (321)</span>
+              </label>
+            </div>
+            <div class="filterbox__group-item">
+              <label class="checkbox checkbox_linkable">
+                <input class="checkbox__input" type="checkbox" />
+                <span class="checkbox__checkmark"></span>
+                <span class="checkbox__label">House & Home (120)</span>
+              </label>
+            </div>
+            <div class="filterbox__group-item">
+              <label class="checkbox checkbox_linkable">
+                <input class="checkbox__input" type="checkbox" />
+                <span class="checkbox__checkmark"></span>
+                <span class="checkbox__label">Technology & Engineering (498)</span>
+              </label>
+            </div>
+            <div class="filterbox__group-item">
+              <label class="checkbox checkbox_linkable">
+                <input class="checkbox__input" type="checkbox" />
+                <span class="checkbox__checkmark"></span>
+                <span class="checkbox__label">Fiction (2321)</span>
+              </label>
+            </div>
+            <div class="filterbox__group-item">
+              <label class="checkbox checkbox_linkable">
+                <input class="checkbox__input" type="checkbox" />
+                <span class="checkbox__checkmark"></span>
+                <span class="checkbox__label">Art (47)</span>
+              </label>
+            </div>
+            <div class="filterbox__group-seemore">
+              See more
+            </div>
+          </div>
+        </details>
+        <!-- Filter Group: Price -->
+        <details class="filterbox__group filterbox__group_range" open>
+          <summary class="filterbox__group-header">
+            <div class="filterbox__group-header-label">
+              Price
+            </div>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8.51832 4.16871L14.4522 10.1026C14.7384 10.3888 14.7384 10.8527 14.4522 11.1389L13.7601 11.831C13.4744 12.1167 13.0114 12.1172 12.725 11.8322L8.00015 7.12953L3.27532 11.8322C2.98896 12.1173 2.52592 12.1167 2.24023 11.831L1.54814 11.1389C1.26195 10.8527 1.26195 10.3888 1.54814 10.1026L7.482 4.16874C7.76816 3.88256 8.23214 3.88256 8.51832 4.16871Z" fill="#2F4E92"/>
+            </svg>
+          </summary>
+          <div class="filterbox__group-body">
+            <div class="filterbox__group-item">
+              <div class="textfield textfield_required">
+                <div class="textfield__input-container">
+                  <input type="text" class="textfield__input" placeholder="Min price">
+                </div>
+              </div>
+            </div>
+            <div class="filterbox__group-indicator">to</div>
+            <div class="filterbox__group-item">
+              <div class="textfield textfield_required">
+                <div class="textfield__input-container">
+                  <input type="text" class="textfield__input" placeholder="Max price">
+                </div>
+              </div>
+            </div>
+          </div>
+        </details>
+        <!-- Filter Group: Binding -->
+        <details class="filterbox__group" open>
+          <summary class="filterbox__group-header">
+            <div class="filterbox__group-header-label">
+              Binding
+            </div>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8.51832 4.16871L14.4522 10.1026C14.7384 10.3888 14.7384 10.8527 14.4522 11.1389L13.7601 11.831C13.4744 12.1167 13.0114 12.1172 12.725 11.8322L8.00015 7.12953L3.27532 11.8322C2.98896 12.1173 2.52592 12.1167 2.24023 11.831L1.54814 11.1389C1.26195 10.8527 1.26195 10.3888 1.54814 10.1026L7.482 4.16874C7.76816 3.88256 8.23214 3.88256 8.51832 4.16871Z" fill="#2F4E92"/>
+            </svg>
+          </summary>
+          <div class="filterbox__group-body">
+            <div class="filterbox__group-item">
+              <label class="checkbox checkbox_linkable">
+                <input class="checkbox__input" type="checkbox" />
+                <span class="checkbox__checkmark"></span>
+                <span class="checkbox__label">All (2000)</span>
+              </label>
+            </div>
+            <div class="filterbox__group-item">
+              <label class="checkbox checkbox_linkable">
+                <input class="checkbox__input" type="checkbox" />
+                <span class="checkbox__checkmark"></span>
+                <span class="checkbox__label">Paperback (1283)</span>
+              </label>
+            </div>
+            <div class="filterbox__group-item">
+              <label class="checkbox checkbox_linkable">
+                <input class="checkbox__input" type="checkbox" />
+                <span class="checkbox__checkmark"></span>
+                <span class="checkbox__label">Hardcover (498)</span>
+              </label>
+            </div>
+            <div class="filterbox__group-item">
+              <label class="checkbox checkbox_linkable">
+                <input class="checkbox__input" type="checkbox" />
+                <span class="checkbox__checkmark"></span>
+                <span class="checkbox__label">Library Binding (42)</span>
+              </label>
+            </div>
+            <div class="filterbox__group-item">
+              <label class="checkbox checkbox_linkable">
+                <input class="checkbox__input" type="checkbox" />
+                <span class="checkbox__checkmark"></span>
+                <span class="checkbox__label">Boxed Set (26)</span>
+              </label>
+            </div>
+            <div class="filterbox__group-seemore">
+              See more
+            </div>
+          </div>
+        </details>
+        <!-- Filter Group: Language -->
+        <details class="filterbox__group" open>
+          <summary class="filterbox__group-header">
+            <div class="filterbox__group-header-label">
+              Language
+            </div>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8.51832 4.16871L14.4522 10.1026C14.7384 10.3888 14.7384 10.8527 14.4522 11.1389L13.7601 11.831C13.4744 12.1167 13.0114 12.1172 12.725 11.8322L8.00015 7.12953L3.27532 11.8322C2.98896 12.1173 2.52592 12.1167 2.24023 11.831L1.54814 11.1389C1.26195 10.8527 1.26195 10.3888 1.54814 10.1026L7.482 4.16874C7.76816 3.88256 8.23214 3.88256 8.51832 4.16871Z" fill="#2F4E92"/>
+            </svg>
+          </summary>
+          <div class="filterbox__group-body">
+            <div class="filterbox__group-item">
+              <label class="checkbox checkbox_linkable">
+                <input class="checkbox__input" type="checkbox" />
+                <span class="checkbox__checkmark"></span>
+                <span class="checkbox__label">All (2000)</span>
+              </label>
+            </div>
+            <div class="filterbox__group-item">
+              <label class="checkbox checkbox_linkable">
+                <input class="checkbox__input" type="checkbox" />
+                <span class="checkbox__checkmark"></span>
+                <span class="checkbox__label">English (1283)</span>
+              </label>
+            </div>
+            <div class="filterbox__group-item">
+              <label class="checkbox checkbox_linkable">
+                <input class="checkbox__input" type="checkbox" />
+                <span class="checkbox__checkmark"></span>
+                <span class="checkbox__label">Spanish (498)</span>
+              </label>
+            </div>
+            <div class="filterbox__group-item">
+              <label class="checkbox checkbox_linkable">
+                <input class="checkbox__input" type="checkbox" />
+                <span class="checkbox__checkmark"></span>
+                <span class="checkbox__label">French (42)</span>
+              </label>
+            </div>
+            <div class="filterbox__group-item">
+              <label class="checkbox checkbox_linkable">
+                <input class="checkbox__input" type="checkbox" />
+                <span class="checkbox__checkmark"></span>
+                <span class="checkbox__label">Korean (6)</span>
+              </label>
+            </div>
+            <div class="filterbox__group-seemore">
+              See more
+            </div>
+          </div>
+        </details>
+        <!-- Filter Group: Publication Year -->
+        <details class="filterbox__group filterbox__group_range" open>
+          <summary class="filterbox__group-header">
+            <div class="filterbox__group-header-label">
+              Price
+            </div>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8.51832 4.16871L14.4522 10.1026C14.7384 10.3888 14.7384 10.8527 14.4522 11.1389L13.7601 11.831C13.4744 12.1167 13.0114 12.1172 12.725 11.8322L8.00015 7.12953L3.27532 11.8322C2.98896 12.1173 2.52592 12.1167 2.24023 11.831L1.54814 11.1389C1.26195 10.8527 1.26195 10.3888 1.54814 10.1026L7.482 4.16874C7.76816 3.88256 8.23214 3.88256 8.51832 4.16871Z" fill="#2F4E92"/>
+            </svg>
+          </summary>
+          <div class="filterbox__group-body">
+            <div class="filterbox__group-item">
+              <div class="textfield textfield_required">
+                <div class="textfield__input-container">
+                  <input type="text" class="textfield__input" placeholder="Year">
+                </div>
+              </div>
+            </div>
+            <div class="filterbox__group-indicator">to</div>
+            <div class="filterbox__group-item">
+              <div class="textfield textfield_required">
+                <div class="textfield__input-container">
+                  <input type="text" class="textfield__input" placeholder="Year">
+                </div>
+              </div>
+            </div>
+          </div>
+        </details>
+        <!-- Filter Group: Age -->
+        <details class="filterbox__group filterbox__group_range" open>
+          <summary class="filterbox__group-header">
+            <div class="filterbox__group-header-label">
+              Age
+            </div>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8.51832 4.16871L14.4522 10.1026C14.7384 10.3888 14.7384 10.8527 14.4522 11.1389L13.7601 11.831C13.4744 12.1167 13.0114 12.1172 12.725 11.8322L8.00015 7.12953L3.27532 11.8322C2.98896 12.1173 2.52592 12.1167 2.24023 11.831L1.54814 11.1389C1.26195 10.8527 1.26195 10.3888 1.54814 10.1026L7.482 4.16874C7.76816 3.88256 8.23214 3.88256 8.51832 4.16871Z" fill="#2F4E92"/>
+            </svg>
+          </summary>
+          <div class="filterbox__group-body">
+            <div class="filterbox__group-item">
+              <div class="textfield textfield_required">
+                <div class="textfield__input-container">
+                  <input type="text" class="textfield__input" placeholder="Age">
+                </div>
+              </div>
+            </div>
+            <div class="filterbox__group-indicator">to</div>
+            <div class="filterbox__group-item">
+              <div class="textfield textfield_required">
+                <div class="textfield__input-container">
+                  <input type="text" class="textfield__input" placeholder="Age">
+                </div>
+              </div>
+            </div>
+          </div>
+        </details>
+        <!-- Filter Group: Grade -->
+        <details class="filterbox__group filterbox__group_range" open>
+          <summary class="filterbox__group-header">
+            <div class="filterbox__group-header-label">
+              Grade
+            </div>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8.51832 4.16871L14.4522 10.1026C14.7384 10.3888 14.7384 10.8527 14.4522 11.1389L13.7601 11.831C13.4744 12.1167 13.0114 12.1172 12.725 11.8322L8.00015 7.12953L3.27532 11.8322C2.98896 12.1173 2.52592 12.1167 2.24023 11.831L1.54814 11.1389C1.26195 10.8527 1.26195 10.3888 1.54814 10.1026L7.482 4.16874C7.76816 3.88256 8.23214 3.88256 8.51832 4.16871Z" fill="#2F4E92"/>
+            </svg>
+          </summary>
+          <div class="filterbox__group-body">
+            <div class="filterbox__group-item">
+              <div class="textfield textfield_required">
+                <div class="textfield__input-container">
+                  <input type="text" class="textfield__input" placeholder="Grade">
+                </div>
+              </div>
+            </div>
+            <div class="filterbox__group-indicator">to</div>
+            <div class="filterbox__group-item">
+              <div class="textfield textfield_required">
+                <div class="textfield__input-container">
+                  <input type="text" class="textfield__input" placeholder="Grade">
+                </div>
+              </div>
+            </div>
+          </div>
+        </details>
+        <!-- Filter Group: Lexile Level -->
+        <details class="filterbox__group filterbox__group_range" open>
+          <summary class="filterbox__group-header">
+            <div class="filterbox__group-header-label">
+              Lexile Level
+            </div>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8.51832 4.16871L14.4522 10.1026C14.7384 10.3888 14.7384 10.8527 14.4522 11.1389L13.7601 11.831C13.4744 12.1167 13.0114 12.1172 12.725 11.8322L8.00015 7.12953L3.27532 11.8322C2.98896 12.1173 2.52592 12.1167 2.24023 11.831L1.54814 11.1389C1.26195 10.8527 1.26195 10.3888 1.54814 10.1026L7.482 4.16874C7.76816 3.88256 8.23214 3.88256 8.51832 4.16871Z" fill="#2F4E92"/>
+            </svg>
+          </summary>
+          <div class="filterbox__group-body">
+            <div class="filterbox__group-item">
+              <div class="textfield textfield_required">
+                <div class="textfield__input-container">
+                  <input type="text" class="textfield__input" placeholder="Min level">
+                </div>
+              </div>
+            </div>
+            <div class="filterbox__group-indicator">to</div>
+            <div class="filterbox__group-item">
+              <div class="textfield textfield_required">
+                <div class="textfield__input-container">
+                  <input type="text" class="textfield__input" placeholder="Max level">
+                </div>
+              </div>
+            </div>
+          </div>
+        </details>
+      </div>
+      <div class="filtermodal__cta">
+        <div class="filtermodal__cta-reset">RESET</div>
+        <button class="button">Apply</button>
+      </div>
+    </div>
   </div>
 </body>
 </html>

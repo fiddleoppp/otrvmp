@@ -1,3 +1,13 @@
+function openFilterModal() {
+  $('#filterModal').addClass('open');
+  $('html, body').css('overflow', 'hidden'); 
+}
+
+function closeFilterModal() {
+  $('#filterModal').removeClass('open');
+  $('html, body').css('overflow', 'initial');
+}
+
 $(document).ready(function() {
   $('.header__search-dropdown-select').select2({
     width: 100,
@@ -12,8 +22,7 @@ $(document).ready(function() {
   });
 
   $('.srp__filter-item-dropdown .menu__item').click(function() {
-    console.log($(this).closest('.srp__filter-item-value'));
-    // Do something with the value
+    $(this).closest('.srp__filter-item-value').first().text('aaaa');
   });
 
   $(document).mouseup(function(e) {
@@ -22,4 +31,14 @@ $(document).ready(function() {
       $('.srp__filter-item_open').removeClass('srp__filter-item_open');
     }
   });
+
+  $('.srp__filter-button').click(function() {
+    openFilterModal();
+  });
+
+  $('#filterModalCloseButton').click(function() {
+    closeFilterModal();
+  });
+
+  // TODO: Show reset only when filters are applied
 });

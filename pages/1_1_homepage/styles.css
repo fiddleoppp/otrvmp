@@ -32,15 +32,15 @@
   padding-bottom: 66.666667%;
 }
 
-.featured__item:nth-child(1) .featured__item-cover {
+.featured__item[data-banner="banner-1"] .featured__item-cover {
   background-image: url('../../assets/samples/homepage/banner_mobile_1.png');
 }
 
-.featured__item:nth-child(2) .featured__item-cover {
+.featured__item[data-banner="banner-2"] .featured__item-cover {
   background-image: url('../../assets/samples/homepage/banner_mobile_2.png');
 }
 
-.featured__item:nth-child(3) .featured__item-cover {
+.featured__item[data-banner="banner-3"] .featured__item-cover {
   background-image: url('../../assets/samples/homepage/banner_mobile_3.png');
 }
 
@@ -65,157 +65,12 @@
   outline: none;
 }
 
+.featured__dots li {
+  flex: 0 1 auto;
+}
+
 .featured__dots .slick-active button {
   background-color: var(--color-ot-blue);
-}
-
-.bestseller {
-  padding: 40px 0;
-}
-
-.bestseller__wrapper {
-
-}
-
-.bestseller__header {
-  padding: 0 16px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.bestseller__label {
-  font-family: 'Lora';
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
-  color: var(--color-ot-black);
-}
-
-.bestseller__viewmore {
-
-}
-
-.bestseller__viewmore-link {
-  font-weight: 500;
-  font-size: 13px;
-  line-height: 18px;
-  color: var(--color-ot-blue);
-}
-
-.bestseller__arrow {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 46px;
-  height: 46px;
-  top: 35%;
-  transform: translateY(-50%);
-  border: none;
-  outline: none;
-  border-radius: 50%;
-  background-color: var(--color-ot-blue);
-  cursor: pointer;
-}
-
-.bestseller__arrow_prev {
-  left: -46px;
-}
-
-.bestseller__arrow_next {
-  right: -46px;
-}
-
-.bestseller__arrow_prev::after,
-.bestseller__arrow_next::after {
-  content: '';
-  position: absolute;
-  width: 24px;
-  height: 24px;
-}
-
-.bestseller__arrow_prev::after {
-  margin-right: 3px;
-  background-image: url('../../assets/icons/chevron-left.png');
-}
-
-.bestseller__arrow_next::after {
-  margin-left: 3px;
-  background-image: url('../../assets/icons/chevron-right.png');
-}
-
-.bestseller__list {
-  margin: 20px 0 0;
-  white-space: nowrap;
-  display: flex;
-  padding: 0 10px;
-}
-
-.bestseller__item {
-  width: calc(50% - 30px);
-  margin: 0 10px;
-}
-
-.bestseller__item-cover {
-  position: relative;
-  width: 100%;
-  padding-bottom: 100%;
-}
-
-.bestseller__item-img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  height: 100%;
-  width: auto;
-}
-
-.bestseller__item-title {
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 18px;
-  margin: 12px 0 0;
-  white-space: initial;
-  text-align: center;
-  color: var(--color-ot-black);
-}
-
-.bestseller__item-author {
-  margin-top: 4px;
-  font-weight: 500;
-  font-size: 13px;
-  line-height: 18px;
-  text-align: center;
-  color: var(--color-ot-black);
-}
-
-.bestseller__item-price,
-.bestseller__item-price_discounted,
-.bestseller__item-price_original {
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 18px;
-  text-align: center;
-}
-
-.bestseller__item-price {
-  color: var(--color-ot-blue);
-}
-
-.bestseller__item-price_discounted {
-  color: var(--color-ot-red);
-}
-
-.bestseller__item-price_original {
-  color: var(--color-ot-gray);
-  text-decoration: line-through;
-  font-weight: 500;
-  font-size: 13px;
-  line-height: 18px;
-  margin-top: 0px;
 }
 
 .recomm {
@@ -335,54 +190,40 @@
     padding-bottom: 33.33333%;
   }
 
-  .featured__item:nth-child(1) .featured__item-cover {
+  .featured__item[data-banner="banner-1"] .featured__item-cover {
     background-image: url('../../assets/samples/homepage/banner_desktop_1.png');
   }
   
-  .featured__item:nth-child(2) .featured__item-cover {
+  .featured__item[data-banner="banner-2"] .featured__item-cover {
     background-image: url('../../assets/samples/homepage/banner_desktop_2.png');
   }
   
-  .featured__item:nth-child(3) .featured__item-cover {
+  .featured__item[data-banner="banner-3"] .featured__item-cover {
     background-image: url('../../assets/samples/homepage/banner_desktop_3.png');
   }
 
-  .bestseller__wrapper,
-  .recomm__wrapper {
-    max-width: 774px;
-    margin: 0 auto;
+  .featured__dots {
+    position: relative;
+    top: -36px;
   }
 
-  .recomm_personalized .recomm__item {
-    width: calc(25% - 18px);
+  .recomm_personalized {
+    margin-bottom: 0;
   }
 
-  .recomm__item {
-    margin-right: 24px;
-    margin-top: 0;
-    width: calc(20% - 24px);
+  .recomm {
+    margin-bottom: 26px;
   }
 
-  .recomm__item:last-child {
-    margin-right: 0;
-  }
-  
-  .recomm__item:nth-child(odd),
-  .recomm__item:nth-child(even) {
-    padding-right: 0;
-    padding-left: 0;
-  }
 }
 
 @media screen and (min-width: 1025px) {
-  .bestseller__wrapper,
   .recomm__wrapper {
     max-width: 916px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .bestseller__wrapper,
   .recomm__wrapper {
     max-width: 1176px;
   }

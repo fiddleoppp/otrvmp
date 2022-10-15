@@ -54,6 +54,10 @@
   margin: 24px 0;
 }
 
+.wishmodal__selector-dropdown .dropdown__selection .select2-selection__placeholder {
+  color: var(--color-ot-blue) !important;
+}
+
 @media screen and (min-width: 1025px) {
   .wishmodal__author,
   .wishmodal__format,

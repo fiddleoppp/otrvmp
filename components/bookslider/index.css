@@ -53,6 +53,10 @@
   cursor: pointer;
 }
 
+.bookslider__arrow:hover {
+  background-color: var(--color-ot-gray-80) !important;
+}
+
 .bookslider__arrow_prev {
   left: -46px;
 }
@@ -105,6 +109,7 @@
   position: relative;
   width: 100%;
   padding-bottom: 100%;
+  cursor: pointer;
 }
 
 .bookslider__item-img {
@@ -118,6 +123,7 @@
 }
 
 .bookslider__item-title {
+  cursor: pointer;
   font-weight: 600;
   font-size: 16px;
   line-height: 18px;
@@ -137,8 +143,7 @@
 }
 
 .bookslider__item-price,
-.bookslider__item-price_discounted,
-.bookslider__item-price_original {
+.bookslider__item-price_discounted {
   font-weight: 600;
   font-size: 14px;
   line-height: 18px;
@@ -154,6 +159,7 @@
 }
 
 .bookslider__item-price_original {
+  text-align: center;
   color: var(--color-ot-gray);
   text-decoration: line-through;
   font-weight: 500;
@@ -168,9 +174,26 @@
     margin: 0 auto;
   }
 
-  
+  .bookslider__label {
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: 600;
+  }
+
   .bookslider__item {
     width: calc(20% - 20px);
+  }
+
+  .bookslider__item-title {
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .bookslider__item-price,
+  .bookslider__item-price_discounted {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 2px;
   }
 }
 

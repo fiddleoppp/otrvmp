@@ -30,8 +30,14 @@
 }
 
 .filterbox__group-header {
+  cursor: pointer;
   display: flex;
   justify-content: space-between;
+  user-select: none;
+}
+
+.filterbox__group-header::marker {
+  display: none;
 }
 
 .filterbox__group-header-label {
@@ -39,6 +45,14 @@
   font-weight: 600;
   font-size: 15px;
   line-height: 18px;
+}
+
+.filterbox__group-header svg {
+  transform: rotate(180deg);
+}
+
+.filterbox__group[open] .filterbox__group-header svg {
+  transform: rotate(0);
 }
 
 .filterbox__group-body {

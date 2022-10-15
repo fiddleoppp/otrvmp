@@ -187,6 +187,10 @@
     gap: 60px;
   }
 
+  .order__meta-wrapper + .order__meta-wrapper {
+    margin-top: 40px;
+  }
+
   .order__meta-item {
     width: 164px;
   }

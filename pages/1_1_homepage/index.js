@@ -3,10 +3,11 @@ $(document).ready(function() {
     dots: true,
     arrows: false,
     dotsClass: 'featured__dots',
+    autoplay: true,
     slidesToShow: 1,
-    infinite: false,
+    infinite: true,
     centerMode: true,
-      centerPadding: '7%',
+    centerPadding: '7%',
     responsive: [
       {
         breakpoint: 768,
@@ -18,11 +19,11 @@ $(document).ready(function() {
     ]
   });
 
-  $('.bestseller__list').slick({
+  $('.bestseller .bookslider__list').slick({
     dots: false,
     arrows: true,
-    prevArrow: '<button class="bestseller__arrow bestseller__arrow_prev"></button>',
-    nextArrow: '<button class="bestseller__arrow bestseller__arrow_next"></button>',
+    prevArrow: '<button class="bookslider__arrow bookslider__arrow_prev"></button>',
+    nextArrow: '<button class="bookslider__arrow bookslider__arrow_next"></button>',
     slidesToShow: 5,
     slidesToScroll: 5,
     infinite: false,

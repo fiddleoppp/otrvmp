@@ -88,6 +88,10 @@
   display: block;
 }
 
+.dropdown .select2-container--open .select2-selection__arrow {
+  transform: rotate(180deg);
+}
+
 .dropdown_large .dropdown__selection .select2-selection__arrow {
   margin-right: 20px;
 }

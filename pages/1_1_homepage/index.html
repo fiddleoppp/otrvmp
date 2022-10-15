@@ -18,6 +18,8 @@
   <link rel="stylesheet" href="../../components/mobile_nav/index.css">
   <link rel="stylesheet" href="../../components/desktop_nav/index.css">
   <link rel="stylesheet" href="../../components/footer/index.css">
+  <link rel="stylesheet" href="../../components/bookgrid/index.css">
+  <link rel="stylesheet" href="../../components/bookslider/index.css">
   <link rel="stylesheet" href="../../components/dropdown/index.css">
   <link rel="stylesheet" href="../../components//navdrawer/index.css">
   <link rel="stylesheet" href="./styles.css">
@@ -469,13 +471,13 @@
     <div class="featured">
       <div class="featured__wrapper">
         <div class="featured__list">
-          <div class="featured__item">
+          <div class="featured__item" data-banner="banner-1">
             <div class="featured__item-cover"></div>
           </div>
-          <div class="featured__item">
+          <div class="featured__item" data-banner="banner-2">
             <div class="featured__item-cover"></div>
           </div>
-          <div class="featured__item">
+          <div class="featured__item" data-banner="banner-3">
             <div class="featured__item-cover"></div>
           </div>
         </div>
@@ -484,84 +486,86 @@
   
     <!-- Bestseller -->
     <div class="bestseller">
-      <div class="bestseller__wrapper">
-        <div class="bestseller__header">
-          <div class="bestseller__label">Bestsellers</div>
-          <a class="bestseller__viewmore-link">VIEW MORE ></a>
-        </div>
-        <div class="bestseller__list">
-          <div class="bestseller__item">
-            <div class="bestseller__item-cover">
-              <img class="bestseller__item-img" src="../../assets/samples/homepage/book_1.png" />
-            </div>
-            <h3 class="bestseller__item-title">Indestructibles: The Itsy Bitsy Spider</h3>
-            <div class="bestseller__item-author">Maddie Frost</div>
-            <div class="bestseller__item-price_discounted">S$ 42.81</div>
-            <div class="bestseller__item-price_original">S$ 48.00</div>
+      <div class="bookslider">
+        <div class="bookslider__wrapper">
+          <div class="bookslider__header">
+            <div class="bookslider__label">Bestsellers</div>
+            <a class="bookslider__viewmore-link">VIEW MORE ></a>
           </div>
-          <div class="bestseller__item">
-            <div class="bestseller__item-cover">
-              <img class="bestseller__item-img" src="../../assets/samples/homepage/book_2.png" />
+          <div class="bookslider__list">
+            <div class="bookslider__item">
+              <div class="bookslider__item-cover">
+                <img class="bookslider__item-img" src="../../assets/samples/homepage/book_4.png" />
+              </div>
+              <h3 class="bookslider__item-title">Indestructibles: The Itsy Bitsy Spider</h3>
+              <div class="bookslider__item-author">Maddie Frost</div>
+              <div class="bookslider__item-price_discounted">S$ 42.81</div>
+              <div class="bookslider__item-price_original">S$ 48.00</div>
             </div>
-            <h3 class="bestseller__item-title">Indestructibles: The Itsy Bitsy Spider</h3>
-            <div class="bestseller__item-author">Maddie Frost</div>
-            <div class="bestseller__item-price">S$ 42.81</div>
-          </div>
-          <div class="bestseller__item">
-            <div class="bestseller__item-cover">
-              <img class="bestseller__item-img" src="../../assets/samples/homepage/book_3.png" />
+            <div class="bookslider__item">
+              <div class="bookslider__item-cover">
+                <img class="bookslider__item-img" src="../../assets/samples/homepage/book_2.png" />
+              </div>
+              <h3 class="bookslider__item-title">Indestructibles: The Itsy Bitsy Spider</h3>
+              <div class="bookslider__item-author">Maddie Frost</div>
+              <div class="bookslider__item-price">S$ 42.81</div>
             </div>
-            <h3 class="bestseller__item-title">Indestructibles: The Itsy Bitsy Spider</h3>
-            <div class="bestseller__item-author">Maddie Frost</div>
-            <div class="bestseller__item-price">S$ 42.81</div>
-          </div>
-          <div class="bestseller__item">
-            <div class="bestseller__item-cover">
-              <img class="bestseller__item-img" src="../../assets/samples/homepage/book_4.png" />
+            <div class="bookslider__item">
+              <div class="bookslider__item-cover">
+                <img class="bookslider__item-img" src="../../assets/samples/homepage/book_3.png" />
+              </div>
+              <h3 class="bookslider__item-title">Indestructibles: The Itsy Bitsy Spider</h3>
+              <div class="bookslider__item-author">Maddie Frost</div>
+              <div class="bookslider__item-price">S$ 42.81</div>
             </div>
-            <h3 class="bestseller__item-title">Indestructibles: The Itsy Bitsy Spider</h3>
-            <div class="bestseller__item-author">Maddie Frost</div>
-            <div class="bestseller__item-price">S$ 42.81</div>
-          </div>
-          <div class="bestseller__item">
-            <div class="bestseller__item-cover">
-              <img class="bestseller__item-img" src="../../assets/samples/homepage/book_5.png" />
+            <div class="bookslider__item">
+              <div class="bookslider__item-cover">
+                <img class="bookslider__item-img" src="../../assets/samples/homepage/book_1.png" />
+              </div>
+              <h3 class="bookslider__item-title">Indestructibles: The Itsy Bitsy Spider</h3>
+              <div class="bookslider__item-author">Maddie Frost</div>
+              <div class="bookslider__item-price">S$ 42.81</div>
             </div>
-            <h3 class="bestseller__item-title">Indestructibles: The Itsy Bitsy Spider</h3>
-            <div class="bestseller__item-author">Maddie Frost</div>
-            <div class="bestseller__item-price">S$ 42.81</div>
-          </div>
-          <div class="bestseller__item">
-            <div class="bestseller__item-cover">
-              <img class="bestseller__item-img" src="../../assets/samples/homepage/book_6.png" />
+            <div class="bookslider__item">
+              <div class="bookslider__item-cover">
+                <img class="bookslider__item-img" src="../../assets/samples/homepage/book_5.png" />
+              </div>
+              <h3 class="bookslider__item-title">Indestructibles: The Itsy Bitsy Spider</h3>
+              <div class="bookslider__item-author">Maddie Frost</div>
+              <div class="bookslider__item-price">S$ 42.81</div>
             </div>
-            <h3 class="bestseller__item-title">Indestructibles: The Itsy Bitsy Spider</h3>
-            <div class="bestseller__item-author">Maddie Frost</div>
-            <div class="bestseller__item-price">S$ 42.81</div>
-          </div>
-          <div class="bestseller__item">
-            <div class="bestseller__item-cover">
-              <img class="bestseller__item-img" src="../../assets/samples/homepage/book_7.png" />
+            <div class="bookslider__item">
+              <div class="bookslider__item-cover">
+                <img class="bookslider__item-img" src="../../assets/samples/homepage/book_6.png" />
+              </div>
+              <h3 class="bookslider__item-title">Indestructibles: The Itsy Bitsy Spider</h3>
+              <div class="bookslider__item-author">Maddie Frost</div>
+              <div class="bookslider__item-price">S$ 42.81</div>
             </div>
-            <h3 class="bestseller__item-title">Indestructibles: The Itsy Bitsy Spider</h3>
-            <div class="bestseller__item-author">Maddie Frost</div>
-            <div class="bestseller__item-price">S$ 42.81</div>
-          </div>
-          <div class="bestseller__item">
-            <div class="bestseller__item-cover">
-              <img class="bestseller__item-img" src="../../assets/samples/homepage/book_8.png" />
+            <div class="bookslider__item">
+              <div class="bookslider__item-cover">
+                <img class="bookslider__item-img" src="../../assets/samples/homepage/book_7.png" />
+              </div>
+              <h3 class="bookslider__item-title">Indestructibles: The Itsy Bitsy Spider</h3>
+              <div class="bookslider__item-author">Maddie Frost</div>
+              <div class="bookslider__item-price">S$ 42.81</div>
             </div>
-            <h3 class="bestseller__item-title">Indestructibles: The Itsy Bitsy Spider</h3>
-            <div class="bestseller__item-author">Maddie Frost</div>
-            <div class="bestseller__item-price">S$ 42.81</div>
-          </div>
-          <div class="bestseller__item">
-            <div class="bestseller__item-cover">
-              <img class="bestseller__item-img" src="../../assets/samples/homepage/book_9.png" />
+            <div class="bookslider__item">
+              <div class="bookslider__item-cover">
+                <img class="bookslider__item-img" src="../../assets/samples/homepage/book_8.png" />
+              </div>
+              <h3 class="bookslider__item-title">Indestructibles: The Itsy Bitsy Spider</h3>
+              <div class="bookslider__item-author">Maddie Frost</div>
+              <div class="bookslider__item-price">S$ 42.81</div>
             </div>
-            <h3 class="bestseller__item-title">Indestructibles: The Itsy Bitsy Spider</h3>
-            <div class="bestseller__item-author">Maddie Frost</div>
-            <div class="bestseller__item-price">S$ 42.81</div>
+            <div class="bookslider__item">
+              <div class="bookslider__item-cover">
+                <img class="bookslider__item-img" src="../../assets/samples/homepage/book_9.png" />
+              </div>
+              <h3 class="bookslider__item-title">Indestructibles: The Itsy Bitsy Spider</h3>
+              <div class="bookslider__item-author">Maddie Frost</div>
+              <div class="bookslider__item-price">S$ 42.81</div>
+            </div>
           </div>
         </div>
       </div>
@@ -569,36 +573,38 @@
   
     <!-- Personalized section -->
     <div class="recomm recomm_personalized">
-      <div class="recomm__wrapper">
-        <h2 class="recomm__label">You Might Be Interested In...</h2>
-        <div class="recomm__list">
-          <div class="recomm__item">
-            <div class="recomm__item-cover">
-              <img class="recomm__item-img" src="../../assets/samples/homepage/book_6.png" />
+      <div class="bookgrid bookgrid_personalized">
+        <div class="bookgrid__wrapper">
+          <h2 class="bookgrid__label">You Might Be Interested In...</h2>
+          <div class="bookgrid__list">
+            <div class="bookgrid__item">
+              <div class="bookgrid__item-cover">
+                <img class="bookgrid__item-img" src="../../assets/samples/homepage/book_5.png" />
+              </div>
+              <div class="bookgrid__item-category">FICTION</div>
+              <div class="bookgrid__item-title">Fiction Books Under S$30</div>
             </div>
-            <div class="recomm__item-category">Fiction</div>
-            <div class="recomm__item-title">Fiction Books Under S$30</div>
-          </div>
-          <div class="recomm__item">
-            <div class="recomm__item-cover">
-              <img class="recomm__item-img" src="../../assets/samples/homepage/book_7.png" />
+            <div class="bookgrid__item">
+              <div class="bookgrid__item-cover">
+                <img class="bookgrid__item-img" src="../../assets/samples/homepage/book_6.png" />
+              </div>
+              <div class="bookgrid__item-category">ARCHITECTURE</div>
+              <div class="bookgrid__item-title">Architecture Books to add to Your Reading List</div>
             </div>
-            <div class="recomm__item-category">ARCHITECTURE</div>
-            <div class="recomm__item-title">Architecture Books to add to Your Reading List</div>
-          </div>
-          <div class="recomm__item">
-            <div class="recomm__item-cover">
-              <img class="recomm__item-img" src="../../assets/samples/homepage/book_8.png" />
+            <div class="bookgrid__item">
+              <div class="bookgrid__item-cover">
+                <img class="bookgrid__item-img" src="../../assets/samples/homepage/book_7.png" />
+              </div>
+              <div class="bookgrid__item-category">GRAPHIC NOVELS</div>
+              <div class="bookgrid__item-title">Fantasy Mangas You Should Not Miss</div>
             </div>
-            <div class="recomm__item-category">GRAPHIC NOVELS</div>
-            <div class="recomm__item-title">Fantasy Mangas You Should Not Miss</div>
-          </div>
-          <div class="recomm__item">
-            <div class="recomm__item-cover">
-              <img class="recomm__item-img" src="../../assets/samples/homepage/book_9.png" />
+            <div class="bookgrid__item">
+              <div class="bookgrid__item-cover">
+                <img class="bookgrid__item-img" src="../../assets/samples/homepage/book_8.png" />
+              </div>
+              <div class="bookgrid__item-category">NON-FICTION</div>
+              <div class="bookgrid__item-title">Inspiring Books This Summer</div>
             </div>
-            <div class="recomm__item-category">NON-FICTION</div>
-            <div class="recomm__item-title">Inspiring Books This Summer</div>
           </div>
         </div>
       </div>
@@ -606,43 +612,45 @@
   
     <!-- Monthly recommendation section -->
     <div class="recomm">
-      <div class="recomm__wrapper">
-        <h2 class="recomm__label">April's Recommendation</h2>
-        <div class="recomm__list">
-          <div class="recomm__item">
-            <div class="recomm__item-cover">
-              <img class="recomm__item-img" src="../../assets/samples/homepage/portrait_1.png" />
+      <div class="bookgrid">
+        <div class="bookgrid__wrapper">
+          <h2 class="bookgrid__label">April's book recommendation</h2>
+          <div class="bookgrid__list">
+            <div class="bookgrid__item">
+              <div class="bookgrid__item-cover">
+                <img class="bookgrid__item-img" src="../../assets/samples/homepage/portrait_1.png" />
+              </div>
+              <div class="bookgrid__item-category">Fiction</div>
+              <div class="bookgrid__item-title">Fiction Books Under S$30</div>
             </div>
-            <div class="recomm__item-category">Fiction</div>
-            <div class="recomm__item-title">Fiction Books Under S$30</div>
-          </div>
-          <div class="recomm__item">
-            <div class="recomm__item-cover">
-              <img class="recomm__item-img" src="../../assets/samples/homepage/portrait_2.png" />
+            <div class="bookgrid__item">
+              <div class="bookgrid__item-cover">
+                <img class="bookgrid__item-img" src="../../assets/samples/homepage/portrait_2.png" />
+              </div>
+              <div class="bookgrid__item-category">ARCHITECTURE</div>
+              <div class="bookgrid__item-title">Architecture Books to add to Your Reading List</div>
             </div>
-            <div class="recomm__item-category">ARCHITECTURE</div>
-            <div class="recomm__item-title">Architecture Books to add to Your Reading List</div>
-          </div>
-          <div class="recomm__item">
-            <div class="recomm__item-cover">
-              <img class="recomm__item-img" src="../../assets/samples/homepage/portrait_3.png" />
+            <div class="bookgrid__item">
+              <div class="bookgrid__item-cover">
+                <img class="bookgrid__item-img" src="../../assets/samples/homepage/portrait_3.png" />
+              </div>
+              <div class="bookgrid__item-category">GRAPHIC NOVELS</div>
+              <div class="bookgrid__item-title">Fantasy Mangas You Should Not Miss</div>
             </div>
-            <div class="recomm__item-category">GRAPHIC NOVELS</div>
-            <div class="recomm__item-title">Fantasy Mangas You Should Not Miss</div>
-          </div>
-          <div class="recomm__item">
-            <div class="recomm__item-cover">
-              <img class="recomm__item-img" src="../../assets/samples/homepage/portrait_4.png" />
+            <div class="bookgrid__item">
+              <div class="bookgrid__item-cover">
+                <img class="bookgrid__item-img" src="../../assets/samples/homepage/portrait_4.png" />
+              </div>
+              <div class="bookgrid__item-category">NON-FICTION</div>
+              <div class="bookgrid__item-title">Inspiring Books This Summer</div>
             </div>
-            <div class="recomm__item-category">NON-FICTION</div>
-            <div class="recomm__item-title">Inspiring Books This Summer</div>
-          </div>
-          <div class="recomm__item">
-            <div class="recomm__item-cover">
-              <img class="recomm__item-img" src="../../assets/samples/homepage/portrait_5.png" />
+            <div class="bookgrid__item">
+              <div class="bookgrid__item-cover">
+                <img class="bookgrid__item-img" src="../../assets/samples/homepage/portrait_5.png" />
+              </div>
+              <div class="bookgrid__item-category">COOKING</div>
+              <div class="bookgrid__item-title">Creative Ways to Eat Your Favorite Fruits</div>
             </div>
-            <div class="recomm__item-category">COOKING</div>
-            <div class="recomm__item-title">Creative Ways to Eat Your Favorite Fruits</div>
           </div>
         </div>
       </div>

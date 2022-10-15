@@ -566,6 +566,13 @@
     align-items: flex-start;
   }
 
+  .cart__subtotal-value,
+  .cart__qty-pricing-discounted,
+  .cart__qty-pricing-original:only-child {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
   .cart__cta {
     width: 100%;
     margin-top: 0;
@@ -638,8 +645,17 @@
     padding: 0 20px;
   }
 
+  .cart__summary-action > button {
+    font-weight: 500;
+  }
+
   .cart__cautionary {
     margin-top: 20px;
+  }
+
+  .cart__perks-title {
+    font-size: 16px;
+    line-height: 20px;
   }
 
   .cart__footer {

@@ -74,6 +74,11 @@
   line-height: 18px;
 }
 
+.ctabox__description > svg {
+  display: inline;
+  vertical-align: middle;
+}
+
 .ctabox__input {
   margin-top: 24px;
   height: 32px;
