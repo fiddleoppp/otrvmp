@@ -1,3 +1,17 @@
+const initialFilterState = {
+  category: {},
+  binding: {},
+  stockStatus: {},
+  language: {}
+}
+
+let filters = {
+  category: {},
+  binding: {},
+  stockStatus: {},
+  language: {}
+};
+
 function openFilterModal() {
   $('#filterModal').addClass('open');
   $('html, body').css('overflow', 'hidden'); 
@@ -6,6 +20,64 @@ function openFilterModal() {
 function closeFilterModal() {
   $('#filterModal').removeClass('open');
   $('html, body').css('overflow', 'initial');
+}
+
+function isFilterExist() {
+  let filterExist = false;
+  for (const [key, value] of Object.entries(filters)) {
+    if (typeof value === 'object') {
+      const objectKeys = Object.keys(value);
+      if (!objectKeys) filterExist = false;
+      else {
+        objectKeys.forEach(function(item) {
+          if (value[item]) filterExist = true;
+        });  
+      }
+    }
+
+    if (typeof value === 'string') {
+      filterExist = !!value;
+    }
+  }
+
+  return filterExist;
+}
+
+function updateFilterResetState() {
+  if (isFilterExist()) {
+    $('.filtermodal__cta-reset').addClass('filtermodal__cta-reset_show');
+  } else {
+    $('.filtermodal__cta-reset').removeClass('filtermodal__cta-reset_show');
+  }
+}
+
+function resetFilter() {
+  filters = JSON.parse(JSON.stringify(initialFilterState));
+  $('#filterModal input[type="checkbox"]').prop('checked', false);
+  $('#filterModal input[type="number"]').val('');
+
+  updateFilterResetState();
+}
+
+function attachFilterEvents() {
+  $('#filterModal input[type="checkbox"]').change(function() {
+    const input = $(this);
+    const checked = input.prop('checked');
+    const name = input.attr('name');
+    const value = input.val();
+    filters[name][value] = checked;
+
+    updateFilterResetState();
+  });
+
+  $('#filterModal input[type="number"]').on('change paste keyup', (function() {
+    const input = $(this);
+    const name = input.attr('name');
+    const value = input.val();
+    filters[name] = value;
+
+    updateFilterResetState();
+  }));
 }
 
 $(document).ready(function() {
@@ -40,5 +112,21 @@ $(document).ready(function() {
     closeFilterModal();
   });
 
-  // TODO: Show reset only when filters are applied
+  // Show reset only when filters are applied
+  attachFilterEvents();
+  $('.filtermodal__cta-reset').click(function() {
+    resetFilter();
+  });
+
+  // With the above scripts loaded, you can call `tippy()` with a CSS
+  // selector and a `content` prop:
+  tippy('.product__promo-info', {
+    content: 'Price incl. GST. Local courier delivery with tracking number.',
+    trigger: 'mouseenter',
+    theme: 'custom',
+    arrow: false,
+    placement: 'bottom-start',
+    maxWidth: 440,
+    offset: [-60, 8]
+  });
 });

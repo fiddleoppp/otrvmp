@@ -231,6 +231,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-column-gap: 28px;
+  width: 80%;
 }
 
 .navdrop__section-groupsub + .navdrop__section-groupsub {
@@ -262,8 +263,8 @@
 }
 
 .navdrop__promo {
-  width: 200px;
-  flex: 0 1 auto;
+  max-width: 200px;
+  flex: 1 0 auto;
   padding: 20px;
   text-align: center;
   background-color: var(--color-ot-cream-20);

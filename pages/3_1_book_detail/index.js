@@ -19,4 +19,14 @@ $(document).ready(function() {
       }
     ]
   });
+
+  tippy('.ctabox__description-info', {
+    content: 'Price incl. GST. Local courier delivery with tracking number.',
+    trigger: 'mouseenter',
+    theme: 'custom',
+    arrow: false,
+    placement: 'bottom-start',
+    maxWidth: 440,
+    offset: [-60, 8]
+  });
 });

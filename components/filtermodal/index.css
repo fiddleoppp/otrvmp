@@ -59,10 +59,19 @@
 }
 
 .filtermodal__cta-reset {
+  display: none;
   cursor: pointer;
   text-decoration: underline;
   color: var(--color-ot-blue);
   font-size: 13px;
   line-height: 18px;
   font-weight: 500;
+}
+
+.filtermodal__cta-reset_show {
+  display: inline-block;
+}
+
+.filtermodal__cta-submit {
+  margin-left: auto;
 }

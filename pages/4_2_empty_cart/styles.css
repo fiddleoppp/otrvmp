@@ -68,6 +68,7 @@
 
 .emptycart__recommendation {
   margin-top: 28px;
+  background-color: var(--color-ot-cream-20);
 }
 
 @media screen and (min-width: 1025px) {

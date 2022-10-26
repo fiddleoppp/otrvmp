@@ -34,9 +34,11 @@
   display: flex;
   justify-content: space-between;
   user-select: none;
+  text-align: left;
 }
 
-.filterbox__group-header::marker {
+.filterbox__group-header::marker,
+.filterbox__group-header::-webkit-details-marker {
   display: none;
 }
 
@@ -45,6 +47,7 @@
   font-weight: 600;
   font-size: 15px;
   line-height: 18px;
+  text-align: left;
 }
 
 .filterbox__group-header svg {

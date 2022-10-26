@@ -3,11 +3,11 @@ $(document).ready(function() {
     dots: true,
     arrows: false,
     dotsClass: 'featured__dots',
-    autoplay: true,
+    autoplay: false,
     slidesToShow: 1,
     infinite: true,
     centerMode: true,
-    centerPadding: '7%',
+    centerPadding: 0,
     responsive: [
       {
         breakpoint: 768,

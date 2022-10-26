@@ -173,16 +173,16 @@
 @media screen and (min-width: 769px) {
   .featured__wrapper {
     padding-top: 40px;
+    overflow-x: hidden;
+  }
+  
+  .featured__list > .slick-list {
+    overflow: visible;
   }
 
   .featured__item {
     overflow: hidden;
-    width: 86%;
     border-radius: 12px;
-    margin: 0 calc(7% + 12px);
-  }
-
-  .slick-slide.featured__item {
     margin: 0 12px;
   }
 
@@ -204,7 +204,7 @@
 
   .featured__dots {
     position: relative;
-    top: -36px;
+    top: -46px;
   }
 
   .recomm_personalized {
@@ -226,5 +226,10 @@
 @media screen and (min-width: 1200px) {
   .recomm__wrapper {
     max-width: 1176px;
+  }
+
+  .featured__carousel-container {
+    margin: 0 auto;
+    max-width: 1160px;
   }
 }

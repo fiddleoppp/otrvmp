@@ -23,7 +23,6 @@
   <link rel="stylesheet" href="../../components/pagination/index.css">
   <link rel="stylesheet" href="../../components/menu/index.css">
   <link rel="stylesheet" href="./styles.css">
-  <script src="./index.js"></script>
 </head>
 <body>
   <div class="root">
@@ -809,7 +808,7 @@
                 </div>
                 <div class="product__promo">
                   3-DAY BOOK SALE (29-31 MARCH 2022)
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="product__promo-info" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M8.00016 1.3125C4.31852 1.3125 1.3335 4.2523 1.3335 7.8758C1.3335 11.5014 4.31852 14.4391 8.00016 14.4391C11.6818 14.4391 14.6668 11.5014 14.6668 7.8758C14.6668 4.2523 11.6818 1.3125 8.00016 1.3125ZM8.00016 4.22364C8.62371 4.22364 9.1292 4.72129 9.1292 5.33517C9.1292 5.94905 8.62371 6.4467 8.00016 6.4467C7.37661 6.4467 6.87113 5.94905 6.87113 5.33517C6.87113 4.72129 7.37661 4.22364 8.00016 4.22364ZM9.50554 10.9457C9.50554 11.1211 9.3611 11.2633 9.18296 11.2633H6.81737C6.63922 11.2633 6.49479 11.1211 6.49479 10.9457V10.3106C6.49479 10.1352 6.63922 9.993 6.81737 9.993H7.13995V8.29924H6.81737C6.63922 8.29924 6.49479 8.15705 6.49479 7.98166V7.34651C6.49479 7.17112 6.63922 7.02893 6.81737 7.02893H8.5378C8.71594 7.02893 8.86038 7.17112 8.86038 7.34651V9.993H9.18296C9.3611 9.993 9.50554 10.1352 9.50554 10.3106V10.9457Z" fill="#2F4E92"/>
                   </svg>
                 </div>
@@ -872,7 +871,7 @@
                 </div>
                 <div class="product__promo">
                   3-DAY BOOK SALE (29-31 MARCH 2022)
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="product__promo-info" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M8.00016 1.3125C4.31852 1.3125 1.3335 4.2523 1.3335 7.8758C1.3335 11.5014 4.31852 14.4391 8.00016 14.4391C11.6818 14.4391 14.6668 11.5014 14.6668 7.8758C14.6668 4.2523 11.6818 1.3125 8.00016 1.3125ZM8.00016 4.22364C8.62371 4.22364 9.1292 4.72129 9.1292 5.33517C9.1292 5.94905 8.62371 6.4467 8.00016 6.4467C7.37661 6.4467 6.87113 5.94905 6.87113 5.33517C6.87113 4.72129 7.37661 4.22364 8.00016 4.22364ZM9.50554 10.9457C9.50554 11.1211 9.3611 11.2633 9.18296 11.2633H6.81737C6.63922 11.2633 6.49479 11.1211 6.49479 10.9457V10.3106C6.49479 10.1352 6.63922 9.993 6.81737 9.993H7.13995V8.29924H6.81737C6.63922 8.29924 6.49479 8.15705 6.49479 7.98166V7.34651C6.49479 7.17112 6.63922 7.02893 6.81737 7.02893H8.5378C8.71594 7.02893 8.86038 7.17112 8.86038 7.34651V9.993H9.18296C9.3611 9.993 9.50554 10.1352 9.50554 10.3106V10.9457Z" fill="#2F4E92"/>
                   </svg>
                 </div>
@@ -1233,35 +1232,35 @@
           <div class="filterbox__group-body">
             <div class="filterbox__group-item">
               <label class="checkbox checkbox_linkable">
-                <input class="checkbox__input" type="checkbox" />
+                <input class="checkbox__input" type="checkbox" name="category" value="children-fiction" />
                 <span class="checkbox__checkmark"></span>
                 <span class="checkbox__label">Children Fiction (321)</span>
               </label>
             </div>
             <div class="filterbox__group-item">
               <label class="checkbox checkbox_linkable">
-                <input class="checkbox__input" type="checkbox" />
+                <input class="checkbox__input" type="checkbox" name="category" value="house-home" />
                 <span class="checkbox__checkmark"></span>
                 <span class="checkbox__label">House & Home (120)</span>
               </label>
             </div>
             <div class="filterbox__group-item">
               <label class="checkbox checkbox_linkable">
-                <input class="checkbox__input" type="checkbox" />
+                <input class="checkbox__input" type="checkbox" name="category" value="technology-engineering" />
                 <span class="checkbox__checkmark"></span>
                 <span class="checkbox__label">Technology & Engineering (498)</span>
               </label>
             </div>
             <div class="filterbox__group-item">
               <label class="checkbox checkbox_linkable">
-                <input class="checkbox__input" type="checkbox" />
+                <input class="checkbox__input" type="checkbox" name="category" value="fiction" />
                 <span class="checkbox__checkmark"></span>
                 <span class="checkbox__label">Fiction (2321)</span>
               </label>
             </div>
             <div class="filterbox__group-item">
               <label class="checkbox checkbox_linkable">
-                <input class="checkbox__input" type="checkbox" />
+                <input class="checkbox__input" type="checkbox" name="category" value="art" />
                 <span class="checkbox__checkmark"></span>
                 <span class="checkbox__label">Art (47)</span>
               </label>
@@ -1285,7 +1284,7 @@
             <div class="filterbox__group-item">
               <div class="textfield textfield_required">
                 <div class="textfield__input-container">
-                  <input type="text" class="textfield__input" placeholder="Min price">
+                  <input type="number" class="textfield__input" placeholder="Min price" name="minPrice">
                 </div>
               </div>
             </div>
@@ -1293,7 +1292,7 @@
             <div class="filterbox__group-item">
               <div class="textfield textfield_required">
                 <div class="textfield__input-container">
-                  <input type="text" class="textfield__input" placeholder="Max price">
+                  <input type="number" type="text" class="textfield__input" placeholder="Max price" name="maxPrice">
                 </div>
               </div>
             </div>
@@ -1312,37 +1311,88 @@
           <div class="filterbox__group-body">
             <div class="filterbox__group-item">
               <label class="checkbox checkbox_linkable">
-                <input class="checkbox__input" type="checkbox" />
+                <input class="checkbox__input" type="checkbox" name="binding" value="all" />
                 <span class="checkbox__checkmark"></span>
                 <span class="checkbox__label">All (2000)</span>
               </label>
             </div>
             <div class="filterbox__group-item">
               <label class="checkbox checkbox_linkable">
-                <input class="checkbox__input" type="checkbox" />
+                <input class="checkbox__input" type="checkbox" name="binding" value="paperback" />
                 <span class="checkbox__checkmark"></span>
                 <span class="checkbox__label">Paperback (1283)</span>
               </label>
             </div>
             <div class="filterbox__group-item">
               <label class="checkbox checkbox_linkable">
-                <input class="checkbox__input" type="checkbox" />
+                <input class="checkbox__input" type="checkbox" name="binding" value="hardcover" />
                 <span class="checkbox__checkmark"></span>
                 <span class="checkbox__label">Hardcover (498)</span>
               </label>
             </div>
             <div class="filterbox__group-item">
               <label class="checkbox checkbox_linkable">
-                <input class="checkbox__input" type="checkbox" />
+                <input class="checkbox__input" type="checkbox" name="binding" value="library-binding" />
                 <span class="checkbox__checkmark"></span>
                 <span class="checkbox__label">Library Binding (42)</span>
               </label>
             </div>
             <div class="filterbox__group-item">
               <label class="checkbox checkbox_linkable">
-                <input class="checkbox__input" type="checkbox" />
+                <input class="checkbox__input" type="checkbox" name="binding" value="boxed-set" />
                 <span class="checkbox__checkmark"></span>
                 <span class="checkbox__label">Boxed Set (26)</span>
+              </label>
+            </div>
+            <div class="filterbox__group-seemore">
+              See more
+            </div>
+          </div>
+        </details>
+        <!-- Filter Group: Stock Status -->
+        <details class="filterbox__group" open>
+          <summary class="filterbox__group-header">
+            <div class="filterbox__group-header-label">
+              Stock Status
+            </div>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8.51832 4.16871L14.4522 10.1026C14.7384 10.3888 14.7384 10.8527 14.4522 11.1389L13.7601 11.831C13.4744 12.1167 13.0114 12.1172 12.725 11.8322L8.00015 7.12953L3.27532 11.8322C2.98896 12.1173 2.52592 12.1167 2.24023 11.831L1.54814 11.1389C1.26195 10.8527 1.26195 10.3888 1.54814 10.1026L7.482 4.16874C7.76816 3.88256 8.23214 3.88256 8.51832 4.16871Z" fill="#2F4E92"/>
+            </svg>
+          </summary>
+          <div class="filterbox__group-body">
+            <div class="filterbox__group-item">
+              <label class="checkbox checkbox_linkable">
+                <input class="checkbox__input" type="checkbox" name="stockStatus" value="all" />
+                <span class="checkbox__checkmark"></span>
+                <span class="checkbox__label">All (2000)</span>
+              </label>
+            </div>
+            <div class="filterbox__group-item">
+              <label class="checkbox checkbox_linkable">
+                <input class="checkbox__input" type="checkbox" name="stockStatus" value="paperback" />
+                <span class="checkbox__checkmark"></span>
+                <span class="checkbox__label">Paperback (1283)</span>
+              </label>
+            </div>
+            <div class="filterbox__group-item">
+              <label class="checkbox checkbox_linkable">
+                <input class="checkbox__input" type="checkbox" name="stockStatus" value="special-order" />
+                <span class="checkbox__checkmark"></span>
+                <span class="checkbox__label">Special Order (498)</span>
+              </label>
+            </div>
+            <div class="filterbox__group-item">
+              <label class="checkbox checkbox_linkable">
+                <input class="checkbox__input" type="checkbox" name="stockStatus" value="restocking" />
+                <span class="checkbox__checkmark"></span>
+                <span class="checkbox__label">Restocking (42)</span>
+              </label>
+            </div>
+            <div class="filterbox__group-item">
+              <label class="checkbox checkbox_linkable">
+                <input class="checkbox__input" type="checkbox" name="stockStatus" value="pre-order" />
+                <span class="checkbox__checkmark"></span>
+                <span class="checkbox__label">Pre-order (26)</span>
               </label>
             </div>
             <div class="filterbox__group-seemore">
@@ -1363,35 +1413,35 @@
           <div class="filterbox__group-body">
             <div class="filterbox__group-item">
               <label class="checkbox checkbox_linkable">
-                <input class="checkbox__input" type="checkbox" />
+                <input class="checkbox__input" type="checkbox" name="language" value="all" />
                 <span class="checkbox__checkmark"></span>
                 <span class="checkbox__label">All (2000)</span>
               </label>
             </div>
             <div class="filterbox__group-item">
               <label class="checkbox checkbox_linkable">
-                <input class="checkbox__input" type="checkbox" />
+                <input class="checkbox__input" type="checkbox" name="language" value="english" />
                 <span class="checkbox__checkmark"></span>
                 <span class="checkbox__label">English (1283)</span>
               </label>
             </div>
             <div class="filterbox__group-item">
               <label class="checkbox checkbox_linkable">
-                <input class="checkbox__input" type="checkbox" />
+                <input class="checkbox__input" type="checkbox" name="language" value="spanish" />
                 <span class="checkbox__checkmark"></span>
                 <span class="checkbox__label">Spanish (498)</span>
               </label>
             </div>
             <div class="filterbox__group-item">
               <label class="checkbox checkbox_linkable">
-                <input class="checkbox__input" type="checkbox" />
+                <input class="checkbox__input" type="checkbox" name="language" value="french" />
                 <span class="checkbox__checkmark"></span>
                 <span class="checkbox__label">French (42)</span>
               </label>
             </div>
             <div class="filterbox__group-item">
               <label class="checkbox checkbox_linkable">
-                <input class="checkbox__input" type="checkbox" />
+                <input class="checkbox__input" type="checkbox" name="language" value="korean" />
                 <span class="checkbox__checkmark"></span>
                 <span class="checkbox__label">Korean (6)</span>
               </label>
@@ -1405,7 +1455,7 @@
         <details class="filterbox__group filterbox__group_range" open>
           <summary class="filterbox__group-header">
             <div class="filterbox__group-header-label">
-              Price
+              Publication Year
             </div>
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M8.51832 4.16871L14.4522 10.1026C14.7384 10.3888 14.7384 10.8527 14.4522 11.1389L13.7601 11.831C13.4744 12.1167 13.0114 12.1172 12.725 11.8322L8.00015 7.12953L3.27532 11.8322C2.98896 12.1173 2.52592 12.1167 2.24023 11.831L1.54814 11.1389C1.26195 10.8527 1.26195 10.3888 1.54814 10.1026L7.482 4.16874C7.76816 3.88256 8.23214 3.88256 8.51832 4.16871Z" fill="#2F4E92"/>
@@ -1415,7 +1465,7 @@
             <div class="filterbox__group-item">
               <div class="textfield textfield_required">
                 <div class="textfield__input-container">
-                  <input type="text" class="textfield__input" placeholder="Year">
+                  <input type="number" class="textfield__input" placeholder="Year" name="publicationYearFrom">
                 </div>
               </div>
             </div>
@@ -1423,7 +1473,7 @@
             <div class="filterbox__group-item">
               <div class="textfield textfield_required">
                 <div class="textfield__input-container">
-                  <input type="text" class="textfield__input" placeholder="Year">
+                  <input type="number" class="textfield__input" placeholder="Year" name="publicationYearTo">
                 </div>
               </div>
             </div>
@@ -1443,7 +1493,7 @@
             <div class="filterbox__group-item">
               <div class="textfield textfield_required">
                 <div class="textfield__input-container">
-                  <input type="text" class="textfield__input" placeholder="Age">
+                  <input type="number" class="textfield__input" placeholder="Age" name="ageFrom">
                 </div>
               </div>
             </div>
@@ -1451,7 +1501,7 @@
             <div class="filterbox__group-item">
               <div class="textfield textfield_required">
                 <div class="textfield__input-container">
-                  <input type="text" class="textfield__input" placeholder="Age">
+                  <input type="number" class="textfield__input" placeholder="Age" name="ageTo">
                 </div>
               </div>
             </div>
@@ -1471,7 +1521,7 @@
             <div class="filterbox__group-item">
               <div class="textfield textfield_required">
                 <div class="textfield__input-container">
-                  <input type="text" class="textfield__input" placeholder="Grade">
+                  <input type="number" class="textfield__input" placeholder="Grade" name="gradeFrom">
                 </div>
               </div>
             </div>
@@ -1479,7 +1529,7 @@
             <div class="filterbox__group-item">
               <div class="textfield textfield_required">
                 <div class="textfield__input-container">
-                  <input type="text" class="textfield__input" placeholder="Grade">
+                  <input type="number" class="textfield__input" placeholder="Grade" name="gradeTo">
                 </div>
               </div>
             </div>
@@ -1499,7 +1549,7 @@
             <div class="filterbox__group-item">
               <div class="textfield textfield_required">
                 <div class="textfield__input-container">
-                  <input type="text" class="textfield__input" placeholder="Min level">
+                  <input type="number" class="textfield__input" placeholder="Min level" name="lexileFrom">
                 </div>
               </div>
             </div>
@@ -1507,7 +1557,7 @@
             <div class="filterbox__group-item">
               <div class="textfield textfield_required">
                 <div class="textfield__input-container">
-                  <input type="text" class="textfield__input" placeholder="Max level">
+                  <input type="number" class="textfield__input" placeholder="Max level" name="lexileTo">
                 </div>
               </div>
             </div>
@@ -1516,9 +1566,13 @@
       </div>
       <div class="filtermodal__cta">
         <div class="filtermodal__cta-reset">RESET</div>
-        <button class="button">Apply</button>
+        <button class="filtermodal__cta-submit button">Apply</button>
       </div>
     </div>
   </div>
+
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://unpkg.com/tippy.js@6"></script>
+  <script src="./index.js"></script>
 </body>
 </html>

@@ -212,6 +212,10 @@
   text-decoration: underline;
 }
 
+.detail__personalization {
+  background-color: var(--color-ot-cream-20);
+}
+
 @media screen and (min-width: 1025px) {
   .detail__info {
     padding: 40px 20px 40px;

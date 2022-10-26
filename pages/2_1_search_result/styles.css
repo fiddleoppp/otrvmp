@@ -185,6 +185,10 @@
   text-overflow: ellipsis;
 }
 
+.product__author a {
+  text-decoration: underline;
+}
+
 .product__type {
   margin-top: 10px;
   font-weight: 500;
