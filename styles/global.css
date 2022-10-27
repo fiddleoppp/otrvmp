@@ -422,6 +422,10 @@ ul {
   padding: 16px;
 }
 
+.select2-container {
+  z-index: 10000000 !important;
+}
+
 @media screen and (min-width: 769px) {
   .page__wrapper {
     max-width: 774px;
