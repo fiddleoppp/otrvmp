@@ -68,6 +68,7 @@
 .featured__dots li {
   flex: 0 1 auto;
   width: 12px;
+  display: inline-block;
 }
 
 .featured__dots .slick-active button {
