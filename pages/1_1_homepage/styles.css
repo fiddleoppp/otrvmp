@@ -57,6 +57,9 @@
 
 .featured__dots button {
   color: transparent;
+  display: block;
+  padding: 0;
+  margin: 0;
   width: 12px;
   height: 12px;
   border-radius: 50%;
