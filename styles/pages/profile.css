@@ -62,10 +62,11 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  margin-top: 32px;
 }
 
-.profile__form-item + .profile__form-item {
-  margin-top: 32px;
+.profile__form-item:first-child {
+  margin-top: 0;
 }
 
 .profile__form-action {
@@ -89,10 +90,11 @@
 .profile__address-item {
   padding-bottom: 32px;
   border-bottom: 1px solid var(--color-ot-gray-40);
+  margin-top: 32px;
 }
 
-.profile__address-item + .profile__address-item {
-  margin-top: 32px;
+.profile__address-item:first-child {
+  margin-top: 0;
 }
 
 .profile__address-recipient {

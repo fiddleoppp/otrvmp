@@ -1,3 +1,7 @@
-.createlist__item + .createlist__item {
+.createlist__item {
   margin-top: 32px;
+}
+
+.createlist__item:first-child {
+  margin-top: 0;
 }

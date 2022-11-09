@@ -49,6 +49,7 @@
   position: relative;
   width: 100%;
   cursor: pointer;
+  display: block;
 }
 
 .bookgrid__item-img {
@@ -95,6 +96,12 @@
   line-height: 18px;
   color: var(--color-ot-black);
   text-align: center;
+}
+
+.bookgrid__item-link,
+.bookgrid__item-link:hover {
+  color: var(--color-ot-black) !important;
+  text-decoration: none;
 }
 
 @media screen and (min-width: 769px) {

@@ -2,6 +2,10 @@
   z-index: 10001;
 }
 
+.dropdown__container_modal.select2-dropdown {
+  z-index: 10000001;
+}
+
 .dropdown_full-width {
   width: 100%;
 }

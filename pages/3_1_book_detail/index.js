@@ -29,4 +29,8 @@ $(document).ready(function() {
     maxWidth: 440,
     offset: [-60, 8]
   });
+
+  $('#add-to-list-btn').click(function() {
+    window.location.href = '../8_4_1_add_to_wishlist_modal/index.html';
+  });
 });

@@ -118,6 +118,10 @@ $(document).ready(function() {
     resetFilter();
   });
 
+  $('.filtermodal__cta-submit').click(function() {
+    window.location.href = '../2_1_search_result/index.html';
+  });
+
   // With the above scripts loaded, you can call `tippy()` with a CSS
   // selector and a `content` prop:
   tippy('.product__promo-info', {

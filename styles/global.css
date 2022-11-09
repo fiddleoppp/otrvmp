@@ -213,6 +213,16 @@ ul {
   align-items: center;
 }
 
+a.button {
+  display: inline-flex;
+  text-decoration: none;
+  color: var(--color-ot-white);
+}
+
+a.button:hover {
+  color: var(--color-ot-white);
+}
+
 .button:hover {
   background-color: var(--color-ot-gray-80);
 }
@@ -234,10 +244,18 @@ ul {
   border: 1px solid var(--color-ot-blue);
 }
 
+a.button_ghost {
+  color: var(--color-ot-blue);
+}
+
 .button_text {
   border: none;
   background-color: transparent;
   color: var(--color-ot-blue);
+}
+
+.button_text:hover {
+  background-color: initial;
 }
 
 .button_full-width {
@@ -318,6 +336,7 @@ ul {
 }
 
 .textfield_password .textfield__input-suffix {
+  cursor: pointer;
   background-image: url('../assets/icons/eye.png');
 }
 
@@ -422,8 +441,15 @@ ul {
   padding: 16px;
 }
 
-.select2-container {
-  z-index: 10000000 !important;
+.error {
+  margin-top: 4px;
+  font-size: 12px;
+  line-height: 15px;
+  color: var(--color-ot-red);
+}
+
+.error:empty {
+  display: none;
 }
 
 @media screen and (min-width: 769px) {

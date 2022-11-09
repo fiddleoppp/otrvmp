@@ -35,14 +35,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 32px;
+}
+
+.register__form-item:first-child {
+  margin-top: 0;
 }
 
 .register__form-item_password {
   width: 55%;
-}
-
-.register__form-item + .register__form-item {
-  margin-top: 32px;
 }
 
 .register__form-forget-password {

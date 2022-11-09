@@ -19,4 +19,24 @@ $(document).ready(function() {
       }
     ]
   });
+
+  $('#cancel-btn').click(function(e) {
+    e.preventDefault();
+    window.location.href = '../8_1_my_wishlist/index.html';
+  });
+
+  $('#create-btn').click(function(e) {
+    e.preventDefault();
+    $('#title-error').html('');
+    
+    const title = $('#title-input').val();
+    const description = $('#description-input').val();
+
+    if (!title) {
+      $('#title-error').html("Please enter list's new title");
+      return;
+    }
+
+    window.location.href = '../8_1_my_wishlist/index.html';
+  });
 });

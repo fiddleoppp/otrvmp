@@ -55,6 +55,7 @@
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+  text-decoration: none;
 }
 
 .categories__recommendation-item + .categories__recommendation-item {
@@ -91,6 +92,7 @@
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+  text-decoration: none;
 }
 
 .categories__subcategories-item + .categories__subcategories-item {
@@ -114,6 +116,7 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
+  text-decoration: none;
 }
 
 @media screen and (min-width: 1025px) {
@@ -175,6 +178,7 @@
     font-size: 16px;
     line-height: 20px;
     cursor: pointer;
+    text-decoration: none;
   }
 
   .categories__info {
@@ -220,6 +224,7 @@
   .categories__recommendation-item,
   .categories__subcategories-item {
     height: 100px;
+    width: 100%;
   }
   
   .categories__recommendation-item {

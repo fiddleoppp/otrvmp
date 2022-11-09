@@ -22,7 +22,6 @@
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
-  padding: 10px 24px;
   cursor: pointer;
 }
 
@@ -32,6 +31,8 @@
 }
 
 .profilemenu-link {
+  display: block;
+  padding: 10px 24px;
   text-decoration: none;
 }
 

@@ -23,8 +23,26 @@ $(document).ready(function() {
   $('.wishmodal__dropdown-select').select2({
     width: '100%',
     placeholder: 'Select wishlist',
-    dropdownCssClass: 'dropdown__container',
+    dropdownCssClass: 'dropdown__container dropdown__container_modal',
     selectionCssClass: 'dropdown__selection',
     minimumResultsForSearch: -1
+  });
+
+  $('#cancel-btn').click(function(e) {
+    e.preventDefault();
+    window.location.href = '../3_1_book_detail/index.html';
+  });
+
+  $('#add-btn').click(function(e) {
+    e.preventDefault();
+    $('#add-to-list-error').html('');
+    
+    const selectedWishlist = $('#wishlist-select').val();
+    if (!selectedWishlist) {
+      $('#add-to-list-error').html('Please select your collection');
+      return;
+    }
+
+    window.location.href = '../3_1_book_detail/index.html';
   });
 });

@@ -19,8 +19,9 @@
   <link rel="stylesheet" href="../../components/footer/index.css">
   <link rel="stylesheet" href="../../components/filterbox/index.css">
   <link rel="stylesheet" href="../../components/dropdown/index.css">
+  <link rel="stylesheet" href="../../components/navdrawer/index.css">
+  <link rel="stylesheet" href="../../components/bookslider/index.css">
   <link rel="stylesheet" href="./styles.css">
-  <script src="./index.js"></script>
 </head>
 <body>
   <div class="root">
@@ -33,17 +34,17 @@
             Singapore-based online bookstore  •  15 million titles  •  7-day local delivery  •  trackable 
           </div>
           <div class="header__info-help">
-            <a class="header__info__link">HELP & FAQ</a>
+            <a class="header__info__link" href="../7_1_info_template_1/index.html">HELP & FAQ</a>
             <div class="header__info__divider"></div>
-            <a class="header__info__link">CONTACT US</a>
+            <a class="header__info__link" href="../7_1_info_template_1/index.html">CONTACT US</a>
           </div>
         </div>
       </div>
       <nav class="header__navbar">
         <div class="header__navbar-wrapper">
-          <div class="header__logo">
+          <a class="header__logo" href="../1_1_homepage/index.html">
             <img class="header__logo-img" src="../../assets/opentrolley_logo.png" />
-          </div>
+          </a>
           <div class="header__search">
             <div class="header__search-bar">
               <div class="header__search-dropdown">
@@ -69,30 +70,30 @@
             </div>
           </div>
           <div class="header__action">
-            <div class="header__action-item">
+            <a class="header__action-item" href="../11_1_login/index.html">
               <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M16.0001 2.66667C8.63449 2.66667 2.66675 8.63441 2.66675 16C2.66675 23.3656 8.63449 29.3333 16.0001 29.3333C23.3657 29.3333 29.3334 23.3656 29.3334 16C29.3334 8.63441 23.3657 2.66667 16.0001 2.66667ZM16.0001 7.82796C18.613 7.82796 20.7313 9.94624 20.7313 12.5591C20.7313 15.172 18.613 17.2903 16.0001 17.2903C13.3872 17.2903 11.2689 15.172 11.2689 12.5591C11.2689 9.94624 13.3872 7.82796 16.0001 7.82796ZM16.0001 26.3226C12.8442 26.3226 10.0162 24.8925 8.12374 22.6559C9.13449 20.7527 11.113 19.4409 13.4194 19.4409C13.5485 19.4409 13.6775 19.4624 13.8012 19.5C14.5001 19.7258 15.2313 19.871 16.0001 19.871C16.7689 19.871 17.5055 19.7258 18.199 19.5C18.3227 19.4624 18.4517 19.4409 18.5807 19.4409C20.8872 19.4409 22.8657 20.7527 23.8764 22.6559C21.984 24.8925 19.156 26.3226 16.0001 26.3226Z" fill="#333333"/>
               </svg>
               <div class="header__action-item-label">
                 Account
               </div>       
-            </div>
-            <div class="header__action-item">
+            </a>
+            <a class="header__action-item" href="../8_1_my_wishlist/index.html">
               <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M26.7451 5.92879C23.8909 3.49655 19.6462 3.93404 17.0265 6.63711L16.0005 7.69438L14.9744 6.63711C12.3599 3.93404 8.10999 3.49655 5.25588 5.92879C1.98511 8.72041 1.81324 13.7307 4.74026 16.7567L14.8182 27.1628C15.4692 27.8346 16.5265 27.8346 17.1775 27.1628L27.2555 16.7567C30.1877 13.7307 30.0158 8.72041 26.7451 5.92879Z" fill="#333333"/>
               </svg>
               <div class="header__action-item-label">
                 Wishlist
               </div>   
-            </div>
-            <div class="header__action-item">
+            </a>
+            <a class="header__action-item" href="../4_1_cart/index.html">
               <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M26.0333 18.963H12.4618L12.7648 20.4444H25.1915C25.9045 20.4444 26.433 21.1065 26.275 21.8018L26.0196 22.9257C26.8849 23.3457 27.4816 24.2328 27.4816 25.2593C27.4816 26.7038 26.3001 27.8724 24.8508 27.8516C23.4701 27.8317 22.3346 26.7113 22.2974 25.3309C22.277 24.5769 22.5791 23.8934 23.0753 23.4074H13.3693C13.8498 23.878 14.1482 24.5336 14.1482 25.2593C14.1482 26.7321 12.9201 27.9181 11.432 27.849C10.1107 27.7876 9.03615 26.72 8.9667 25.3991C8.91309 24.379 9.44985 23.4799 10.2654 23.0109L7.01318 7.11111H3.77786C3.1642 7.11111 2.66675 6.61365 2.66675 6V5.25926C2.66675 4.6456 3.1642 4.14814 3.77786 4.14814H8.52457C9.0524 4.14814 9.50735 4.51949 9.61314 5.03657L10.0375 7.11111H28.2218C28.9349 7.11111 29.4633 7.77319 29.3053 8.46847L27.1168 18.0981C27.0018 18.604 26.5521 18.963 26.0333 18.963Z" fill="black"/>
               </svg>
               <div class="header__action-item-label">
                 My Cart
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </nav>
@@ -111,40 +112,40 @@
                         <div class="navdrop__section-groupsub">
                           <div class="navdrop__section-group-title">Architecture</div>
                           <div class="navdrop__section-group-item">
-                            <a class="navdrop__section-group-link">Annuals</a>
+                            <a class="navdrop__section-group-link" href="../5_1_categories/index.html">Annuals</a>
                           </div>
                           <div class="navdrop__section-group-item">
-                            <a class="navdrop__section-group-link">Decoration & Ornaments</a>
+                            <a class="navdrop__section-group-link" href="../5_1_categories/index.html">Decoration & Ornaments</a>
                           </div>
                           <div class="navdrop__section-group-item">
-                            <a class="navdrop__section-group-link">General</a>
+                            <a class="navdrop__section-group-link" href="../5_1_categories/index.html">General</a>
                           </div>
                           <div class="navdrop__section-group-item">
-                            <a class="navdrop__section-group-link">Interior Design</a>
+                            <a class="navdrop__section-group-link" href="../5_1_categories/index.html">Interior Design</a>
                           </div>
                           <div class="navdrop__section-group-item">
-                            <a class="navdrop__section-group-link">Landscape</a>
+                            <a class="navdrop__section-group-link" href="../5_1_categories/index.html">Landscape</a>
                           </div>
                         </div>
                         <div class="navdrop__section-groupsub">
                           <div class="navdrop__section-group-title">Business & Economics</div>
                           <div class="navdrop__section-group-item">
-                            <a class="navdrop__section-group-link">Accounting</a>
+                            <a class="navdrop__section-group-link" href="../5_1_categories/index.html">Accounting</a>
                           </div>
                           <div class="navdrop__section-group-item">
-                            <a class="navdrop__section-group-link">Business Communication</a>
+                            <a class="navdrop__section-group-link" href="../5_1_categories/index.html">Business Communication</a>
                           </div>
                           <div class="navdrop__section-group-item">
-                            <a class="navdrop__section-group-link">Careers</a>
+                            <a class="navdrop__section-group-link" href="../5_1_categories/index.html">Careers</a>
                           </div>
                           <div class="navdrop__section-group-item">
-                            <a class="navdrop__section-group-link">Economics</a>
+                            <a class="navdrop__section-group-link" href="../5_1_categories/index.html">Economics</a>
                           </div>
                           <div class="navdrop__section-group-item">
-                            <a class="navdrop__section-group-link">Enterpreneurship</a>
+                            <a class="navdrop__section-group-link" href="../5_1_categories/index.html">Enterpreneurship</a>
                           </div>
                           <div class="navdrop__section-group-item">
-                            <a class="navdrop__section-group-link">Money</a>
+                            <a class="navdrop__section-group-link" href="../5_1_categories/index.html">Money</a>
                           </div>
                         </div>
                       </div>
@@ -153,40 +154,40 @@
                         <div class="navdrop__section-groupsub">
                           <div class="navdrop__section-group-title">Crafts & Hobbies</div>
                           <div class="navdrop__section-group-item">
-                            <a class="navdrop__section-group-link">Beadwork</a>
+                            <a class="navdrop__section-group-link" href="../5_1_categories/index.html">Beadwork</a>
                           </div>
                           <div class="navdrop__section-group-item">
-                            <a class="navdrop__section-group-link">Bookprinting & Binding</a>
+                            <a class="navdrop__section-group-link" href="../5_1_categories/index.html">Bookprinting & Binding</a>
                           </div>
                           <div class="navdrop__section-group-item">
-                            <a class="navdrop__section-group-link">Candle Marking</a>
+                            <a class="navdrop__section-group-link" href="../5_1_categories/index.html">Candle Marking</a>
                           </div>
                           <div class="navdrop__section-group-item">
-                            <a class="navdrop__section-group-link">Crafts for Children</a>
+                            <a class="navdrop__section-group-link" href="../5_1_categories/index.html">Crafts for Children</a>
                           </div>
                           <div class="navdrop__section-group-item">
-                            <a class="navdrop__section-group-link">Dollhouses</a>
+                            <a class="navdrop__section-group-link" href="../5_1_categories/index.html">Dollhouses</a>
                           </div>
                           <div class="navdrop__section-group-item">
-                            <a class="navdrop__section-group-link">Dye</a>
+                            <a class="navdrop__section-group-link" href="../5_1_categories/index.html">Dye</a>
                           </div>
                           <div class="navdrop__section-group-item">
-                            <a class="navdrop__section-group-link">Fashion</a>
+                            <a class="navdrop__section-group-link" href="../5_1_categories/index.html">Fashion</a>
                           </div>
                           <div class="navdrop__section-group-item">
-                            <a class="navdrop__section-group-link">Flower Arranging</a>
+                            <a class="navdrop__section-group-link" href="../5_1_categories/index.html">Flower Arranging</a>
                           </div>
                           <div class="navdrop__section-group-item">
-                            <a class="navdrop__section-group-link">Glass & Glassware</a>
+                            <a class="navdrop__section-group-link" href="../5_1_categories/index.html">Glass & Glassware</a>
                           </div>
                           <div class="navdrop__section-group-item">
-                            <a class="navdrop__section-group-link">Jewelry</a>
+                            <a class="navdrop__section-group-link" href="../5_1_categories/index.html">Jewelry</a>
                           </div>
                           <div class="navdrop__section-group-item">
-                            <a class="navdrop__section-group-link">Needlework</a>
+                            <a class="navdrop__section-group-link" href="../5_1_categories/index.html">Needlework</a>
                           </div>
                           <div class="navdrop__section-group-item">
-                            <a class="navdrop__section-group-link">Scrapbooking</a>
+                            <a class="navdrop__section-group-link" href="../5_1_categories/index.html">Scrapbooking</a>
                           </div>
                         </div>
                       </div>
@@ -195,40 +196,40 @@
                         <div class="navdrop__section-groupsub">
                           <div class="navdrop__section-group-title">Fiction</div>
                           <div class="navdrop__section-group-item">
-                            <a class="navdrop__section-group-link">Action & Adventure</a>
+                            <a class="navdrop__section-group-link" href="../5_1_categories/index.html">Action & Adventure</a>
                           </div>
                           <div class="navdrop__section-group-item">
-                            <a class="navdrop__section-group-link">Decoration & Ornaments</a>
+                            <a class="navdrop__section-group-link" href="../5_1_categories/index.html">Decoration & Ornaments</a>
                           </div>
                           <div class="navdrop__section-group-item">
-                            <a class="navdrop__section-group-link">General</a>
+                            <a class="navdrop__section-group-link" href="../5_1_categories/index.html">General</a>
                           </div>
                           <div class="navdrop__section-group-item">
-                            <a class="navdrop__section-group-link">Interior Design</a>
+                            <a class="navdrop__section-group-link" href="../5_1_categories/index.html">Interior Design</a>
                           </div>
                           <div class="navdrop__section-group-item">
-                            <a class="navdrop__section-group-link">Landscape</a>
+                            <a class="navdrop__section-group-link" href="../5_1_categories/index.html">Landscape</a>
                           </div>
                         </div>
                         <div class="navdrop__section-groupsub">
                           <div class="navdrop__section-group-title">Foreign Language Study</div>
                           <div class="navdrop__section-group-item">
-                            <a class="navdrop__section-group-link">Accounting</a>
+                            <a class="navdrop__section-group-link" href="../5_1_categories/index.html">Accounting</a>
                           </div>
                           <div class="navdrop__section-group-item">
-                            <a class="navdrop__section-group-link">Business Communication</a>
+                            <a class="navdrop__section-group-link" href="../5_1_categories/index.html">Business Communication</a>
                           </div>
                           <div class="navdrop__section-group-item">
-                            <a class="navdrop__section-group-link">Careers</a>
+                            <a class="navdrop__section-group-link" href="../5_1_categories/index.html">Careers</a>
                           </div>
                           <div class="navdrop__section-group-item">
-                            <a class="navdrop__section-group-link">Economics</a>
+                            <a class="navdrop__section-group-link" href="../5_1_categories/index.html">Economics</a>
                           </div>
                           <div class="navdrop__section-group-item">
-                            <a class="navdrop__section-group-link">Enterpreneurship</a>
+                            <a class="navdrop__section-group-link" href="../5_1_categories/index.html">Enterpreneurship</a>
                           </div>
                           <div class="navdrop__section-group-item">
-                            <a class="navdrop__section-group-link">Money</a>
+                            <a class="navdrop__section-group-link" href="../5_1_categories/index.html">Money</a>
                           </div>
                         </div>
                       </div>
@@ -237,34 +238,34 @@
                         <div class="navdrop__section-groupsub">
                           <div class="navdrop__section-group-title">Health & Fitness</div>
                           <div class="navdrop__section-group-item">
-                            <a class="navdrop__section-group-link">Annuals</a>
+                            <a class="navdrop__section-group-link" href="../5_1_categories/index.html">Annuals</a>
                           </div>
                           <div class="navdrop__section-group-item">
-                            <a class="navdrop__section-group-link">Decoration & Ornaments</a>
+                            <a class="navdrop__section-group-link" href="../5_1_categories/index.html">Decoration & Ornaments</a>
                           </div>
                           <div class="navdrop__section-group-item">
-                            <a class="navdrop__section-group-link">General</a>
+                            <a class="navdrop__section-group-link" href="../5_1_categories/index.html">General</a>
                           </div>
                           <div class="navdrop__section-group-item">
-                            <a class="navdrop__section-group-link">Interior Design</a>
+                            <a class="navdrop__section-group-link" href="../5_1_categories/index.html">Interior Design</a>
                           </div>
                           <div class="navdrop__section-group-item">
-                            <a class="navdrop__section-group-link">Landscape</a>
+                            <a class="navdrop__section-group-link" href="../5_1_categories/index.html">Landscape</a>
                           </div>
                         </div>
                         <div class="navdrop__section-groupsub">
                           <div class="navdrop__section-group-title">Humor</div>
                           <div class="navdrop__section-group-item">
-                            <a class="navdrop__section-group-link">Accounting</a>
+                            <a class="navdrop__section-group-link" href="../5_1_categories/index.html">Accounting</a>
                           </div>
                           <div class="navdrop__section-group-item">
-                            <a class="navdrop__section-group-link">Business Communication</a>
+                            <a class="navdrop__section-group-link" href="../5_1_categories/index.html">Business Communication</a>
                           </div>
                           <div class="navdrop__section-group-item">
-                            <a class="navdrop__section-group-link">Careers</a>
+                            <a class="navdrop__section-group-link" href="../5_1_categories/index.html">Careers</a>
                           </div>
                           <div class="navdrop__section-group-item">
-                            <a class="navdrop__section-group-link">Economics</a>
+                            <a class="navdrop__section-group-link" href="../5_1_categories/index.html">Economics</a>
                           </div>
                         </div>
                       </div>
@@ -276,7 +277,7 @@
                       <div class="navdrop__promo-label">Pre-order Now!</div>
                       <div class="navdrop__promo-description">The top ten most-anticipated titles are available to order in advance!</div>
                       <div class="navdrop__promo-cta">
-                        <button class="button button_small">Find out more</button>
+                        <a class="button button_small" href="../7_1_info_template_1/index.html">Find out more</a>
                       </div>
                     </div>
                 </li>
@@ -321,9 +322,9 @@
                   </div>
                 </li>
               </ul>
-            <div class="header__megamenu-promo">
+            <a class="header__megamenu-promo" href="../7_1_info_template_1/index.html">
               Feb 2022 promo up to 20% off
-            </div>
+            </a>
           </div>
         </div>
       </div>
@@ -331,7 +332,7 @@
     <!-- MOBILE ONLY HEADER -->
     <header class="mobile-header">
       <nav class="mobile-header__navbar">
-        <div class="mobile-header__action">
+        <div class="mobile-header__action" id="menu-drawer">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M2.71429 6.46429H21.2857C21.6802 6.46429 22 6.14451 22 5.75V3.96429C22 3.56978 21.6802 3.25 21.2857 3.25H2.71429C2.31978 3.25 2 3.56978 2 3.96429V5.75C2 6.14451 2.31978 6.46429 2.71429 6.46429ZM2.71429 13.6071H21.2857C21.6802 13.6071 22 13.2874 22 12.8929V11.1071C22 10.7126 21.6802 10.3929 21.2857 10.3929H2.71429C2.31978 10.3929 2 10.7126 2 11.1071V12.8929C2 13.2874 2.31978 13.6071 2.71429 13.6071ZM2.71429 20.75H21.2857C21.6802 20.75 22 20.4302 22 20.0357V18.25C22 17.8555 21.6802 17.5357 21.2857 17.5357H2.71429C2.31978 17.5357 2 17.8555 2 18.25V20.0357C2 20.4302 2.31978 20.75 2.71429 20.75Z" fill="#2F4E92"/>
           </svg>
@@ -342,14 +343,14 @@
         <div class="mobile-header__logo">
           <img class="mobile-header__logo-img" src="../../assets/opentrolley_logo.png" />
         </div>
-        <div class="mobile-header__action">
+        <a class="mobile-header__action" href="../4_1_cart/index.html">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M19.5249 14.2222H9.34625L9.57351 15.3333H18.8936C19.4283 15.3333 19.8247 15.8299 19.7062 16.3514L19.5146 17.1943C20.1636 17.5093 20.6111 18.1746 20.6111 18.9444C20.6111 20.0278 19.725 20.9043 18.6381 20.8887C17.6025 20.8738 16.7509 20.0334 16.723 18.9982C16.7077 18.4326 16.9342 17.9201 17.3064 17.5555H10.0269C10.3873 17.9085 10.6111 18.4002 10.6111 18.9444C10.6111 20.0491 9.69 20.9386 8.57396 20.8867C7.58299 20.8407 6.77705 20.04 6.72497 19.0493C6.68476 18.2843 7.08733 17.6099 7.69896 17.2582L5.25983 5.33333H2.83333C2.37309 5.33333 2 4.96024 2 4.5V3.94444C2 3.4842 2.37309 3.11111 2.83333 3.11111H6.39337C6.78924 3.11111 7.13045 3.38961 7.20979 3.77743L7.52806 5.33333H21.1663C21.7011 5.33333 22.0974 5.82989 21.9789 6.35135L20.3375 13.5736C20.2513 13.953 19.914 14.2222 19.5249 14.2222Z" fill="#2F4E92"/>
           </svg>
           <div class="mobile-header__action-label">
             CART
           </div>
-        </div>
+        </a>
       </nav>
       <div class="mobile-header__search">
         <div class="mobile-header__search-bar">
@@ -363,8 +364,104 @@
           </button>
         </div>
       </div>
-      <div class="mobile-header__promo">
+      <a class="mobile-header__promo" href="../7_1_info_template_1/index.html">
         Feb 2022 promo up to 20% off
+      </a>
+
+      <div class="navdrawer">
+        <header class="navdrawer__header">
+          <div class="navdrawer__header-action" id="drawer-close">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9117 9.63879L5.77503 3.50212C5.49607 3.22316 5.04384 3.22316 4.76488 3.50212L3.50219 4.76481C3.22323 5.04377 3.22323 5.496 3.50219 5.77496L9.63887 11.9116L3.50219 18.0483C3.22323 18.3273 3.22323 18.7795 3.50219 19.0585L4.76488 20.3212C5.04384 20.6001 5.49607 20.6001 5.77503 20.3212L11.9117 14.1845L18.0484 20.3212C18.3273 20.6001 18.7796 20.6001 19.0585 20.3212L20.3212 19.0585C20.6002 18.7795 20.6002 18.3273 20.3212 18.0483L14.1846 11.9116L20.3212 5.77496C20.6002 5.496 20.6002 5.04377 20.3212 4.76481L19.0585 3.50211C18.7796 3.22316 18.3273 3.22316 18.0484 3.50211L11.9117 9.63879Z" fill="#2F4E92"/>
+            </svg>
+            <div class="navdrawer__header-action-label">
+              EXIT
+            </div>
+          </div>
+          <div class="navdrawer__header-logo">
+            <img class="navdrawer__header-logo-img" src="../../assets/opentrolley_logo.png" />
+          </div>
+          <div class="navdrawer__header-action" id="drawer-search">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M21.7266 19.2913L17.8324 15.3971C17.6567 15.2214 17.4184 15.1237 17.1684 15.1237H16.5318C17.6098 13.7449 18.2504 12.0107 18.2504 10.1242C18.2504 5.63636 14.614 2 10.1262 2C5.63832 2 2.00195 5.63636 2.00195 10.1242C2.00195 14.612 5.63832 18.2484 10.1262 18.2484C12.0127 18.2484 13.7469 17.6079 15.1257 16.5298V17.1665C15.1257 17.4165 15.2233 17.6547 15.3991 17.8305L19.2932 21.7246C19.6604 22.0918 20.2541 22.0918 20.6173 21.7246L21.7227 20.6193C22.0898 20.2521 22.0898 19.6584 21.7266 19.2913ZM10.1262 15.1237C7.36471 15.1237 5.12665 12.8896 5.12665 10.1242C5.12665 7.36276 7.36081 5.12469 10.1262 5.12469C12.8876 5.12469 15.1257 7.35885 15.1257 10.1242C15.1257 12.8857 12.8915 15.1237 10.1262 15.1237Z" fill="#2F4E92"/>
+            </svg>
+            <div class="navdrawer__header-action-label">
+              SEARCH
+            </div>
+          </div>
+        </header>
+        <div class="navdrawer__body">
+          <div class="navdrawer__item" data-id="book-categories">
+            <div class="navdrawer__item-button">
+              <div class="navdrawer__item-label">Book Categories</div>
+              <div class="navdrawer__item-icon">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11.831 8.51816L5.89714 14.452C5.61096 14.7382 5.14698 14.7382 4.86082 14.452L4.16873 13.7599C3.88304 13.4742 3.88249 13.0112 4.16751 12.7248L8.87023 7.99999L4.16751 3.27516C3.88249 2.9888 3.88304 2.52576 4.16873 2.24007L4.86082 1.54797C5.14701 1.26179 5.61099 1.26179 5.89714 1.54797L11.831 7.48184C12.1172 7.768 12.1172 8.23198 11.831 8.51816Z" fill="#74A4BF"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="navdrawer__item" data-id="bestsellers">
+            <div class="navdrawer__item-button">
+              <div class="navdrawer__item-label">Bestsellers</div>
+              <div class="navdrawer__item-icon">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11.831 8.51816L5.89714 14.452C5.61096 14.7382 5.14698 14.7382 4.86082 14.452L4.16873 13.7599C3.88304 13.4742 3.88249 13.0112 4.16751 12.7248L8.87023 7.99999L4.16751 3.27516C3.88249 2.9888 3.88304 2.52576 4.16873 2.24007L4.86082 1.54797C5.14701 1.26179 5.61099 1.26179 5.89714 1.54797L11.831 7.48184C12.1172 7.768 12.1172 8.23198 11.831 8.51816Z" fill="#74A4BF"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="navdrawer__item" data-id="new-arrivals">
+            <div class="navdrawer__item-button">
+              <div class="navdrawer__item-label">New Arrivals</div>
+              <div class="navdrawer__item-icon">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11.831 8.51816L5.89714 14.452C5.61096 14.7382 5.14698 14.7382 4.86082 14.452L4.16873 13.7599C3.88304 13.4742 3.88249 13.0112 4.16751 12.7248L8.87023 7.99999L4.16751 3.27516C3.88249 2.9888 3.88304 2.52576 4.16873 2.24007L4.86082 1.54797C5.14701 1.26179 5.61099 1.26179 5.89714 1.54797L11.831 7.48184C12.1172 7.768 12.1172 8.23198 11.831 8.51816Z" fill="#74A4BF"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="navdrawer__item" data-id="fiction">
+            <div class="navdrawer__item-button">
+              <div class="navdrawer__item-label">Fiction</div>
+              <div class="navdrawer__item-icon">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11.831 8.51816L5.89714 14.452C5.61096 14.7382 5.14698 14.7382 4.86082 14.452L4.16873 13.7599C3.88304 13.4742 3.88249 13.0112 4.16751 12.7248L8.87023 7.99999L4.16751 3.27516C3.88249 2.9888 3.88304 2.52576 4.16873 2.24007L4.86082 1.54797C5.14701 1.26179 5.61099 1.26179 5.89714 1.54797L11.831 7.48184C12.1172 7.768 12.1172 8.23198 11.831 8.51816Z" fill="#74A4BF"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="navdrawer__item" data-id="self-help">
+            <div class="navdrawer__item-button">
+              <div class="navdrawer__item-label">Self-help</div>
+              <div class="navdrawer__item-icon">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11.831 8.51816L5.89714 14.452C5.61096 14.7382 5.14698 14.7382 4.86082 14.452L4.16873 13.7599C3.88304 13.4742 3.88249 13.0112 4.16751 12.7248L8.87023 7.99999L4.16751 3.27516C3.88249 2.9888 3.88304 2.52576 4.16873 2.24007L4.86082 1.54797C5.14701 1.26179 5.61099 1.26179 5.89714 1.54797L11.831 7.48184C12.1172 7.768 12.1172 8.23198 11.831 8.51816Z" fill="#74A4BF"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="navdrawer__item" data-id="information">
+            <div class="navdrawer__item-button">
+              <div class="navdrawer__item-label">Information</div>
+              <div class="navdrawer__item-icon">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11.831 8.51816L5.89714 14.452C5.61096 14.7382 5.14698 14.7382 4.86082 14.452L4.16873 13.7599C3.88304 13.4742 3.88249 13.0112 4.16751 12.7248L8.87023 7.99999L4.16751 3.27516C3.88249 2.9888 3.88304 2.52576 4.16873 2.24007L4.86082 1.54797C5.14701 1.26179 5.61099 1.26179 5.89714 1.54797L11.831 7.48184C12.1172 7.768 12.1172 8.23198 11.831 8.51816Z" fill="#74A4BF"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="navdrawer__searchbar">
+          <input class="navdrawer__searchbar-input" placeholder="Search by title, author, keyword, ISBN, EAN" />
+          <button class="navdrawer__searchbar-button">
+            <div class="navdrawer__searchbar-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21.7263 19.2913L17.8322 15.3971C17.6564 15.2214 17.4182 15.1237 17.1682 15.1237H16.5315C17.6096 13.7449 18.2501 12.0107 18.2501 10.1242C18.2501 5.63636 14.6138 2 10.1259 2C5.63807 2 2.00171 5.63636 2.00171 10.1242C2.00171 14.612 5.63807 18.2484 10.1259 18.2484C12.0125 18.2484 13.7467 17.6079 15.1254 16.5298V17.1665C15.1254 17.4165 15.2231 17.6547 15.3988 17.8305L19.293 21.7246C19.6601 22.0918 20.2538 22.0918 20.6171 21.7246L21.7224 20.6193C22.0896 20.2521 22.0896 19.6584 21.7263 19.2913ZM10.1259 15.1237C7.36447 15.1237 5.1264 12.8896 5.1264 10.1242C5.1264 7.36276 7.36056 5.12469 10.1259 5.12469C12.8874 5.12469 15.1254 7.35885 15.1254 10.1242C15.1254 12.8857 12.8913 15.1237 10.1259 15.1237Z" fill="white"/>
+              </svg>
+            </div>
+          </button>
+        </div>
       </div>
     </header>
     <div class="emptysearch">
@@ -422,84 +519,86 @@
         </div>
         <!-- Empty search recommendation -->
         <div class="emptysearch__recommendation">
-          <div class="emptysearch__recommendation-wrapper">
-            <div class="emptysearch__recommendation-header">
-              <div class="emptysearch__recommendation-label">Titles You Might Be Interested In...</div>
-              <a class="emptysearch__recommendation-viewmore-link">VIEW MORE ></a>
-            </div>
-            <div class="emptysearch__recommendation-list">
-              <div class="emptysearch__recommendation-item">
-                <div class="emptysearch__recommendation-item-cover">
-                  <img class="emptysearch__recommendation-item-img" src="../../assets/samples/homepage/book_1.png" />
-                </div>
-                <h3 class="emptysearch__recommendation-item-title">Indestructibles: The Itsy Bitsy Spider</h3>
-                <div class="emptysearch__recommendation-item-author">Maddie Frost</div>
-                <div class="emptysearch__recommendation-item-price_discounted">S$ 42.81</div>
-                <div class="emptysearch__recommendation-item-price_original">S$ 48.00</div>
+          <div class="bookslider">
+            <div class="bookslider__wrapper">
+              <div class="bookslider__header">
+                <div class="bookslider__label">Titles You Might Be Interested In...</div>
+                <a class="bookslider__viewmore-link">VIEW MORE ></a>
               </div>
-              <div class="emptysearch__recommendation-item">
-                <div class="emptysearch__recommendation-item-cover">
-                  <img class="emptysearch__recommendation-item-img" src="../../assets/samples/homepage/book_2.png" />
+              <div class="bookslider__list">
+                <div class="bookslider__item">
+                  <a class="bookslider__item-cover" href="../3_1_book_detail/index.html">
+                    <img class="bookslider__item-img" src="../../assets/samples/homepage/book_1.png" />
+                  </a>
+                  <h3 class="bookslider__item-title"><a class="bookslider__item-link" href="../3_1_book_detail/index.html">Indestructibles: The Itsy Bitsy Spider</a></h3>
+                  <div class="bookslider__item-author">Maddie Frost</div>
+                  <div class="bookslider__item-price_discounted">S$ 42.81</div>
+                  <div class="bookslider__item-price_original">S$ 48.00</div>
                 </div>
-                <h3 class="emptysearch__recommendation-item-title">Indestructibles: The Itsy Bitsy Spider</h3>
-                <div class="emptysearch__recommendation-item-author">Maddie Frost</div>
-                <div class="emptysearch__recommendation-item-price">S$ 42.81</div>
-              </div>
-              <div class="emptysearch__recommendation-item">
-                <div class="emptysearch__recommendation-item-cover">
-                  <img class="emptysearch__recommendation-item-img" src="../../assets/samples/homepage/book_3.png" />
+                <div class="bookslider__item">
+                  <a class="bookslider__item-cover" href="../3_1_book_detail/index.html">
+                    <img class="bookslider__item-img" src="../../assets/samples/homepage/book_2.png" />
+                  </a>
+                  <h3 class="bookslider__item-title"><a class="bookslider__item-link" href="../3_1_book_detail/index.html">Indestructibles: The Itsy Bitsy Spider</a></h3>
+                  <div class="bookslider__item-author">Maddie Frost</div>
+                  <div class="bookslider__item-price">S$ 42.81</div>
                 </div>
-                <h3 class="emptysearch__recommendation-item-title">Indestructibles: The Itsy Bitsy Spider</h3>
-                <div class="emptysearch__recommendation-item-author">Maddie Frost</div>
-                <div class="emptysearch__recommendation-item-price">S$ 42.81</div>
-              </div>
-              <div class="emptysearch__recommendation-item">
-                <div class="emptysearch__recommendation-item-cover">
-                  <img class="emptysearch__recommendation-item-img" src="../../assets/samples/homepage/book_4.png" />
+                <div class="bookslider__item">
+                  <a class="bookslider__item-cover" href="../3_1_book_detail/index.html">
+                    <img class="bookslider__item-img" src="../../assets/samples/homepage/book_3.png" />
+                  </a>
+                  <h3 class="bookslider__item-title"><a class="bookslider__item-link" href="../3_1_book_detail/index.html">Indestructibles: The Itsy Bitsy Spider</a></h3>
+                  <div class="bookslider__item-author">Maddie Frost</div>
+                  <div class="bookslider__item-price">S$ 42.81</div>
                 </div>
-                <h3 class="emptysearch__recommendation-item-title">Indestructibles: The Itsy Bitsy Spider</h3>
-                <div class="emptysearch__recommendation-item-author">Maddie Frost</div>
-                <div class="emptysearch__recommendation-item-price">S$ 42.81</div>
-              </div>
-              <div class="emptysearch__recommendation-item">
-                <div class="emptysearch__recommendation-item-cover">
-                  <img class="emptysearch__recommendation-item-img" src="../../assets/samples/homepage/book_5.png" />
+                <div class="bookslider__item">
+                  <a class="bookslider__item-cover" href="../3_1_book_detail/index.html">
+                    <img class="bookslider__item-img" src="../../assets/samples/homepage/book_4.png" />
+                  </a>
+                  <h3 class="bookslider__item-title"><a class="bookslider__item-link" href="../3_1_book_detail/index.html">Indestructibles: The Itsy Bitsy Spider</a></h3>
+                  <div class="bookslider__item-author">Maddie Frost</div>
+                  <div class="bookslider__item-price">S$ 42.81</div>
                 </div>
-                <h3 class="emptysearch__recommendation-item-title">Indestructibles: The Itsy Bitsy Spider</h3>
-                <div class="emptysearch__recommendation-item-author">Maddie Frost</div>
-                <div class="emptysearch__recommendation-item-price">S$ 42.81</div>
-              </div>
-              <div class="emptysearch__recommendation-item">
-                <div class="emptysearch__recommendation-item-cover">
-                  <img class="emptysearch__recommendation-item-img" src="../../assets/samples/homepage/book_6.png" />
+                <div class="bookslider__item">
+                  <a class="bookslider__item-cover" href="../3_1_book_detail/index.html">
+                    <img class="bookslider__item-img" src="../../assets/samples/homepage/book_5.png" />
+                  </a>
+                  <h3 class="bookslider__item-title"><a class="bookslider__item-link" href="../3_1_book_detail/index.html">Indestructibles: The Itsy Bitsy Spider</a></h3>
+                  <div class="bookslider__item-author">Maddie Frost</div>
+                  <div class="bookslider__item-price">S$ 42.81</div>
                 </div>
-                <h3 class="emptysearch__recommendation-item-title">Indestructibles: The Itsy Bitsy Spider</h3>
-                <div class="emptysearch__recommendation-item-author">Maddie Frost</div>
-                <div class="emptysearch__recommendation-item-price">S$ 42.81</div>
-              </div>
-              <div class="emptysearch__recommendation-item">
-                <div class="emptysearch__recommendation-item-cover">
-                  <img class="emptysearch__recommendation-item-img" src="../../assets/samples/homepage/book_7.png" />
+                <div class="bookslider__item">
+                  <a class="bookslider__item-cover" href="../3_1_book_detail/index.html">
+                    <img class="bookslider__item-img" src="../../assets/samples/homepage/book_6.png" />
+                  </a>
+                  <h3 class="bookslider__item-title"><a class="bookslider__item-link" href="../3_1_book_detail/index.html">Indestructibles: The Itsy Bitsy Spider</a></h3>
+                  <div class="bookslider__item-author">Maddie Frost</div>
+                  <div class="bookslider__item-price">S$ 42.81</div>
                 </div>
-                <h3 class="emptysearch__recommendation-item-title">Indestructibles: The Itsy Bitsy Spider</h3>
-                <div class="emptysearch__recommendation-item-author">Maddie Frost</div>
-                <div class="emptysearch__recommendation-item-price">S$ 42.81</div>
-              </div>
-              <div class="emptysearch__recommendation-item">
-                <div class="emptysearch__recommendation-item-cover">
-                  <img class="emptysearch__recommendation-item-img" src="../../assets/samples/homepage/book_8.png" />
+                <div class="bookslider__item">
+                  <a class="bookslider__item-cover" href="../3_1_book_detail/index.html">
+                    <img class="bookslider__item-img" src="../../assets/samples/homepage/book_7.png" />
+                  </a>
+                  <h3 class="bookslider__item-title"><a class="bookslider__item-link" href="../3_1_book_detail/index.html">Indestructibles: The Itsy Bitsy Spider</a></h3>
+                  <div class="bookslider__item-author">Maddie Frost</div>
+                  <div class="bookslider__item-price">S$ 42.81</div>
                 </div>
-                <h3 class="emptysearch__recommendation-item-title">Indestructibles: The Itsy Bitsy Spider</h3>
-                <div class="emptysearch__recommendation-item-author">Maddie Frost</div>
-                <div class="emptysearch__recommendation-item-price">S$ 42.81</div>
-              </div>
-              <div class="emptysearch__recommendation-item">
-                <div class="emptysearch__recommendation-item-cover">
-                  <img class="emptysearch__recommendation-item-img" src="../../assets/samples/homepage/book_9.png" />
+                <div class="bookslider__item">
+                  <a class="bookslider__item-cover" href="../3_1_book_detail/index.html">
+                    <img class="bookslider__item-img" src="../../assets/samples/homepage/book_8.png" />
+                  </a>
+                  <h3 class="bookslider__item-title"><a class="bookslider__item-link" href="../3_1_book_detail/index.html">Indestructibles: The Itsy Bitsy Spider</a></h3>
+                  <div class="bookslider__item-author">Maddie Frost</div>
+                  <div class="bookslider__item-price">S$ 42.81</div>
                 </div>
-                <h3 class="emptysearch__recommendation-item-title">Indestructibles: The Itsy Bitsy Spider</h3>
-                <div class="emptysearch__recommendation-item-author">Maddie Frost</div>
-                <div class="emptysearch__recommendation-item-price">S$ 42.81</div>
+                <div class="bookslider__item">
+                  <a class="bookslider__item-cover" href="../3_1_book_detail/index.html">
+                    <img class="bookslider__item-img" src="../../assets/samples/homepage/book_9.png" />
+                  </a>
+                  <h3 class="bookslider__item-title"><a class="bookslider__item-link" href="../3_1_book_detail/index.html">Indestructibles: The Itsy Bitsy Spider</a></h3>
+                  <div class="bookslider__item-author">Maddie Frost</div>
+                  <div class="bookslider__item-price">S$ 42.81</div>
+                </div>
               </div>
             </div>
           </div>
@@ -560,12 +659,23 @@
           <h5 class="footer__follow-us">FOLLOW US</h5>
           <div class="footer__socials">
             <div class="footer__social-item">
-              <!-- <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M44 24.1208C44 13.0725 35.0484 4.12085 24 4.12085C12.9516 4.12085 4 13.0725 4 24.1208C4 34.1031 11.3137 42.3773 20.875 43.8789V29.9023H15.7944V24.1208H20.875V19.7144C20.875 14.7023 23.8589 11.9338 28.429 11.9338C30.6177 11.9338 32.9065 12.3241 32.9065 12.3241V17.2434H30.3839C27.9 17.2434 27.125 18.7854 27.125 20.3668V24.1208H32.6718L31.7847 29.9023H27.125V43.8789C36.6863 42.3773 44 34.1031 44 24.1208Z" fill="#2F4E92"/>
-              </svg> -->
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="20" r="20" fill="#2F4E92"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M39.9999 20.0598C40 20.0399 40 20.0199 40 20C40 8.9543 31.0457 0 20 0C8.9543 0 0 8.9543 0 20C0 20.0201 2.97817e-05 20.0403 8.93036e-05 20.0604C0.0326623 9.03983 8.97177 0.12085 20 0.12085C31.028 0.12085 39.967 9.03949 39.9999 20.0598ZM23.125 39.7573V25.9023H27.7847L28.6718 20.1208H23.125V16.3668C23.125 14.7854 23.9 13.2434 26.3839 13.2434H28.9065V8.32407C28.9065 8.32407 26.6177 7.93375 24.429 7.93375C19.8589 7.93375 16.875 10.7023 16.875 15.7144V20.1208H11.7944V25.9023H16.875V39.7573C17.8932 39.9171 18.9369 40 20 40C21.0631 40 22.1068 39.9171 23.125 39.7573Z" fill="white"/>
+              </svg>
             </div>
-            <div class="footer__social-item"></div>
-            <div class="footer__social-item"></div>
+            <div class="footer__social-item">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="20" r="20" fill="#2F4E92"/>
+                <path d="M20.0025 14.019C16.6919 14.019 14.0215 16.6894 14.0215 20C14.0215 23.3107 16.6919 25.981 20.0025 25.981C23.3132 25.981 25.9836 23.3107 25.9836 20C25.9836 16.6894 23.3132 14.019 20.0025 14.019ZM20.0025 23.8885C17.8631 23.8885 16.1141 22.1446 16.1141 20C16.1141 17.8554 17.8579 16.1115 20.0025 16.1115C22.1472 16.1115 23.891 17.8554 23.891 20C23.891 22.1446 22.142 23.8885 20.0025 23.8885V23.8885ZM27.6233 13.7743C27.6233 14.5499 26.9986 15.1694 26.2282 15.1694C25.4526 15.1694 24.8332 14.5447 24.8332 13.7743C24.8332 13.0039 25.4578 12.3793 26.2282 12.3793C26.9986 12.3793 27.6233 13.0039 27.6233 13.7743ZM31.5846 15.1902C31.4961 13.3214 31.0693 11.6661 29.7002 10.3023C28.3364 8.93847 26.6811 8.51162 24.8123 8.41792C22.8863 8.30861 17.1135 8.30861 15.1875 8.41792C13.324 8.50642 11.6686 8.93326 10.2996 10.2971C8.93058 11.6609 8.50894 13.3162 8.41524 15.185C8.30592 17.111 8.30592 22.8838 8.41524 24.8098C8.50373 26.6786 8.93058 28.3339 10.2996 29.6977C11.6686 31.0615 13.3188 31.4884 15.1875 31.5821C17.1135 31.6914 22.8863 31.6914 24.8123 31.5821C26.6811 31.4936 28.3364 31.0667 29.7002 29.6977C31.0641 28.3339 31.4909 26.6786 31.5846 24.8098C31.6939 22.8838 31.6939 17.1162 31.5846 15.1902V15.1902ZM29.0964 26.8764C28.6904 27.8966 27.9044 28.6827 26.8789 29.0939C25.3433 29.7029 21.6995 29.5624 20.0025 29.5624C18.3056 29.5624 14.6565 29.6977 13.1262 29.0939C12.1059 28.6879 11.3199 27.9018 10.9086 26.8764C10.2996 25.3408 10.4401 21.697 10.4401 20C10.4401 18.303 10.3048 14.654 10.9086 13.1236C11.3147 12.1034 12.1007 11.3173 13.1262 10.9061C14.6618 10.2971 18.3056 10.4376 20.0025 10.4376C21.6995 10.4376 25.3485 10.3023 26.8789 10.9061C27.8992 11.3121 28.6852 12.0982 29.0964 13.1236C29.7054 14.6592 29.5649 18.303 29.5649 20C29.5649 21.697 29.7054 25.346 29.0964 26.8764Z" fill="white"/>
+              </svg>
+            </div>
+            <div class="footer__social-item">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="20" r="20" fill="#2F4E92"/>
+                <path d="M29.2682 15.2473C29.283 15.4546 29.283 15.6619 29.283 15.8692C29.283 22.1911 24.4712 29.4754 15.6768 29.4754C12.9674 29.4754 10.4504 28.6907 8.33325 27.3286C8.71821 27.373 9.08831 27.3878 9.48807 27.3878C11.7237 27.3878 13.7817 26.6328 15.4251 25.3447C13.3227 25.3003 11.5608 23.9234 10.9538 22.0282C11.2499 22.0726 11.546 22.1023 11.857 22.1023C12.2863 22.1023 12.7157 22.043 13.1154 21.9394C10.9242 21.4952 9.28076 19.5705 9.28076 17.2461V17.1869C9.91737 17.5422 10.6577 17.7643 11.4423 17.7939C10.1543 16.9351 9.31038 15.4694 9.31038 13.8112C9.31038 12.9229 9.54723 12.1086 9.96181 11.3979C12.3159 14.2998 15.8544 16.1948 19.8222 16.4022C19.7482 16.0468 19.7038 15.6767 19.7038 15.3066C19.7038 12.6712 21.8358 10.5244 24.486 10.5244C25.8629 10.5244 27.1065 11.1018 27.98 12.0346C29.0608 11.8273 30.0972 11.4275 31.0152 10.8797C30.6598 11.9902 29.9047 12.9229 28.9128 13.5151C29.8752 13.4115 30.8079 13.145 31.6666 12.7749C31.0153 13.7224 30.2009 14.5662 29.2682 15.2473Z" fill="white"/>
+              </svg>
+            </div>
           </div>
         </div>
         <nav class="footer__nav">
@@ -574,46 +684,46 @@
               <h6 class="footer__nav-title">BOOK CATEGORIES</h6>
               <ul class="footer__links">
                 <li class="footer__link-item">
-                  <a class="footer__link-anchor">Architecture</a>
+                  <a class="footer__link-anchor" href="../5_1_categories/index.html">Architecture</a>
                 </li>
                 <li class="footer__link-item">
-                  <a class="footer__link-anchor">Art</a>
+                  <a class="footer__link-anchor" href="../5_1_categories/index.html">Art</a>
                 </li>
                 <li class="footer__link-item">
-                  <a class="footer__link-anchor">Biography & Autobiography</a>
+                  <a class="footer__link-anchor" href="../5_1_categories/index.html">Biography & Autobiography</a>
                 </li>
                 <li class="footer__link-item">
-                  <a class="footer__link-anchor">Body, Mind & Spirit</a>
+                  <a class="footer__link-anchor" href="../5_1_categories/index.html">Body, Mind & Spirit</a>
                 </li>
                 <li class="footer__link-item">
-                  <a class="footer__link-anchor">Business & Economics</a>
+                  <a class="footer__link-anchor" href="../5_1_categories/index.html">Business & Economics</a>
                 </li>
                 <li class="footer__link-item">
-                  <a class="footer__link-anchor">Children Fiction</a>
+                  <a class="footer__link-anchor" href="../5_1_categories/index.html">Children Fiction</a>
                 </li>
                 <li class="footer__link-item">
-                  <a class="footer__link-anchor">Children Non-fiction</a>
+                  <a class="footer__link-anchor" href="../5_1_categories/index.html">Children Non-fiction</a>
                 </li>
                 <li class="footer__link-item">
-                  <a class="footer__link-anchor">Comics & Graphic Novels</a>
+                  <a class="footer__link-anchor" href="../5_1_categories/index.html">Comics & Graphic Novels</a>
                 </li>
                 <li class="footer__link-item">
-                  <a class="footer__link-anchor">Computers</a>
+                  <a class="footer__link-anchor" href="../5_1_categories/index.html">Computers</a>
                 </li>
                 <li class="footer__link-item">
-                  <a class="footer__link-anchor">Cooking</a>
+                  <a class="footer__link-anchor" href="../5_1_categories/index.html">Cooking</a>
                 </li>
                 <li class="footer__link-item">
-                  <a class="footer__link-anchor">Crafts & Hobbies</a>
+                  <a class="footer__link-anchor" href="../5_1_categories/index.html">Crafts & Hobbies</a>
                 </li>
                 <li class="footer__link-item">
-                  <a class="footer__link-anchor">Design</a>
+                  <a class="footer__link-anchor" href="../5_1_categories/index.html">Design</a>
                 </li>
                 <li class="footer__link-item">
-                  <a class="footer__link-anchor">Drama</a>
+                  <a class="footer__link-anchor" href="../5_1_categories/index.html">Drama</a>
                 </li>
                 <li class="footer__link-item">
-                  <a class="footer__link-anchor">Education</a>
+                  <a class="footer__link-anchor" href="../5_1_categories/index.html">Education</a>
                 </li>
               </ul>
             </div>
@@ -621,43 +731,43 @@
               <div class="footer__nav-placholder"></div>
               <ul class="footer__links">
                 <li class="footer__link-item">
-                  <a class="footer__link-anchor">Drama</a>
+                  <a class="footer__link-anchor" href="../5_1_categories/index.html">Drama</a>
                 </li>
                 <li class="footer__link-item">
-                  <a class="footer__link-anchor">Education</a>
+                  <a class="footer__link-anchor" href="../5_1_categories/index.html">Education</a>
                 </li>
                 <li class="footer__link-item">
-                  <a class="footer__link-anchor">Family & Relationships</a>
+                  <a class="footer__link-anchor" href="../5_1_categories/index.html">Family & Relationships</a>
                 </li>
                 <li class="footer__link-item">
-                  <a class="footer__link-anchor">Fiction</a>
+                  <a class="footer__link-anchor" href="../5_1_categories/index.html">Fiction</a>
                 </li>
                 <li class="footer__link-item">
-                  <a class="footer__link-anchor">Foreign Language Study</a>
+                  <a class="footer__link-anchor" href="../5_1_categories/index.html">Foreign Language Study</a>
                 </li>
                 <li class="footer__link-item">
-                  <a class="footer__link-anchor">Games</a>
+                  <a class="footer__link-anchor" href="../5_1_categories/index.html">Games</a>
                 </li>
                 <li class="footer__link-item">
-                  <a class="footer__link-anchor">Gardening</a>
+                  <a class="footer__link-anchor" href="../5_1_categories/index.html">Gardening</a>
                 </li>
                 <li class="footer__link-item">
-                  <a class="footer__link-anchor">Health & Fitness</a>
+                  <a class="footer__link-anchor" href="../5_1_categories/index.html">Health & Fitness</a>
                 </li>
                 <li class="footer__link-item">
-                  <a class="footer__link-anchor">Literary Collections</a>
+                  <a class="footer__link-anchor" href="../5_1_categories/index.html">Literary Collections</a>
                 </li>
                 <li class="footer__link-item">
-                  <a class="footer__link-anchor">Mathematics</a>
+                  <a class="footer__link-anchor" href="../5_1_categories/index.html">Mathematics</a>
                 </li>
                 <li class="footer__link-item">
-                  <a class="footer__link-anchor">Medical</a>
+                  <a class="footer__link-anchor" href="../5_1_categories/index.html">Medical</a>
                 </li>
                 <li class="footer__link-item">
-                  <a class="footer__link-anchor">Nature</a>
+                  <a class="footer__link-anchor" href="../5_1_categories/index.html">Nature</a>
                 </li>
                 <li class="footer__link-item">
-                  <a class="footer__link-anchor">Performing Arts</a>
+                  <a class="footer__link-anchor" href="../5_1_categories/index.html">Performing Arts</a>
                 </li>
               </ul>
             </div>
@@ -665,22 +775,22 @@
               <h6 class="footer__nav-title">ABOUT OPENTROLLEY</h6>
               <ul class="footer__links">
                 <li class="footer__link-item">
-                  <a class="footer__link-anchor">About Us</a>
+                  <a class="footer__link-anchor" href="../7_1_info_template_1/index.html">About Us</a>
                 </li>
                 <li class="footer__link-item">
-                  <a class="footer__link-anchor">Browse 4000+ Book Categories</a>
+                  <a class="footer__link-anchor" href="../5_1_categories/index.html">Browse 4000+ Book Categories</a>
                 </li>
                 <li class="footer__link-item">
-                  <a class="footer__link-anchor">Terms of Sale</a>
+                  <a class="footer__link-anchor" href="../7_1_info_template_1/index.html">Terms of Sale</a>
                 </li>
                 <li class="footer__link-item">
-                  <a class="footer__link-anchor">Corporate Accounts</a>
+                  <a class="footer__link-anchor" href="../7_1_info_template_1/index.html">Corporate Accounts</a>
                 </li>
                 <li class="footer__link-item">
-                  <a class="footer__link-anchor">OpenTrolley Bookstore Indonesia</a>
+                  <a class="footer__link-anchor" href="https://opentrolley.co.id/">OpenTrolley Bookstore Indonesia</a>
                 </li>
                 <li class="footer__link-item">
-                  <a class="footer__link-anchor">OpenTrolley Bookstore Malaysia</a>
+                  <a class="footer__link-anchor" href="https://opentrolley.com.my/">OpenTrolley Bookstore Malaysia</a>
                 </li>
               </ul>
             </div>
@@ -688,39 +798,54 @@
               <h6 class="footer__nav-title">INFORMATION</h6>
               <ul class="footer__links">
                 <li class="footer__link-item">
-                  <a class="footer__link-anchor">How to Shop</a>
+                  <a class="footer__link-anchor" href="../7_1_info_template_1/index.html">How to Shop</a>
                 </li>
                 <li class="footer__link-item">
-                  <a class="footer__link-anchor">Delivery Info and Charges</a>
+                  <a class="footer__link-anchor" href="../7_1_info_template_1/index.html">Delivery Info and Charges</a>
                 </li>
                 <li class="footer__link-item">
-                  <a class="footer__link-anchor">Self-collection</a>
+                  <a class="footer__link-anchor" href="../7_1_info_template_1/index.html">Self-collection</a>
                 </li>
                 <li class="footer__link-item">
-                  <a class="footer__link-anchor">Track My Orders</a>
+                  <a class="footer__link-anchor" href="../7_1_info_template_1/index.html">Track My Orders</a>
                 </li>
                 <li class="footer__link-item">
-                  <a class="footer__link-anchor">Payment Modes Accepted</a>
+                  <a class="footer__link-anchor" href="../7_1_info_template_1/index.html">Payment Modes Accepted</a>
                 </li>
                 <li class="footer__link-item">
-                  <a class="footer__link-anchor">Promotions</a>
+                  <a class="footer__link-anchor" href="../7_1_info_template_1/index.html">Promotions</a>
                 </li>
                 <li class="footer__link-item">
-                  <a class="footer__link-anchor">Frequently Asked Questions</a>
+                  <a class="footer__link-anchor" href="../7_1_info_template_1/index.html">Frequently Asked Questions</a>
                 </li>
                 <li class="footer__link-item">
-                  <a class="footer__link-anchor">Contact Us</a>
+                  <a class="footer__link-anchor" href="../7_1_info_template_1/index.html">Contact Us</a>
                 </li>
               </ul>
               <div class="footer__sharer-alt">
-                <div class="footer__sharer-alt-item"></div>
-                <div class="footer__sharer-alt-item"></div>
-                <div class="footer__sharer-alt-item"></div>
+                <div class="footer__sharer-alt-item">
+                  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="20" cy="20" r="20" fill="#2F4E92"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M39.9999 20.0598C40 20.0399 40 20.0199 40 20C40 8.9543 31.0457 0 20 0C8.9543 0 0 8.9543 0 20C0 20.0201 2.97817e-05 20.0403 8.93036e-05 20.0604C0.0326623 9.03983 8.97177 0.12085 20 0.12085C31.028 0.12085 39.967 9.03949 39.9999 20.0598ZM23.125 39.7573V25.9023H27.7847L28.6718 20.1208H23.125V16.3668C23.125 14.7854 23.9 13.2434 26.3839 13.2434H28.9065V8.32407C28.9065 8.32407 26.6177 7.93375 24.429 7.93375C19.8589 7.93375 16.875 10.7023 16.875 15.7144V20.1208H11.7944V25.9023H16.875V39.7573C17.8932 39.9171 18.9369 40 20 40C21.0631 40 22.1068 39.9171 23.125 39.7573Z" fill="white"/>
+                  </svg>
+                </div>
+                <div class="footer__sharer-alt-item">
+                  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="20" cy="20" r="20" fill="#2F4E92"/>
+                    <path d="M20.0025 14.019C16.6919 14.019 14.0215 16.6894 14.0215 20C14.0215 23.3107 16.6919 25.981 20.0025 25.981C23.3132 25.981 25.9836 23.3107 25.9836 20C25.9836 16.6894 23.3132 14.019 20.0025 14.019ZM20.0025 23.8885C17.8631 23.8885 16.1141 22.1446 16.1141 20C16.1141 17.8554 17.8579 16.1115 20.0025 16.1115C22.1472 16.1115 23.891 17.8554 23.891 20C23.891 22.1446 22.142 23.8885 20.0025 23.8885V23.8885ZM27.6233 13.7743C27.6233 14.5499 26.9986 15.1694 26.2282 15.1694C25.4526 15.1694 24.8332 14.5447 24.8332 13.7743C24.8332 13.0039 25.4578 12.3793 26.2282 12.3793C26.9986 12.3793 27.6233 13.0039 27.6233 13.7743ZM31.5846 15.1902C31.4961 13.3214 31.0693 11.6661 29.7002 10.3023C28.3364 8.93847 26.6811 8.51162 24.8123 8.41792C22.8863 8.30861 17.1135 8.30861 15.1875 8.41792C13.324 8.50642 11.6686 8.93326 10.2996 10.2971C8.93058 11.6609 8.50894 13.3162 8.41524 15.185C8.30592 17.111 8.30592 22.8838 8.41524 24.8098C8.50373 26.6786 8.93058 28.3339 10.2996 29.6977C11.6686 31.0615 13.3188 31.4884 15.1875 31.5821C17.1135 31.6914 22.8863 31.6914 24.8123 31.5821C26.6811 31.4936 28.3364 31.0667 29.7002 29.6977C31.0641 28.3339 31.4909 26.6786 31.5846 24.8098C31.6939 22.8838 31.6939 17.1162 31.5846 15.1902V15.1902ZM29.0964 26.8764C28.6904 27.8966 27.9044 28.6827 26.8789 29.0939C25.3433 29.7029 21.6995 29.5624 20.0025 29.5624C18.3056 29.5624 14.6565 29.6977 13.1262 29.0939C12.1059 28.6879 11.3199 27.9018 10.9086 26.8764C10.2996 25.3408 10.4401 21.697 10.4401 20C10.4401 18.303 10.3048 14.654 10.9086 13.1236C11.3147 12.1034 12.1007 11.3173 13.1262 10.9061C14.6618 10.2971 18.3056 10.4376 20.0025 10.4376C21.6995 10.4376 25.3485 10.3023 26.8789 10.9061C27.8992 11.3121 28.6852 12.0982 29.0964 13.1236C29.7054 14.6592 29.5649 18.303 29.5649 20C29.5649 21.697 29.7054 25.346 29.0964 26.8764Z" fill="white"/>
+                  </svg>
+                </div>
+                <div class="footer__sharer-alt-item">
+                  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="20" cy="20" r="20" fill="#2F4E92"/>
+                    <path d="M29.2682 15.2473C29.283 15.4546 29.283 15.6619 29.283 15.8692C29.283 22.1911 24.4712 29.4754 15.6768 29.4754C12.9674 29.4754 10.4504 28.6907 8.33325 27.3286C8.71821 27.373 9.08831 27.3878 9.48807 27.3878C11.7237 27.3878 13.7817 26.6328 15.4251 25.3447C13.3227 25.3003 11.5608 23.9234 10.9538 22.0282C11.2499 22.0726 11.546 22.1023 11.857 22.1023C12.2863 22.1023 12.7157 22.043 13.1154 21.9394C10.9242 21.4952 9.28076 19.5705 9.28076 17.2461V17.1869C9.91737 17.5422 10.6577 17.7643 11.4423 17.7939C10.1543 16.9351 9.31038 15.4694 9.31038 13.8112C9.31038 12.9229 9.54723 12.1086 9.96181 11.3979C12.3159 14.2998 15.8544 16.1948 19.8222 16.4022C19.7482 16.0468 19.7038 15.6767 19.7038 15.3066C19.7038 12.6712 21.8358 10.5244 24.486 10.5244C25.8629 10.5244 27.1065 11.1018 27.98 12.0346C29.0608 11.8273 30.0972 11.4275 31.0152 10.8797C30.6598 11.9902 29.9047 12.9229 28.9128 13.5151C29.8752 13.4115 30.8079 13.145 31.6666 12.7749C31.0153 13.7224 30.2009 14.5662 29.2682 15.2473Z" fill="white"/>
+                  </svg>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="footer__illustration">
-            <div class="footer__illustration-wrapper"></div>
+            <div class="footer__illustration">
+              <div class="footer__illustration-wrapper"></div>
+            </div>
           </div>
         </nav>
       </div>
@@ -731,5 +856,8 @@
       </div>
     </footer>
   </div>
+  <script src="./index.js"></script>
+  <script src="../../scripts/header.js"></script>
+  <script src="../../components/navdrawer/index.js"></script>
 </body>
 </html>

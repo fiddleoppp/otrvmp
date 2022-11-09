@@ -5,4 +5,8 @@ $(document).ready(function() {
     selectionCssClass: 'dropdown__selection',
     minimumResultsForSearch: -1
   });
+
+  $('#add-new-address-btn').click(function() {
+    window.location.href = '../10_2_address_form/index.html';
+  });
 });

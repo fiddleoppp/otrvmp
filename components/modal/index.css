@@ -2,7 +2,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 10000000 !important;
+  z-index: 10000001 !important;
 }
 
 .modal__backdrop {
@@ -58,6 +58,11 @@
 
 .modal__action-item {
   width: calc(50% - 8px);
+}
+
+.modal .select2-container[aria-expanded="true"],
+.modal .select2-container.select2-container--open {
+  z-index: 10000010 !important;
 }
 
 @media screen and (min-width: 1025px) {

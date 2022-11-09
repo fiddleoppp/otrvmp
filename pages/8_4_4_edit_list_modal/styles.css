@@ -1,3 +1,7 @@
-.editlist__item + .editlist__item {
+.editlist__item {
   margin-top: 32px;
+}
+
+.editlist__item:first-child {
+  margin-top: 0;
 }

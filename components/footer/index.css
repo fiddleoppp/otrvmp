@@ -152,6 +152,7 @@
   font-size: 13px;
   color: var(--color-ot-blue);
   cursor: pointer;
+  text-decoration: none;
 }
 
 .footer__illustration {
