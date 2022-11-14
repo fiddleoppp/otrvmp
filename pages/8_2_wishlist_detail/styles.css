@@ -137,6 +137,7 @@
   flex: 1 0 auto;
   position: relative;
   text-align: center;
+  display: block;
 }
 
 .wishdetail__item-cover-ribbon {
@@ -160,6 +161,12 @@
   font-size: 18px;
   line-height: 20px;
   margin: 0;
+}
+
+.wishdetail__item-link,
+.wishdetail__item-link:hover {
+  text-decoration: none;
+  color: var(--color-ot-black) !important;
 }
 
 .wishdetail__item-author {

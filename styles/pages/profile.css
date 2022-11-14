@@ -11,39 +11,6 @@
   border: 1px solid var(--color-ot-gray-40);
 }
 
-.profile__nav-label {
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 21px;
-  padding: 20px;
-  border-bottom: 1px solid var(--color-ot-gray-40);
-}
-
-.profile__nav-set {
-  padding: 10px 0;
-}
-
-.profile__nav-item {
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 20px;
-  padding: 10px 24px;
-  cursor: pointer;
-}
-
-.profile__nav-item_active,
-.profile__nav-item:hover {
-  background-color: var(--color-ot-gray-40);
-}
-
-.profile__nav-link {
-  text-decoration: none;
-}
-
-.profile__nav-link:hover {
-  color: var(--color-ot-blue);
-}
-
 .profile__dropdown {
   margin-bottom: 46px;
 }
