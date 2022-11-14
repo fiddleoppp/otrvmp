@@ -191,8 +191,6 @@
   display: flex;
   align-items: center;
   flex: 1 0 auto;
-  line-height: 54px;
-  height: 54px;
 }
 
 .header__megamenu-item:hover {
@@ -317,14 +315,19 @@
 }
 
 .header__megamenu-link {
-  color: var(--color-ot-black);
+  color: var(--color-ot-black) !important;
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
+  text-decoration: none;
+  display: block;
+  line-height: 54px;
+  height: 54px;
+  
 }
 
 .header__megamenu-item:hover .header__megamenu-link {
-  color: var(--color-ot-white);
+  color: var(--color-ot-white) !important ;
 }
 
 .header__megamenu-link:hover {
