@@ -22,23 +22,23 @@
   color: var(--color-ot-black);
 }
 
-.bookslider__viewmore {
-
-}
-
 .bookslider__viewmore-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
   font-weight: 500;
   font-size: 13px;
   line-height: 18px;
-  width: 140px;
   color: var(--color-ot-blue);
   margin-bottom: 5px;
+  margin-left: auto;
   text-align: right;
+  text-decoration: none;
 }
 
 .bookslider__arrow {
   position: absolute;
-  display: flex;
+  display: flex !important;
   justify-content: center;
   align-items: center;
   width: 46px;
@@ -50,6 +50,10 @@
   border-radius: 50%;
   background-color: var(--color-ot-blue);
   cursor: pointer;
+}
+
+.bookslider__arrow[aria-disabled="true"] {
+  display: none !important;
 }
 
 .bookslider__arrow:hover {
