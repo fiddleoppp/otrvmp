@@ -4,6 +4,7 @@
 .pagination-wrapper {
   display: flex;
   justify-content: flex-start;
+  align-items: center;
   gap: 12px;
 }
 
@@ -14,6 +15,8 @@
   color: var(--color-ot-blue);
   text-decoration: underline;
   cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 
 .pagination-item_active {

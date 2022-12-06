@@ -122,6 +122,14 @@ $(document).ready(function() {
     window.location.href = '../2_1_search_result/index.html';
   });
 
+  $('.filterbox__group-seemore').click(function() {
+    const group = $(this).closest('.filterbox__group');
+    group.toggleClass('filterbox__group_more');
+
+    const isSeeMore = group.hasClass('filterbox__group_more');
+    $(this).text(isSeeMore ? 'See less' : 'See more');
+  });
+
   // With the above scripts loaded, you can call `tippy()` with a CSS
   // selector and a `content` prop:
   tippy('.product__promo-info', {

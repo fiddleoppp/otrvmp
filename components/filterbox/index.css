@@ -71,6 +71,16 @@
   margin-top: 12px;
 }
 
+/* Only show first 5 items */
+.filterbox__group-body > .filterbox__group-item:nth-child(n+6) {
+  display: none;
+}
+
+/* Show the rest if has class `filterbox__group_more` */
+.filterbox__group_more > .filterbox__group-body > .filterbox__group-item:nth-child(n+6) {
+  display: block;
+}
+
 .filterbox__group_range .filterbox__group-item {
   margin-top: 0;
 }
