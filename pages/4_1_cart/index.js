@@ -20,4 +20,12 @@ $(document).ready(function() {
   $('#empty-cart-btn').click(function() {
     window.location.href = '../4_2_empty_cart/index.html';
   });
+
+  // Set "checked" state of checkbox to reflect current state
+  $('.checkbox').click(function(e) {
+    e.stopPropagation();
+    e.preventDefault();
+    const checkbox = $(this).find('.checkbox__input');
+    checkbox.attr('checked', !checkbox.attr('checked'));
+  });
 });

@@ -130,6 +130,14 @@ $(document).ready(function() {
     $(this).text(isSeeMore ? 'See less' : 'See more');
   });
 
+  // Set "checked" state of checkbox to reflect current state
+  $('.filterbox__group-item .checkbox').click(function(e) {
+    e.stopPropagation();
+    e.preventDefault();
+    const checkbox = $(this).find('.checkbox__input');
+    checkbox.attr('checked', !checkbox.attr('checked'));
+  });
+
   // With the above scripts loaded, you can call `tippy()` with a CSS
   // selector and a `content` prop:
   tippy('.product__promo-info', {
