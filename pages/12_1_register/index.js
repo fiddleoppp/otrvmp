@@ -78,4 +78,11 @@ $(document).ready(function() {
 
     window.location.href = '../1_1_homepage/index.html';
   });
+
+  $('.checkbox').click(function(e) {
+    e.stopPropagation();
+    e.preventDefault();
+    const checkbox = $(this).find('.checkbox__input');
+    checkbox.attr('checked', !checkbox.attr('checked'));
+  });
 });

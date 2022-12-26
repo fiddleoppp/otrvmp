@@ -25,7 +25,17 @@ $(document).ready(function() {
   $('.checkbox').click(function(e) {
     e.stopPropagation();
     e.preventDefault();
+
     const checkbox = $(this).find('.checkbox__input');
-    checkbox.attr('checked', !checkbox.attr('checked'));
+    const nextTarget = !checkbox.attr('checked');
+
+    const isHeadCheckbox = checkbox.attr('id') === 'header-checkbox';
+    if (isHeadCheckbox) {
+      $('.checkbox .checkbox__input').attr('checked', nextTarget);
+      return;
+    }
+
+    
+    checkbox.attr('checked', nextTarget);
   });
 });

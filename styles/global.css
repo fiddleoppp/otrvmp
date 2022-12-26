@@ -381,12 +381,12 @@ a.button_ghost {
   border: 1px solid var(--color-ot-gray-60);
 }
 
-.checkbox__input:checked ~ .checkbox__checkmark {
+.checkbox__input[type=checkbox]:checked ~ .checkbox__checkmark {
   background-color: var(--color-ot-blue);
   border: none;
 }
 
-.checkbox__input:checked ~ .checkbox__checkmark::after {
+.checkbox__input[type=checkbox]:checked ~ .checkbox__checkmark::after {
   display: block;
 }
 
