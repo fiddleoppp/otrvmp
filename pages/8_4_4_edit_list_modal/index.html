@@ -9,6 +9,8 @@
   src="https://code.jquery.com/jquery-3.6.0.min.js"
   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
   crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&family=Lora:ital,wght@0,600;0,700;1,600;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../styles/normalize.css">
   <link rel="stylesheet" href="../../styles/global.css">
@@ -20,6 +22,7 @@
   <link rel="stylesheet" href="../../components/pagination/index.css">
   <link rel="stylesheet" href="../../components/modal/index.css">
   <link rel="stylesheet" href="../../components/dropdown/index.css">
+  <link rel="stylesheet" href="../../components/popover/index.css">
   <link rel="stylesheet" href="../../components/ribbon/index.css">
   <link rel="stylesheet" href="../../components/navdrawer/index.css">
   <!-- Reuse CSS from `8_2_wishlist_detail` for simulating the page only  -->
@@ -678,28 +681,29 @@
                 <div class="wishdetail__config-item">
                   <div class="wishdetail__config-label">Sort by:</div>
                   <div class="wishdetail__config-current">
-                    Most Popular
-                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1.84107 3.08008H10.1589C10.9068 3.08008 11.2808 3.98526 10.7531 4.51299L6.59413 8.67191C6.26561 9.00043 5.73439 9.00043 5.40936 8.67191L1.24694 4.51299C0.719209 3.98526 1.09316 3.08008 1.84107 3.08008Z" fill="#2F4E92"/>
-                    </svg>                      
+                    <select class="wishdetail__config-popover popover">
+                      <option>Most Popular</option>
+                      <option>Least Popular</option>
+                    </select>
                   </div>
                 </div>
                 <div class="wishdetail__config-item">
                   <div class="wishdetail__config-label">Not-in-stock items:</div>
                   <div class="wishdetail__config-current">
-                    Show
-                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1.84107 3.08008H10.1589C10.9068 3.08008 11.2808 3.98526 10.7531 4.51299L6.59413 8.67191C6.26561 9.00043 5.73439 9.00043 5.40936 8.67191L1.24694 4.51299C0.719209 3.98526 1.09316 3.08008 1.84107 3.08008Z" fill="#2F4E92"/>
-                    </svg>                      
+                    <select class="wishdetail__config-popover popover">
+                      <option>Newest</option>
+                      <option>Oldest</option>
+                    </select>                  
                   </div>
                 </div>
                 <div class="wishdetail__config-item">
                   <div class="wishdetail__config-label">View per page:</div>
                   <div class="wishdetail__config-current">
-                    20
-                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1.84107 3.08008H10.1589C10.9068 3.08008 11.2808 3.98526 10.7531 4.51299L6.59413 8.67191C6.26561 9.00043 5.73439 9.00043 5.40936 8.67191L1.24694 4.51299C0.719209 3.98526 1.09316 3.08008 1.84107 3.08008Z" fill="#2F4E92"/>
-                    </svg>                      
+                    <select class="wishdetail__config-popover popover">
+                      <option>10</option>
+                      <option>20</option>
+                      <option>40</option>
+                    </select>                      
                   </div>
                 </div>
               </div>

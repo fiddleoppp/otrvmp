@@ -88,21 +88,18 @@ $(document).ready(function() {
     minimumResultsForSearch: -1
   });
 
-  $('.srp__filter-item-value').click(function() {
-    $('.srp__filter-item').removeClass('srp__filter-item_open');
-    $(this).closest('.srp__filter-item').addClass('srp__filter-item_open');
+  // Selector for "Sort by", "Not-in stock items", "View per page"
+  $('.srp__filter-item-popover').select2({
+    width: 'auto',
+    dropdownCssClass: 'popover__container',
+    selectionCssClass: 'popover__selection',
+    minimumResultsForSearch: -1
   });
 
-  $('.srp__filter-item-dropdown .menu__item').click(function() {
-    $(this).closest('.srp__filter-item-value').first().text('aaaa');
-  });
-
-  $(document).mouseup(function(e) {
-    var container = $('.srp__filter-item_open .srp__filter-item-dropdown');
-    if (!container.is(e.target) && container.has(e.target).length === 0) {
-      $('.srp__filter-item_open').removeClass('srp__filter-item_open');
-    }
-  });
+  // onChange callback for "Sort by", "Not-in stock items", "View per page"
+  $('.srp__filter-item-popover').on('select2:select', function(e) {
+    console.log(e.params.data);
+  })
 
   $('.srp__filter-button').click(function() {
     openFilterModal();

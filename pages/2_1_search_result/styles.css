@@ -1,5 +1,3 @@
-.srp {}
-
 .srp__desktop-filter {
   display: none;
 }
@@ -7,8 +5,6 @@
 .srp__wrapper {
   padding: 32px 0;
 }
-
-.srp__header {}
 
 .srp__label {
   padding: 0 16px;
@@ -36,11 +32,7 @@
 
 .srp__filter {
   margin-top: 16px;
-  overflow-x: scroll;
-  white-space: nowrap;
   padding: 0 16px;
-  padding-bottom: 150px;
-  margin-bottom: -150px;
 }
 
 .srp__filter::-webkit-scrollbar {
@@ -423,7 +415,7 @@
   }
 
   .srp__filter-item {
-    margin-left: 40px;
+    margin-left: 20px;
   }
 
   .product__wrapper {
